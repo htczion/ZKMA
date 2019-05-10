@@ -27,3 +27,4 @@ Press the “Make project” button or following command below to build your APP
 ```
 ./gradlew assembleRelease
 ```
+  <center>** Figure 1. ZKMA API call flow**</center>
