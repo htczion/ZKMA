@@ -20,7 +20,7 @@ import com.htc.htcwalletsdk.Utils.ZKMALog;
 /**
  * ZKMA exported APIs
  *
- * @version 3.1.2
+ * @version 3.2.0
  *
  * @since   2018/09/21
  *

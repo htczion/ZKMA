@@ -19,7 +19,7 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 26
-        versionName "3.1.2" // @version
+        versionName "3.2.0" // @version
         buildConfigField "int", "PARTNER_ID", "0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
