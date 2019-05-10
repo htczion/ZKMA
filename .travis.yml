@@ -51,7 +51,7 @@ deploy:
   provider: releases 
   api_key:           
     secure: $ZKMA
-  file: "HtcWalletSDK/build/outputs/aar/HtcWalletSDK-Htc_internal-debug.aar"
+  file: "HtcWalletSDK/build/outputs/aar/HtcWalletSDK-Htc_partner1-release.aar"
   skip_cleanup: true
   overwrite: true
   
