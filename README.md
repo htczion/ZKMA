@@ -6,58 +6,35 @@ Integration guide for creating a wallet using Zion Key Management APIs
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ZKMA (Zion Key Management API) is a SDK which allows users to control the seed more safety. Currently, HTC Exodus’s build-in Zion Vault App has been applied ZKMA, all the secure operation (enter pin, show seed, sign transaction) will be operated on the trust OS and all secure data will not be exposed on android world.
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/1.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 1. ZKMA API call flow</b></cemter>
+    
+<p align="center"> <b>Figure 1. ZKMA API call flow</b></p>
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depending your purpose, ZKMA can support the caller to call ZKMA APIs directly or bind service which is ZKMS of HTC Zion Vault. For performance, our suggestion is you can call ZKMA by ZKMA.aar. Another way which is ZKMS can be used for reducing your APK size. This document will focus on ZKMA API call flow via ZKMA.aar.
 
-<table align="center">
-  <tr>
-    <th> </th>
-    <th>ZKMA</th>
-    <th>ZKMS</th>
-  </tr>
-  <tr>
-    <td><center>Library name</td>
-    <td><center>ZKMA.aar</td>
-    <td><center>ZKMS.aar</td>
-  </tr>
-  <tr>
-    <td><center>File Size</td>
-    <td><center>7 MB~</td>
-    <td><center>20 KB~</td>
-  </tr>
-  <tr>
-    <td><center>Architecture</td>
-    <td><center>Direct call API via ZKMA library</td>
-    <td><center>Call API via ZKMS service</td>
-  </tr>
-  <tr>
-    <td><center>HTC Zion Vault App</td>
-    <td><center>Unnecessary</td>
-    <td><center>Mandatory</td>
-  </tr>
-</table>
+|   | ZKMA  | ZKMS  |
+|:-:|:-:|:-:|
+Library name|  ZKMA.aar |  ZKMS.aar |   |
+File Size| 7 MB~  | 20 KB~  |   |
+Architecture| Direct call API via ZKMA library  | Call API via ZKMS service  |   |
+HTC Zion Vault App| Unnecessary  |  Mandatory |   |
 
-<pr><pr>
-
-<center><b>Table 1. A comparison between ZKMA and ZKMS library</center></b>
+<b>Table 1. A comparison between ZKMA and ZKMS library</center></b>
 
 ## 1.1 Get ZKMA files and documents at GitHub
 
 Any collaborator can get the latest ZKMA file and document at https://github.com/htczion/ZKMA.
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/2.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 2. Release ZKMA</b></cemter>
+   <p align="center"> <b>
+   Figure 2. Release ZKMA</b></p>
   
  ## 1.2 ZKMA SDK document
 
 The developer can find all ZKMA information for development in the release document files.
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/3.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 3. ZKMA document</b></cemter>
+   <p align="center"> <b>
+   Figure 3. ZKMA document</b></p>
 
 ## 1.3 API execution result
 
@@ -168,8 +145,8 @@ For example, 1.1.0 (0.0003.01010001) is one of the version TAG in history.txt.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If this field is empty like 1.1.2, it is meaning ZKMA is compatible with the previous version, and don’t need to ROM update.
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/4.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 4. Init API check sequence</b></cemter>
+    <p align="center"> <b>
+   Figure 4. Init API check sequence</b></p>
 
  ## 3.3 Get ZKMA version and API version
 Using getModuleVersion method, you can get the current ZKMA version.
@@ -217,8 +194,8 @@ If unique_id is 0 that means the registration is failed, and the wallet_name max
 ```
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/5.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 5. A guide to show the security UI for user to create a new seed </b></cemter>
+    <p align="center"> <b>
+   Figure 5. A guide to show the security UI for user to create a new seed </b></p>
    
 To prevent Trust Zone blocked UI thread, the developer must call this API in background thread.
 
@@ -233,8 +210,8 @@ To prevent Trust Zone blocked UI thread, the developer must call this API in bac
 Guide the user to input 12 words
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/6.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 6. A guide to show the security UI for user to restore their seed </b></cemter>
+    <p align="center"> <b>
+   Figure 6. A guide to show the security UI for user to restore their seed </b></p>
    
 To prevent Trust Zone blocked UI thread, the developer must call this API in background thread.
 ## 3.8 Check whether wallet seed has already existed or not.
@@ -254,8 +231,8 @@ To prevent Trust Zone blocked UI thread, the developer must call this API in bac
 ```
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/7.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 7. Show the security UI for user to show their seed </b></cemter>
+ <p align="center"> <b>
+   Figure 7. Show the security UI for user to show their seed </b></p>
    
 
 To prevent Trust Zone blocked UI thread, the developer must call this API in background thread.
@@ -494,12 +471,13 @@ To prevent Trust Zone blocked UI thread, the developer must call this API in bac
 ```
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/8.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 8. Show the security UI for sign a transaction with BTC/LTC/ETH coin type </b></cemter>
+    <p align="center"> <b>
+   Figure 8. Show the security UI for sign a transaction with BTC/LTC/ETH coin type </b></p>
    
 To prevent Trust Zone blocked UI thread, the developer must call this API in background thread.
 
 **Sign transaction for Ethereum ERC20:**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For Ethereum ERC20 secure UI, the parameters of extra tag can be used for customizing the icon, background color, token name, display full name of token, amount decimal for secure UI. For example, if I assign my parameters of extra tag as following JSON data format, and then the secure UI will show UI as these parameters.
 ```js
 {
@@ -554,8 +532,8 @@ The parameters of extra tag are specific as:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;erc20_decimal: A number divider for display (each token has its decimal define, please must fill the correct decimal of target token)
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/9.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 9. Show the security UI with ERC20 extra tag for sign a transaction </b></cemter>
+    <p align="center"> <b>
+   Figure 9. Show the security UI with ERC20 extra tag for sign a transaction </b></p>
    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For Ethereum [ERC20 smart contract methods](https://theethereum.wiki/w/index.php/ERC20_Token_Standard), ZKMA support ERC20 transfer method with data parsing, for other methods, sign TUI just showing unknown method with raw HEX data for user confirming.
 ```js
@@ -623,8 +601,8 @@ contract ERC20Interface {
 ```
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/10.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 10. Show the security UI with ERC721 extra tag for sign a transaction </b></cemter>
+    <p align="center"> <b>
+   Figure 10. Show the security UI with ERC721 extra tag for sign a transaction </b></p>
    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For Ethereum [ERC721 smart contract methods](http://erc721.org/), ZKMA only support ERC20 transfer method now. For those data format not supported by ZKMA, sign TUI just showing unknown method with raw HEX data for user confirming
 
@@ -637,8 +615,8 @@ int result = mHtcWalletSdkManager.clearSeed(unique_id);
 ```
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/11.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 11. Show the security UI for clear an existing seed</b></cemter>
+    <p align="center"> <b>
+   Figure 11. Show the security UI for clear an existing seed</b></p>
    
 To prevent Trust Zone blocked UI thread, the developer must call this API in background thread.
 
@@ -650,8 +628,8 @@ int result = mHtcWalletSdkManager.changePIN(unique_id);
 ```
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/12.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 12. Show the security UI for user to change their PIN code</b></cemter>
+    <p align="center"> <b>
+   Figure 12. Show the security UI for user to change their PIN code</b></p>
    
 
 To prevent Trust Zone blocked UI thread, the developer must call this API in background thread.
@@ -661,8 +639,8 @@ Any PIN confirm action will also show a security UI for user to input PIN.
 int result = mHtcWalletSdkManager.confirmPIN(unique_id, resId = 3);
 ```
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/13.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 13. Show the security UI for user to confirm their PIN code</b></cemter>
+   <p align="center"> <b>
+   Figure 13. Show the security UI for user to confirm their PIN code</b></p>
    
 To prevent Trust Zone blocked UI thread, the developer must call this API in background thread.
 
@@ -681,8 +659,8 @@ int result = mHtcWalletSdkManager.deinit();
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The developer can get the error code from the returned value. If any error code occurred, ZKMA will check and handle it by three types. The first type can be ignored since it is just a normal behavior, like E_TEEKM_UI_BACK, E_TEEKM_UI_CANCEL and so on. The second type is silent error type will not show any UI prompt by ZKMA since this silent error required App handle without ZKMA error prompt, like E_TEEKM_SEED_NOT_FOUND, E_TEEKM_TIME_TIMEOUT, E_SDK_ROM_SERVICE_TOO_OLD, E_SDK_ROM_TZAPI_TOO_OLD and so on. If the error code is excepted the listed in type1 and type2 both, ZKMA will handle it by ZKMA’s generic error dialog on the screen.
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/14.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 14. Default error dialogs if an error detected by ZKMA</b></cemter>
+   <p align="center"> <b>
+   Figure 14. Default error dialogs if an error detected by ZKMA</b></p>
    
 All error code is defined in RESULT.java and can be found its meaning by name.
 ## 3.18 Sign Message
@@ -710,6 +688,6 @@ int result = mHtcWalletSdkManager.signMessage(unique_id, coin_type, strJson, Byt
 Basically, a message data in JSON should contain version and data tags.
 
 <p align="center"><img src="https://raw.githubusercontent.com/wiki/htczion/ZKMA/image/15.png" align="middle" width="700"></p>
-    <center><b>
-   Figure 15. Show the security UI for user to confirm the signing message operation</b></cemter>
+   <p align="center"> <b>
+   Figure 15. Show the security UI for user to confirm the signing message operation</b></p>
    
