@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/writeRecoveryKey_marginTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/writeRecoveryKey_LinearLayout_marginStart"
+            android:layout_marginEnd="@dimen/double_margin_l"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:id="@+id/idx_1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_1_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_01" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_1_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="aaaa fy"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idx_2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_2_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_02" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_2_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="BBBB"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idx_3_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_3_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_03" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_3_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="CCCC"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idx_4_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_4_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_04" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_4_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="DDDD"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idx_5_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_5_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_05"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_5_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="EEEE"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idx_6_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_6_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_06" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_6_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="FFFF"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/writeRecoveryKey_LinearLayout_marginStart"
+            android:layout_marginEnd="@dimen/double_margin_l"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:id="@+id/idx_7_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_7_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_07" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_7_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="GGGG"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/idx_8_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_8_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_08" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_8_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="HHHH"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idx_9_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_9_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_09" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_9_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="IIII"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idx_10_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_10_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_10" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_10_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="JJJJ"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idx_11_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_11_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_11" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_11_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="KKKK"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idx_12_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/writeRecoveryKey_marginBottom">
+
+                <ImageView
+                    android:id="@+id/idx_12_label_number"
+                    android:layout_width="@dimen/writeRecoveryKey_image_size"
+                    android:layout_height="@dimen/writeRecoveryKey_image_size"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/wallet_number_12" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/writeRecoveryKey_text_height"
+                    android:layout_toEndOf="@+id/idx_12_label_number"
+                    android:layout_marginStart="@dimen/margin_m"
+                    android:layout_centerVertical="true"
+                    android:text="LLLL"
+                    android:theme="@style/wallet_33"
+                    android:paddingTop="@dimen/writeRecoveryKey_text_padding_top"
+                    android:includeFontPadding="false"
+                    android:textAlignment="viewStart"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        style="@style/recovery_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_margin_m1"
+        android:layout_marginEnd="@dimen/double_margin_l"
+        android:layout_marginStart="@dimen/double_margin_l"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:paddingEnd="@dimen/recoveryKey_button_horizontal_padding"
+        android:paddingStart="@dimen/recoveryKey_button_horizontal_padding"
+        android:text="@string/write_recovery_key_button"
+        android:textAllCaps="false" />
+
+    <Space
+        android:id="@+id/bottom_space"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_m1"
+        android:layout_below="@id/next_button"
+        android:layout_marginTop="-15dp"/>
+</RelativeLayout>

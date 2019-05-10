@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorError">#ff1515</color>
+    <color name="black">#000000</color>
+
+
+    <color name="progressBar">#7fffffff</color>
+    <color name="progressTint">#ffffff</color>
+
+    <!--for wallet input seed ui-->
+    <color name="colorRecoveryButtonBackground">#ffffff</color>
+    <color name="colorRecoveryDisabledButtonBackground">#80ffffff</color>
+    <color name="colorRecoveryBoxUnfocused">#99ffffff</color>
+    <color name="colorRecoveryBoxFocused">#ffffff</color>
+    <color name="colorRecoveryBackground">#646464</color>
+
+    <!--for wallet review activity-->
+    <color name="colorReviewEditText">#5d5d5d</color>
+    <color name="colorReviewETH">#5c6bc0</color>
+    <color name="colorReviewBTC">#F7931A</color>
+    <color name="colorReviewLTC">#7D7D7D</color>
+    <color name="colorReviewBAT">#FF5000</color>
+    <color name="colorReviewXLM">#3ED01A</color>
+    <color name="colorReviewDefault">#E2A466</color>
+    <array name="colorReviewERC20">
+        <item>#AA0000</item>
+        <item>#AA5500</item>
+        <item>#AAAA00</item>
+        <item>#55AA00</item>
+        <item>#00AA00</item>
+        <item>#00AA55</item>
+        <item>#00AAAA</item>
+        <item>#0055AA</item>
+        <item>#0000AA</item>
+        <item>#5500AA</item>
+    </array>
+
+    <!--guideline text color-->
+    <color name="dark_primaryfont_color">#ffffff</color>
+    <color name="light_primaryfont_color">#464c53</color>
+    <color name="button_primaryfont_color">#f7b66a</color>
+
+    <!--alert dialog color-->
+    <color name="alert_dialog_button">#009688</color>
+
+</resources>

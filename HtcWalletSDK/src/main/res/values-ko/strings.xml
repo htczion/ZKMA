@@ -1,0 +1,106 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">Backup your wallet by recovery phrase</string>
+    <string name="recovery_key_introduction_description">Recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction password</string>
+    <string name="recovery_key_introduction_button">Generate recovery phrase</string>
+    <string name="write_recovery_key_title">Write down your recovery phrase carefully</string>
+    <string name="show_recovery_key_title">This is your recovery phrase</string>
+    <string name="write_recovery_key_description">Be sure to write these 12 words in correct order on paper and keep it safe and secure.</string>
+    <string name="write_recovery_key_button">I’ve wrote it down</string>
+    <string name="text_try_again">Some word isn’t correct. Try again</string>
+    <string name="text_next_button">Next</string>
+    <string name="text_recovery_verify_title">Verify your recovery phrase(%1$d/3)</string>
+    <string name="text_recovery_verify_description">To make sure everything was written down correctly, please enter the word from recovery phrase</string>
+    <string name="text_recovery_enter_title">Enter recovery phrase to restore your wallet(%1$d/3)</string>
+    <string name="text_recovery_enter_description">To restore your wallet, please enter the word from recovery phrase</string>
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">Review your transaction</string>
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string>
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string>
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string>
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+	<string name="text_review_coin_detail_title_bat">Basic Attention Token</string>
+    <string name="text_review_edit_button">Edit</string>
+    <string name="text_review_send_to">SEND TO</string>
+    <string name="text_review_amount">AMOUNT</string>
+    <string name="text_review_fee">FEE</string>
+    <string name="text_review_passcode_title">Passcode</string>
+    <string name="text_review_cancel_button">Cancel transaction</string>
+    <string name="text_review_send_button">Send</string>
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">Those Passcodes didn\'t match. Try again.</string>
+
+<!-- error code -->
+    <string name="text_generic_error_description">An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.</string>
+    <string name="text_type1_error_description">An error has occurred.\nError code: %1$s\nPlease relaunch the application.</string>
+    <string name="text_type2_error_description">An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.</string>
+    <string name="text_type3_error_description">An error has occurred.\nError code: %1$s\nMake sure your 12-word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.</string>
+    <string name="text_type4_error_description">An error has occurred.\nError code: %1$s\nPlease restart your phone.</string>
+    <string name="text_type5_error_description">An error has occurred.\nError code: %1$s\nPlease contact HTC support.</string>
+    <string name="text_type6_error_description">An error has occurred.\nError code: %1$s\nThis feature is not available.</string>
+    <string name="text_type7_error_description">An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.</string>
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">Please try again later</string>
+    <string name="text_try_often_description1">You are trying too often, please try again in 10 minutes.</string>
+    <string name="text_try_often_button1">OK</string>
+    <string name="text_try_often_title2">You are trying too often</string>
+    <string name="text_try_often_description2">To protect your wallet from being hacked, we have suspend your wallet in this device.\nTo use wallet, you need to restore it by entering recovery phrase or social backup.</string>
+    <string name="text_try_often_button2">Restore wallet</string>
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Create your PIN code</string>
+    <string name="confirm_your_pin_code_title">Confirm your PIN code</string>
+    <string name="create_your_new_pin_code_title">Create your new PIN code</string>
+    <string name="confirm_your_new_pin_code_title">Confirm your new PIN code</string>
+    <string name="enter_pin_to_unlock_your_wallet_title">Enter PIN to unlock your wallet</string>
+    <string name="enter_pin_to_continue_title">Enter PIN to continue</string>
+    <string name="pin_open_app_desc">This PIN code will be required for every transaction and open this app</string>
+    <string name="pin_unlock_wallet_desc">This PIN code will be required for every transaction and unlock your wallet</string>
+    <string name="pin_codes_did_not_match">These PIN codes didn\'t match. Try again</string>
+    
+<string name="pin_codes_did_not_match2">Passcode incorrect. Please try again.</string>
+
+<string name="confirm_remove_trusted_contact_title">Are you sure to remove your trusted contact?</string>
+    <string name="enter_pin_to_remove_desc">Enter PIN to remove</string>
+    <string name="enter_pin_change_pin_title">Are you sure to change PIN?</string>
+    <string name="enter_pin_change_subtitle">Enter PIN to change</string>
+    <string name="enter_pin_show_recovery_key_title">Are you sure to show recovery phrase?</string>
+    <string name="enter_pin_show_subtitle">Enter PIN to show</string>
+    <string name="enter_pin_reset_wallet_title">Are you sure to reset wallet?</string>
+    <string name="enter_pin_reset_wallet_subtitle">Enter PIN to reset</string>
+    <string name="enter_pin_to_reset_wallet_title">Enter PIN to reset your wallet</string>
+    <string name="enter_pin_to_reset_wallet_desc">This will wipe all data and you will need your recovery phrase to restore your wallet</string>
+    <string name="enter_pin_to_generate_verification_code_title">Enter PIN to generate verification code</string>
+    <string name="enter_pin_backup_security_check_title">Are you sure to use this account?</string>
+    <string name="enter_pin_backup_security_check_desc">Your previous social backup can\'t be restore permanently.</string>
+    <string name="enter_pin_log_out_title">Are you sure to log out?</string>
+    <string name="enter_pin_log_out_desc">Your previous social backup can\'t be restore permanently, if you log out this account</string>
+    <string name="enter_pin_log_out_subtitle">Enter PIN to log out</string>
+
+<string name="recovery_phrase_incorrect">Invalid recovery phrase.</string>
+	<string name="passcode_required_for_additional_security">Passcode required for additional security</string>
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">Reset wallet?</string>
+    <string name="reset_wallet_dialog_description">This will wipe all data and you will need your recovery phrase to restore your wallet.</string>
+    <string name="reset_wallet_confirm">CONFIRM</string>
+    <string name="reset_wallet_cancel">CANCEL</string>
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

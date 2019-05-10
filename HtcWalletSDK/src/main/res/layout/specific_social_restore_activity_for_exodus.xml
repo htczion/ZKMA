@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallet_background"
+    android:layoutDirection="locale">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keyboard"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/title_margin_top">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/common_margin_m1_2"
+            android:layout_marginStart="@dimen/common_margin_m1_2"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="@string/enter_the_recovery_code_title"
+            android:theme="@style/wallet_31" />
+
+        <EditText
+            android:id="@+id/recovery_code"
+            style="@style/darklist_primary_xl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recovery_code_height"
+            android:layout_below="@+id/title"
+            android:layout_marginStart="@dimen/recovery_code_margin_start"
+            android:layout_marginTop="@dimen/common_margin_m1_3"
+            android:layout_marginEnd="@dimen/recovery_code_margin_start"
+            android:background="@drawable/recovery_input_text_background"
+            android:focusedByDefault="true"
+            android:gravity="center_vertical|start"
+            android:maxLength="18"
+            android:paddingStart="@dimen/common_margin_m2"
+            android:paddingEnd="@dimen/common_margin_m2"
+            android:textAlignment="textStart"
+            android:textCursorDrawable="@drawable/recovery_text_cursor_drawable"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/recovery_code"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/margin_l"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/button_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_l">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    style="@style/darklist_primary_xs"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/review_button_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/double_margin_l"
+                    android:background="@drawable/review_button_background"
+                    android:text="@string/cancel"
+                    android:textColor="@color/button_primaryfont_color" />
+
+                <Space
+                    android:layout_width="@dimen/margin_m"
+                    android:layout_height="@dimen/review_button_height" />
+
+                <Button
+                    android:id="@+id/ok_button"
+                    style="@style/darklist_primary_xs"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/review_button_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/double_margin_l"
+                    android:background="@drawable/review_button_background"
+                    android:text="@string/ok"
+                    android:textColor="@color/button_primaryfont_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="312dp"
+        android:layout_alignParentBottom="true"></Space>
+
+</RelativeLayout>

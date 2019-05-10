@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">Sao lưu ví của bạn bằng cụm từ khôi phục 12 từ</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">Cụm từ khôi phục 12 từ là cách duy nhất để khôi phục ví trong trường hợp bạn đánh mất điện thoại hoặc quên mật khẩu giao dịch.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">Tạo cụm từ khôi phục</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">Viết lại cụm từ khôi phục 12 từ của bạn theo đúng thứ tự</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">Đây là cụm từ khôi phục 12 từ của bạn</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">Đảm bảo viết tất cả 12 từ theo đúng thứ tự và cất giữ ở nơi an toàn.</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">Tôi đã viết chúng ra</string><!--I\'ve written them down-->
+    <string name="text_try_again">Một hoặc nhiều từ không đúng. Thử lại.</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">Tiếp theo</string><!--Next-->
+    <string name="text_recovery_verify_title">Xác minh cụm từ khôi phục của bạn (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">Để xác minh cụm từ khôi phục 12 từ của bạn, hãy nhập 12 từ theo đúng thứ tự.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">Khôi phục ví của bạn(%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">Nhập cụm từ khôi phục 12 từ của bạn theo đúng thứ tự.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">Xem lại giao dịch</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">Basic Attention Token</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">Chỉnh sửa</string><!--Edit-->
+    <string name="text_review_send_to">GỬI ĐẾN</string><!--SEND TO-->
+    <string name="text_review_amount">SỐ TIỀN</string><!--AMOUNT-->
+    <string name="text_review_fee">PHÍ</string><!--FEE-->
+    <string name="text_review_passcode_title">Mật mã</string><!--Passcode-->
+    <string name="text_review_cancel_button">Hủy giao dịch</string><!--Cancel transaction-->
+    <string name="text_review_send_button">Gửi</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">Mật mã không khớp. Thử lại.</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">Đã xảy ra lỗi.\nMã lỗi: %1$s\nNếu việc khởi động lại điện thoại không giải quyết được vấn đề, hãy liên hệ bộ phận hỗ trợ của HTC. Chúng tôi xin lỗi vì sự bất tiện này.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">Đã xảy ra lỗi.\nMã lỗi: %1$s\nHãy khởi chạy lại ứng dụng.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">Đã xảy ra lỗi.\nMã lỗi: %1$s\nHãy xóa dữ liệu ứng dụng Zion khỏi cài đặt Android và thử lại.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">Đã xảy ra lỗi.\nMã lỗi: %1$s\nĐảm bảo hãy ghi lại cụm từ khôi phục 12 từ hoặc Social Key Recovery của bạn được cập nhật, sau đó vào cài đặt Zion để đặt lại ví.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">Đã xảy ra lỗi.\nMã lỗi: %1$s\nVui lòng khởi động lại điện thoại.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">Đã xảy ra lỗi.\nMã lỗi: %1$s\nVui lòng liên hệ với bộ phận hỗ trợ của HTC.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">Đã xảy ra lỗi.\nMã lỗi: %1$s\nTính năng này không khả dụng.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">Đã xảy ra lỗi.\nMã lỗi: %1$s\nTham số cung cấp không hợp lệ.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">Quá nhiều lần thử. Vui lòng thử lại sau.</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">Quá nhiều lần thử. Hãy thử lại sau %1$s phút.</string>
+    <string name="text_try_often_button1">OK</string><!--OK-->
+    <string name="text_try_often_title2">Quá nhiều lần thử.</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">Ví của bạn đã bị xóa khỏi thiết bị này vì lý do bảo mật.\nĐể truy cập ví, hãy sử dụng cụm từ khôi phục 12 từ hoặc Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Khôi phục ví</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Tạo mật mã của bạn</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">Xác nhận mật mã của bạn</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">Tạo mật mã mới của bạn</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">Xác nhận mật mã mới của bạn</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Nhập mật mã của bạn để mở khóa ví</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">Nhập mật mã của bạn để tiếp tục</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">Sẽ cần đến mật mã này cho tất cả các giao dịch và khởi động ứng dụng.</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">Sẽ cần đến mật mã này cho các giao dịch và mở khóa ví.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">Mật mã của bạn không khớp. Thử lại.</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">Mật mã không đúng. Vui lòng thử lại.</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">Bạn có chắc muốn xóa bỏ liên hệ tin cậy này không?</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">Nhập mật mã của bạn để xóa</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">Bạn có chắc muốn thay đổi mật mã của bạn không?</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">Nhập mật mã để thay đổi</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">Bạn có chắc muốn hiển thị cụm từ khôi phục này không?</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">Nhập mật mã của bạn để hiển thị</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">Bạn có chắc muốn đặt lại ví không?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">Nhập mật mã của bạn để đặt lại</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">Nhập mật mã của bạn để đặt lại ví</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">Thao tác này sẽ xóa tất cả dữ liệu ví. Bạn sẽ cần cụm từ khôi phục để khôi phục ví.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">Nhập mật mã của bạn</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">Bạn có chắc muốn sử dụng tài khoản này không?</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">Dữ liệu liên hệ tin cậy trước đây của bạn sẽ bị mất vĩnh viễn.</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">Bạn có chắc chắn muốn thoát ra?</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">Tất cả dữ liệu liên hệ tin cậy sẽ bị mất.</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">Nhập mật mã của bạn để đăng xuất</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">Cụm từ khôi phục không hợp lệ.</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">Yêu cầu mật mã để bảo mật thêm</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">Đặt lại ví?</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">Thao tác này sẽ xóa tất cả dữ liệu ví và bạn cần có cụm từ khôi phục để khôi phục ví.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">XÁC NHẬN</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">HỦY</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/review_statusbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/colorReviewETH" />
+
+    <RelativeLayout
+        android:id="@+id/review_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/review_statusbar_background"
+        android:background="@color/colorReviewETH">
+
+        <ImageButton
+            android:id="@+id/review_backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/review_backward_arrow" />
+
+        <TextView
+            android:id="@+id/review_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/review_backbutton"
+            android:text="@string/text_review_toolbar_title"
+            android:theme="@style/title_primary_m" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/review_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/review_keyboard_layout"
+        android:layout_below="@+id/review_toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/review_info_shadow_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/review_shadow_marginEnd"
+                android:layout_marginStart="@dimen/review_shadow_marginStart"
+                android:layout_marginTop="@dimen/review_shadow_marginTop"
+                android:background="@drawable/review_info_shadow_background"
+                android:paddingBottom="@dimen/review_shadow_paddingBottom"
+                android:paddingEnd="@dimen/review_shadow_paddingEnd"
+                android:paddingStart="@dimen/review_shadow_paddingStart"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/review_info_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/review_info_content"
+                    android:layout_alignEnd="@id/review_info_content"
+                    android:layout_alignStart="@id/review_info_content"
+                    android:layout_alignTop="@id/review_info_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wallet_card_eth"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/review_info_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="@dimen/margin_l"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/review_info_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/review_info_coin_label_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/wallet_icon_indicator_eth" />
+
+                        <TextView
+                            android:id="@+id/review_info_coin_title_simple_text"
+                            android:layout_width="171.25dp"
+                            android:layout_height="19.75dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="@dimen/margin_l"
+                            android:layout_toEndOf="@+id/review_info_coin_label_icon"
+                            android:gravity="center_vertical|start"
+                            android:text="@string/text_review_coin_simple_title_eth"
+                            android:textAlignment="textStart"
+                            android:theme="@style/darklist_primary_s_bold" />
+
+                        <TextView
+                            android:id="@+id/review_info_coin_title_detail_text"
+                            android:layout_width="171.25dp"
+                            android:layout_height="15.25dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_below="@+id/review_info_coin_title_simple_text"
+                            android:layout_marginStart="@dimen/margin_l"
+                            android:layout_toEndOf="@+id/review_info_coin_label_icon"
+                            android:text="@string/text_review_coin_detail_title_eth"
+                            android:textAlignment="viewStart"
+                            android:theme="@style/wallet_34" />
+
+                        <Button
+                            android:id="@+id/review_info_edit_button"
+                            style="@style/darklist_primary_xs"
+                            android:layout_width="@dimen/review_info_edit_width"
+                            android:layout_height="@dimen/review_info_edit_height"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/review_info_edit_button_background"
+                            android:text="@string/text_review_edit_button"
+                            android:textAllCaps="false" />
+
+                        <TextView
+                            android:id="@+id/review_info_addr_title_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="@dimen/margin_l"
+                            android:layout_toEndOf="@+id/review_info_coin_label_icon"
+                            android:gravity="center_vertical|start"
+                            android:text="@string/text_signmsg_address_title"
+                            android:textAlignment="textStart"
+                            android:theme="@style/darklist_primary_s_bold"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/review_info_addr_content_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/review_info_addr_title_text"
+                            android:layout_alignBottom="@+id/review_info_coin_label_icon"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginStart="@dimen/margin_l"
+                            android:layout_toEndOf="@+id/review_info_coin_label_icon"
+                            android:lines="1"
+                            android:textAlignment="viewStart"
+                            android:theme="@style/wallet_58"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/review_info_transaction_content_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/review_info_title">
+
+                        <TextView
+                            android:id="@+id/review_info_send_to"
+                            android:layout_width="181.5dp"
+                            android:layout_height="14.25dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="@dimen/review_info_send_to_marginTop"
+                            android:text="@string/text_review_send_to"
+                            android:textAlignment="viewStart"
+                            android:theme="@style/wallet_35" />
+
+                        <TextView
+                            android:id="@+id/review_receiver_address"
+                            android:layout_width="181.5dp"
+                            android:layout_height="32.25dp"
+                            android:layout_below="@id/review_info_send_to"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="@dimen/leading"
+                            android:lines="2"
+                            android:text="0X98FFFA807ACF6E27C69223B296FB28064421e156"
+                            android:theme="@style/wallet_36" />
+
+                        <TextView
+                            android:id="@+id/review_info_fee_title"
+                            android:layout_width="108.25dp"
+                            android:layout_height="14.5dp"
+                            android:layout_alignTop="@+id/review_info_send_to"
+                            android:layout_marginStart="@dimen/margin_m"
+                            android:layout_toEndOf="@+id/review_info_send_to"
+                            android:text="@string/text_review_fee"
+                            android:textAlignment="viewStart"
+                            android:theme="@style/wallet_35" />
+
+                        <TextView
+                            android:id="@+id/review_info_fee_coin"
+                            android:layout_width="108.25dp"
+                            android:layout_height="16.75dp"
+                            android:layout_alignStart="@+id/review_info_fee_title"
+                            android:layout_alignTop="@+id/review_receiver_address"
+                            android:text="0.0042 ETH fy"
+                            android:theme="@style/wallet_37" />
+
+                        <TextView
+                            android:id="@+id/review_info_fee_conversion"
+                            android:layout_width="108.25dp"
+                            android:layout_height="15.5dp"
+                            android:layout_below="@+id/review_info_fee_coin"
+                            android:layout_alignLeft="@+id/review_info_fee_coin"
+                            android:text=" = USD 0.1619"
+                            android:theme="@style/wallet_38" />
+
+                        <TextView
+                            android:id="@+id/review_info_amount_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="14.25dp"
+                            android:layout_below="@id/review_receiver_address"
+                            android:layout_marginTop="@dimen/review_info_amount_marginTop"
+                            android:text="@string/text_review_amount"
+                            android:textAlignment="viewStart"
+                            android:theme="@style/wallet_35" />
+
+                        <TextView
+                            android:id="@+id/review_info_amount_coin"
+                            style="@style/wallet_39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28.25dp"
+                            android:layout_below="@+id/review_info_amount_title"
+                            android:includeFontPadding="false"
+                            android:maxWidth="254.5dp"
+                            android:text="0000.00000000" />
+
+                        <TextView
+                            android:id="@+id/review_info_amount_coin_unit"
+                            style="@style/wallet_37"
+                            android:layout_width="39dp"
+                            android:layout_height="17.5dp"
+                            android:layout_alignBottom="@+id/review_info_amount_coin"
+                            android:layout_marginStart="@dimen/margin_xs"
+                            android:layout_marginBottom="-3.75dp"
+                            android:layout_toEndOf="@+id/review_info_amount_coin"
+                            android:gravity="bottom|start"
+                            android:text="@string/text_review_coin_simple_title_eth"
+                            android:textAllCaps="false"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/review_info_amount_conversion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_below="@+id/review_info_amount_coin"
+                            android:layout_marginTop="7.5dp"
+                            android:text=" = USD 6.21384569"
+                            android:theme="@style/wallet_38" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/review_info_message_content_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/review_info_title"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/review_info_message_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="18.75dp"
+                            android:layout_marginTop="@dimen/double_spacing"
+                            android:text="@string/text_signmsg_message_title"
+                            android:textAlignment="viewStart"
+                            android:theme="@style/darklist_primary_xs_bold" />
+
+                        <TextView
+                            android:id="@+id/review_info_message_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="120.75dp"
+                            android:layout_below="@+id/review_info_message_title"
+                            android:layout_marginTop="@dimen/margin_xs"
+                            android:theme="@style/wallet_59" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/review_enter_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/review_enter_title_height"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/review_info_shadow_background"
+                android:layout_marginEnd="@dimen/margin_l"
+                android:layout_marginStart="@dimen/margin_l"
+                android:layout_marginTop="@dimen/review_enter_title_marginTop"
+                android:background="@color/white"
+                android:text="@string/text_review_passcode_title"
+                android:theme="@style/wallet_40" />
+
+            <EditText
+                android:id="@+id/review_enter_text"
+                style="@style/list_primary_m"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/review_enter_text_height"
+                android:layout_below="@+id/review_enter_title"
+                android:layout_marginEnd="@dimen/margin_l"
+                android:layout_marginStart="@dimen/margin_l"
+                android:layout_marginTop="@dimen/margin_m"
+                android:background="@drawable/review_enter_pincode_background"
+                android:focusedByDefault="true"
+                android:gravity="center_vertical|start"
+                android:maxLength="18"
+                android:paddingEnd="@dimen/margin_l"
+                android:paddingStart="@dimen/margin_l"
+                android:textAlignment="textStart"
+                android:textCursorDrawable="@drawable/review_text_cursor_drawable" />
+
+            <TextView
+                android:id="@+id/review_invalid_message"
+                style="@style/wallet_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/review_enter_text"
+                android:layout_alignStart="@+id/review_enter_text"
+                android:layout_below="@+id/review_enter_text"
+                android:layout_marginStart="@dimen/margin_m"
+                android:layout_marginTop="@dimen/margin_xs"
+                android:text="@string/passcode_incorrect"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/review_lower_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/review_enter_text"
+                android:layout_marginTop="@dimen/margin_l"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/review_button_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_l">
+
+                    <Button
+                        android:id="@+id/review_cancel_button"
+                        style="@style/darklist_primary_xs"
+                        android:layout_width="@dimen/review_button_width"
+                        android:layout_height="@dimen/review_button_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/margin_l"
+                        android:background="@drawable/review_button_background"
+                        android:text="@string/cancel" />
+
+                    <Button
+                        android:id="@+id/review_send_button"
+                        style="@style/darklist_primary_xs"
+                        android:layout_width="@dimen/review_button_width"
+                        android:layout_height="@dimen/review_button_height"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/margin_l"
+                        android:background="@drawable/review_button_background"
+                        android:text="@string/text_review_send_button" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/review_keyboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:id="@+id/review_frame_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/num_key_background_height"
+            android:visibility="visible">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

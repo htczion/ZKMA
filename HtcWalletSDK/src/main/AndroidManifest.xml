@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.htc.htcwalletsdk">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application>
+        <activity android:name=".Act.UITestAct" android:screenOrientation="portrait" />
+        <activity android:name=".Act.UIReviewAct" android:screenOrientation="portrait"
+            android:theme="@style/ReviewTheme"/>
+        <activity android:name=".Act.UISignMsgAct" android:screenOrientation="portrait"
+            android:theme="@style/ReviewTheme"/>
+        <activity android:name=".Act.UITemplateAct" android:screenOrientation="portrait" android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".Act.UITransitionAct" android:screenOrientation="portrait" android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".Act.UnlockWalletActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".Act.UITryOftenAct" android:screenOrientation="portrait" android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".Act.UISocialRestoreAct" android:screenOrientation="portrait" android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".Act.UIVerificationCodeAct" android:screenOrientation="portrait" android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".Act.UIErrorDialogAct"
+            android:theme="@style/AlertDialogThemeEx"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

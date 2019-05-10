@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/recovery_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recovery_error_message_height"
+        android:paddingStart="@dimen/recovery_error_message_padding"
+        android:paddingEnd="@dimen/recovery_error_message_padding"
+        android:lines="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal|center"
+        android:text="@string/text_try_again"
+        android:theme="@style/wallet_32" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/next_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keyboard_space2"
+        android:layout_marginBottom="@dimen/margin_l"
+        android:layout_marginEnd="@dimen/recoveryKey_button_marginHorizontal"
+        android:layout_marginStart="@dimen/recoveryKey_button_marginHorizontal">
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/wallet_29"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recoveryKey_button_height"
+            android:background="@drawable/recovery_button_background"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingEnd="@dimen/recoveryKey_button_horizontal_padding"
+            android:paddingStart="@dimen/recoveryKey_button_horizontal_padding"
+            android:text="@string/text_next_button"
+            android:textAlignment="center"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/keyboard_space2"
+        android:layout_width="match_parent"
+        android:layout_height="190.25dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+

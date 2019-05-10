@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">Zaščitite denarnico z obnovitveno frazo, sestavljeno iz 12 besed</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">Če izgubite telefon ali pozabite kodo transakcije, lahko denarnico obnovite samo z obnovitveno frazo, sestavljeno iz 12 besed.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">Generiraj obnovitveno frazo</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">Obnovitveno frazo, sestavljeno iz 12 besed, si zapišite v zaporedju</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">To je vaša obnovitvena fraza, sestavljena iz 12 besed</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">Vseh 12 besed si zapišite v pravilnem zaporedju in jih shranite na varno mesto.</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">Zapisal(-a) sem si jih</string><!--I\'ve written them down-->
+    <string name="text_try_again">Ena ali več besed je napačnih. Poskusite znova.</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">Naprej</string><!--Next-->
+    <string name="text_recovery_verify_title">Preverite obnovitveno frazo(%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">Za preverjanje obnovitvene fraze, sestavljene iz 12 besed, vnesite 12 besed v zaporedju.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">Obnovite denarnico(%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">Obnovitveno frazo, sestavljeno iz 12 besed, vnesite v zaporedju.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">Preglejte transakcijo</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">Basic Attention Token</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">Uredi</string><!--Edit-->
+    <string name="text_review_send_to">POŠLJI</string><!--SEND TO-->
+    <string name="text_review_amount">ZNESEK</string><!--AMOUNT-->
+    <string name="text_review_fee">STROŠEK</string><!--FEE-->
+    <string name="text_review_passcode_title">Geslo</string><!--Passcode-->
+    <string name="text_review_cancel_button">Prekliči transakcijo</string><!--Cancel transaction-->
+    <string name="text_review_send_button">Pošlji</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">Kodi se ne ujemata. Poskusite znova.</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">Prišlo je do napake.\nKoda napake: %1$s\nČe z vnovičnim zagonom telefona ne odpravite napake, se obrnite na podporo HTC. Opravičujemo se vam za nevšečnosti.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">Prišlo je do napake.\nKoda napake: %1$s\nZnova zaženite aplikacijo.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">Prišlo je do napake.\nKoda napake: %1$s\nIz nastavitev Android počistite podatke o aplikaciji Zion in poskusite znova.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">Prišlo je do napake.\nKoda napake: %1$s\nNe pozabite si zapisati obnovitvene fraze, sestavljene iz 12 besed, ali posodobiti ključa Social Key Recovery, nato pa v nastavitvah Zion ponastavite denarnico.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">Prišlo je do napake.\nKoda napake: %1$s\nZnova zaženite telefon.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">Prišlo je do napake.\nKoda napake: %1$s\nObrnite se na podporo HTC.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">Prišlo je do napake.\nKoda napake: %1$s\nTa funkcija ni na voljo.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">Prišlo je do napake.\nKoda napake: %1$s\nVneseni parametri niso veljavni.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">Preveč poskusov. Poskusite znova pozneje.</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">Preveč poskusov. Poskusite znova čez %1$s minut.</string>
+    <string name="text_try_often_button1">V REDU</string><!--OK-->
+    <string name="text_try_often_title2">Preveč poskusov.</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">Denarnica bo zaradi varnostnih razlogov odstranjena iz te naprave.\nZa dostop do denarnice uporabite obnovitveno frazo, sestavljeno iz 12 besed, ali Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Obnovi denarnico</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Ustvarite kodo</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">Potrdite kodo</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">Ustvarite novo kodo</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">Potrdite novo kodo</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Vnesite svojo kodo za odklepanje denarnice</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">Za nadaljevanje vnesite kodo</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">Ta koda bo potrebna za vse transakcije in zagon aplikacije.</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">Ta koda bo potrebna za transakcije in odklepanje denarnice.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">Kodi se ne ujemata. Poskusite znova.</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">Koda ni pravilna. Poskusite znova.</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">Ali ste prepričani, da želite odstraniti ta zaupanja vreden stik?</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">Vnesite svojo kodo za odstranitev</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">Ali ste prepričani, da želite spremeniti kodo?</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">Vnesite kodo za spremembo</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">Ali ste prepričani, da želite prikazati obnovitveno frazo?</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">Za prikaz vnesite kodo</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">Ali ste prepričani, da želite ponastaviti denarnico?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">Vnesite svojo kodo za ponastavitev</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">Vnesite svojo kodo za ponastavitev denarnice</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">S tem boste izbrisali vse podatke denarnice. Za obnovitev denarnice boste potrebovali obnovitveno frazo.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">Vnesite svojo kodo</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">Ali ste prepričani, da želite uporabiti ta račun?</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">Podatki predhodnega zaupanja vrednega stika bodo trajno izgubljeni.</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">Ali ste prepričani, da se želite odjaviti?</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">Vsi podatki o zaupanja vrednih stikih bodo izgubljeni.</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">Za odjavo vnesite kodo</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">Neveljavna obnovitvena fraza.</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">Za dodatno varnost je potrebna koda</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">Ali želite ponastaviti denarnico?</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">S tem boste izbrisali vse podatke denarnice, za obnovitev denarnice pa boste potrebovali obnovitveno frazo.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">POTRDI</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">PREKLIČI</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">Back-up maken van je portemonnee met herstelzin van 12 woorden</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">De herstelzin van 12 woorden is de enige manier om je portemonnee te herstellen in het geval dat je je telefoon kwijt raakt of je wachtwoord voor transacties vergeet</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">Herstelzin genereren</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">Schrijf je herstelzin van 12 woorden op volgorde op</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">Dit is je herstelzin van 12 woorden</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">Zorg ervoor dat je alle 12 woorden in de juiste volgorde opschrijft en ze op een veilige plaats bewaart.</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">Ik heb ze opgeschreven</string><!--I\'ve written them down-->
+    <string name="text_try_again">Een of meerdere woorden zijn onjuist. Probeer het opnieuw.</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">Volgende</string><!--Next-->
+    <string name="text_recovery_verify_title">Verifieer je herstelzin (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">Voor het verifiëren van je herstelzin van 12 woorden, voer je de 12 woorden op volgorde in.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">Je portemonnee herstellen (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">Voer je herstelzin van 12 woorden op volgorde in.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">Transactie controleren</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">Standaard token voor aandacht</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">Bewerken</string><!--Edit-->
+    <string name="text_review_send_to">VERZENDEN NAAR</string><!--SEND TO-->
+    <string name="text_review_amount">BEDRAG</string><!--AMOUNT-->
+    <string name="text_review_fee">KOSTEN</string><!--FEE-->
+    <string name="text_review_passcode_title">Wachtwoord</string><!--Passcode-->
+    <string name="text_review_cancel_button">Transactie annuleren</string><!--Cancel transaction-->
+    <string name="text_review_send_button">Verzenden</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">Wachtwoorden komen niet overeen. Probeer het opnieuw.</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">Er is een fout opgetreden.\nFoutcode: %1$s\nAls de fout niet wordt opgelost door het opnieuw opstarten van je telefoon, neem je contact op met ondersteuning van HTC. Onze excuses voor het ongemak.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">Er is een fout opgetreden.\nFoutcode: %1$s\nStart de toepassing opnieuw.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">Er is een fout opgetreden.\nFoutcode: %1$s\nWis gegevens van de Zion-app uit Android-instellingen en probeer het opnieuw.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">Er is een fout opgetreden.\nFoutcode: %1$s\nZorg ervoor dat je herstelzin van 12 woorden is opgeschreven of dat Social Key Recovery geactualiseerd is, en ga vervolgens naar Zion-instellingen om je portemonnee te resetten.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">Er is een fout opgetreden.\nFoutcode: %1$s\nStart je telefoon opnieuw op.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">Er is een fout opgetreden.\nFoutcode: %1$s\nNeem contact op met ondersteuning van HTC.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">Er is een fout opgetreden.\nFoutcode: %1$s\nDeze functie is niet beschikbaar.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">Er is een fout opgetreden.\nFoutcode: %1$s\nDe gegeven parameters zijn niet geldig.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">Teveel pogingen. Probeer het later opnieuw.</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">Teveel pogingen. Probeer het opnieuw over %1$s minuten.</string>
+    <string name="text_try_often_button1">OK</string><!--OK-->
+    <string name="text_try_often_title2">Teveel pogingen.</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">Je portemonnee is gewist van dit apparaat om veiligheidsredenen.\nVoor toegang tot de portemonnee, gebruik je je herstelzin van 12 woorden of Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Portemonnee herstellen</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Je wachtwoord aanmaken</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">Je wachtwoord bevestigen</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">Je nieuwe wachtwoord aanmaken</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">Je nieuwe wachtwoord bevestigen</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Voer je wachtwoord in voor het ontgrendelen van je portemonnee</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">Voer je wachtwoord in om door te gaan</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">Dit wachtwoord is nodig voor alle transacties en opstarten van app.</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">Dit wachtwoord is nodig voor transacties en ontgrendelen van portemonnee.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">Je wachtwoorden komen niet overeen. Probeer het opnieuw.</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">Wachtwoord onjuist. Probeer het opnieuw.</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">Weet je zeker dat je deze vertrouwde contactpersoon wilt verwijderen?</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">Voer je wachtwoord in om te verwijderen</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">Weet je zeker dat je je wachtwoord wilt wijzigen?</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">Wachtwoord invoeren voor wijzigen</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">Weet je zeker dat je de herstelzin wilt tonen?</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">Voer je wachtwoord in om te tonen</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">Weet je zeker dat je je portemonnee wilt resetten?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">Voer je wachtwoord in om te resetten</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">Voer je wachtwoord in voor het resetten van je portemonnee</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">Hierdoor worden alle gegevens van de portemonnee gewist. Je hebt je herstelzin nodig om je portemonnee te herstellen.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">Voer je wachtwoord in</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">Weet je zeker dat je deze account wilt gebruiken?</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">De gegevens van je vorige vertrouwde contactpersoon gaan permanent verloren.</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">Weet je zeker dat je wilt afmelden?</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">Alle gegevens van de vertrouwde contactpersoon gaan verloren.</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">Voer je wachtwoord in om af te melden</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">Ongeldige herstelzin.</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">Wachtwoord vereist voor extra beveiliging</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">Portemonnee resetten?</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">Hierdoor worden alle gegevens van de portemonnee gewist en je hebt je herstelzin nodig om je portemonnee te herstellen.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">BEVESTIGEN</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">ANNULEREN</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

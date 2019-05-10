@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/text_background_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_key_background_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/wallet_keyboard_no_background_sw" />
+
+    <LinearLayout
+        android:id="@+id/text_button_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/keyboard_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_l"
+            android:layout_marginEnd="@dimen/text_key_row1_marginHorizontal"
+            android:layout_marginStart="@dimen/text_key_row1_marginHorizontal"
+            android:layout_marginTop="@dimen/text_key_marginTop"
+            android:gravity="center_horizontal"
+            android:layoutDirection="ltr">
+
+            <ImageButton
+                android:id="@+id/text_button_key0"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_q" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key1"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_w" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key2"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_e" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key3"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_r" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key4"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_t" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key5"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_y" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key6"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_u" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key7"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_i" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key8"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_o" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key9"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_p" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboard_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_l"
+            android:layout_marginEnd="@dimen/text_key_other_row_marginHorizontal"
+            android:layout_marginStart="@dimen/text_key_other_row_marginHorizontal"
+            android:gravity="center_horizontal"
+            android:layoutDirection="ltr">
+
+            <ImageButton
+                android:id="@+id/text_button_key10"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_a" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key11"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_s" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key12"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_d" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key13"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_f" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key14"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_g" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key15"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_h" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key16"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_j" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key17"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_k" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key18"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_l" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboard_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_l"
+            android:layout_marginEnd="@dimen/text_key_other_row_marginHorizontal"
+            android:layout_marginStart="@dimen/text_key_other_row_marginHorizontal"
+            android:gravity="center_horizontal"
+            android:layoutDirection="ltr">
+
+            <ImageButton
+                android:id="@+id/text_button_key19"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_z" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key20"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_x" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key21"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_c" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key22"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_v" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key23"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_b" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key24"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_n" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_key25"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_m" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_back"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_back" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/text_button_done"
+                android:layout_width="@dimen/text_key_button_width"
+                android:layout_height="@dimen/text_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_en_enter" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

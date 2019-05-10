@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">透過 12 組助記詞組備份錢包</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">12 組助記詞組是您遺失手機或忘記交易密碼時還原錢包的唯一方法。</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">產生助記詞組</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">請依序記下 12 組助記詞組</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">這是您的 12 組助記詞組</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">請務必依正確順序記下 12 組詞組並將它們保存在安全的地方。</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">我已記下助記詞組</string><!--I\'ve written them down-->
+    <string name="text_try_again">一或多組詞組不正確。請再試一次。</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">下一步</string><!--Next-->
+    <string name="text_recovery_verify_title">驗證助記詞組 (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">若要驗證 12 組助記詞組，請依序輸入 12 組詞組。</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">還原錢包 (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">請依序輸入 12 組助記詞組。</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">檢視交易</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">比特幣</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">萊特幣</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">基本注意力代幣</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">編輯</string><!--Edit-->
+    <string name="text_review_send_to">傳送至</string><!--SEND TO-->
+    <string name="text_review_amount">金額</string><!--AMOUNT-->
+    <string name="text_review_fee">費用</string><!--FEE-->
+    <string name="text_review_passcode_title">密碼</string><!--Passcode-->
+    <string name="text_review_cancel_button">取消交易</string><!--Cancel transaction-->
+    <string name="text_review_send_button">傳送</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">密碼不符。請再試一次。</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">發生錯誤。\n錯誤代碼：%1$s\n如果重新啟動手機無法解決錯誤，請聯絡 HTC 支援。我們對於造成您的不便深感抱歉。</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">發生錯誤。\n錯誤代碼：%1$s\n請重新啟動應用程式。</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">發生錯誤。\n錯誤代碼：%1$s\n請從 Android 設定清除 Zion 應用程式資料，然後再試一次。</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">發生錯誤。\n錯誤代碼：%1$s\n確定已記下 12 組助記詞組或社交密鑰還原處於最新狀態，然後進入 Zion 設定重設錢包。</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">發生錯誤。\n錯誤代碼：%1$s\n請重新啟動手機。</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">發生錯誤。\n錯誤代碼：%1$s\n請聯絡 HTC 支援。</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">發生錯誤。\n錯誤代碼：%1$s\n此功能無法使用。</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">發生錯誤。\n錯誤代碼：%1$s\n提供的參數無效。</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">輸入次數過多。請稍後再試一次。</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">輸入次數過多。請在 %1$s 分鐘後再試一次。</string>
+    <string name="text_try_often_button1">確定</string><!--OK-->
+    <string name="text_try_often_title2">輸入次數過多。</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">基於安全考量，您的錢包已從此裝置中清除。\n若要存取錢包，請使用 12 組助記詞組或社交密鑰還原。</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">還原錢包</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">建立密碼</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">確認密碼</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">建立新密碼</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">確認新密碼</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">輸入密碼以解鎖您的錢包</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">輸入密碼以繼續</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">每次交易和啟動應用程式時都需要此密碼。</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">交易和解鎖錢包時將需要此密碼。</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">您的密碼不符。請再試一次。</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">密碼不正確。請再試一次。</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">確定要移除此信任的聯絡人嗎？</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">輸入密碼以移除</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">確定要變更密碼？</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">輸入密碼以變更</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">確定要顯示助記詞組？</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">輸入密碼以顯示</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">確定要重設您的錢包嗎？</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">輸入密碼以重設</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">輸入密碼以重設您的錢包</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">此操作將清除所有錢包資料。需要助記詞組才能還原錢包。</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">輸入密碼</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">確定要使用此帳戶？</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">您之前的信任聯絡人資料將永久消失。</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">您確定要登出嗎？</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">所有信任聯絡人資料都將消失。</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">輸入密碼以登出</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">無效的組助記詞。</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">需要密碼以增強安全性</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">重設錢包？</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">此操作將清除所有錢包資料，需要助記詞組才能還原錢包。</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">確認</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">取消</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

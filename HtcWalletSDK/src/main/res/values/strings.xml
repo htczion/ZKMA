@@ -1,0 +1,130 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+    <!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">12-word recovery phrase for backup and recovery</string>
+    <string name="recovery_key_introduction_description">This set of words is the only way to recover your wallet if you lose your phone or forget your passcode.</string>
+    <string name="recovery_key_introduction_button">Generate recovery phrase</string>
+    <string name="write_recovery_key_title">Write down your 12-word recovery phrase in order</string>
+    <string name="show_recovery_key_title">This is your 12-word recovery phrase</string>
+    <string name="write_recovery_key_description">Make sure to write all 12 words down in the correct order and keep them in a safe place.</string>
+    <string name="write_recovery_key_button">I\'ve written them down</string>
+    <string name="text_try_again">One or more words are incorrect. Try again.</string>
+    <string name="text_next_button">Next</string>
+    <string name="text_recovery_verify_title">Verify your recovery phrase(%1$d/3)</string>
+    <string name="text_recovery_verify_description">To verify your 12-word recovery phrase, enter the 12 words in order.</string>
+    <string name="text_recovery_enter_title">Recover your wallet(%1$d/3)</string>
+    <string name="text_recovery_enter_description">Enter your 12-word recovery phrase in order.</string>
+    <string name="text_recovery_duplicated_error">Invalid recovery phrase.</string>
+
+    <!--for wallet review activity-->
+    <string name="text_review_toolbar_title">Review transaction</string>
+    <!--Do not translate-->
+    <string name="text_review_coin_simple_title_eth">ETH</string>
+    <string name="text_review_coin_detail_title_eth">Ethereum</string>
+    <!--Do not translate-->
+    <string name="text_review_coin_simple_title_btc">BTC</string>
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string>
+    <!--Do not translate-->
+    <string name="text_review_coin_simple_title_ltc">LTC</string>
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string>
+    <!--Do not translate-->
+    <string name="text_review_coin_simple_title_bat">BAT</string>
+    <string name="text_review_coin_detail_title_bat">Basic Attention Token</string>
+    <string name="text_review_edit_button">Edit</string>
+    <string name="text_review_send_to">Send to</string>
+    <string name="text_review_amount">Amount</string>
+    <string name="text_review_fee">Fee</string>
+    <string name="text_review_passcode_title">Passcode</string>
+    <string name="text_review_cancel_button">Cancel transaction</string>
+    <string name="text_review_send_button">Send</string>
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format"> = %1$s %2$s</string>
+    <string name="text_review_invalid_message">Passcodes do not match. Try again.</string>
+
+    <!-- error code -->
+    <string name="text_generic_error_description">An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.</string>
+    <string name="text_type1_error_description">An error has occurred.\nError code: %1$s\nPlease relaunch the application.</string>
+    <string name="text_type2_error_description">An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.</string>
+    <string name="text_type3_error_description">An error has occurred.\nError code: %1$s\nMake sure your 12-word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.</string>
+    <string name="text_type4_error_description">An error has occurred.\nError code: %1$s\nPlease restart your phone.</string>
+    <string name="text_type5_error_description">An error has occurred.\nError code: %1$s\nPlease contact HTC support.</string>
+    <string name="text_type6_error_description">An error has occurred.\nError code: %1$s\nThis feature is not available.</string>
+    <string name="text_type7_error_description">An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.</string>
+    <string name="text_sync_tztable_error">An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.</string>
+
+    <!--for try often activity-->
+    <string name="text_try_often_title1">Too many attempts. Please try again later.</string>
+    <string name="text_try_often_description1">Too many attempts. Please try again in %1$s minutes.</string>
+    <string name="text_try_often_button1">OK</string>
+    <string name="text_try_often_title2">Too many attempts.</string>
+    <string name="text_try_often_description2">Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-word recovery phrase or Social Key Recovery.</string>
+    <string name="text_try_often_button2">Recover wallet</string>
+
+    <!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Create your passcode</string>
+    <string name="confirm_your_pin_code_title">Confirm your passcode</string>
+    <string name="create_your_new_pin_code_title">Create your new passcode</string>
+    <string name="confirm_your_new_pin_code_title">Confirm your new passcode</string>
+    <string name="enter_pin_to_unlock_your_wallet_title">Enter your passcode to unlock your wallet</string>
+    <string name="enter_pin_to_continue_title">Enter your passcode to continue</string>
+    <string name="pin_open_app_desc">This passcode will be required for all transactions and app startup.</string>
+    <string name="pin_unlock_wallet_desc">This passcode will be required for transactions and wallet unlock.</string>
+    <string name="pin_codes_did_not_match">Your passcodes do not match. Try again.</string>
+    <string name="confirm_remove_trusted_contact_title">Are you sure you want to remove this trusted contact?</string>
+    <string name="enter_pin_to_remove_desc">Enter your passcode to remove</string>
+    <string name="enter_pin_change_pin_title">Are you sure you want to change your passcode?</string>
+    <string name="enter_pin_change_subtitle">Enter passcode to change</string>
+    <string name="enter_pin_show_recovery_key_title">Are you sure you want to show the recovery phrase?</string>
+    <string name="enter_pin_show_subtitle">Enter your passcode to show</string>
+    <string name="enter_pin_reset_wallet_title">Are you sure you want to reset your wallet?</string>
+    <string name="enter_pin_reset_wallet_subtitle">Enter your passcode to reset</string>
+    <string name="enter_pin_to_reset_wallet_title">Enter your passcode to reset your wallet</string>
+    <string name="enter_pin_to_reset_wallet_desc">This will wipe all wallet data. You will need your recovery phrase to recover your wallet.</string>
+    <string name="enter_pin_to_generate_verification_code_title">Enter your passcode</string>
+    <string name="enter_pin_backup_security_check_title">Are you sure you want to use this account?</string>
+    <string name="enter_pin_backup_security_check_desc">Your previous trusted contact data will be permanently lost.</string>
+    <string name="enter_pin_log_out_title">Are you sure you want to sign out?</string>
+    <string name="enter_pin_log_out_desc">All trusted contact data will be lost.</string>
+    <string name="enter_pin_log_out_subtitle">Enter your passcode to sign out</string>
+    <string name="passcode_incorrect">Passcode incorrect. Please try again.</string>
+    <string name="passcode_required">Passcode required for additional security</string>
+    <!--Do not translate-->
+    <string name="get_publickey_title">Access your public key</string>
+    <!--Do not translate-->
+    <string name="get_publickey_description">%1$s want to acquire your %2$s address from Zion wallet</string>
+    <!--Do not translate-->
+    <string name="sign_tx_title">Sign Tx with %1$s</string>
+    <!--Do not translate-->
+    <string name="sign_tx_description">This is a test message body with dynamic string length at here.</string>
+
+    <!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">Reset wallet?</string>
+    <string name="reset_wallet_dialog_description">This will wipe all wallet data and you will need your recovery phrase to recover your wallet.</string>
+    <string name="reset_wallet_confirm">Confirm</string>
+    <string name="reset_wallet_cancel">Cancel</string>
+
+    <!--secure ui bar-->
+    <!--Do not translate-->
+    <string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>
+
+    <!--social-->
+    <string name="entry_ios_coming_soon">COMING SOON FOR IOS</string>
+    <string name="social_backup">Social Key Recovery</string>
+    <string name="verification_share_code_title">Share this code to\n%1$s</string>
+    <string name="verification_share_code_request_from">Recovery request from</string>
+    <string name="verification_share_code_information">+123 456 789\nvia\nHTC U12+(Mobile)</string>
+    <string name="verification_share_code_reject">Reject</string>
+    <string name="enter_the_recovery_code_title">Enter the recovery code</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="text_signmsg_actionbar_title">Sign Message</string>
+    <string name="text_signmsg_sign_button">Sign</string>
+    <string name="text_signmsg_address_title">Address</string>
+    <string name="text_signmsg_message_title">Message</string>
+
+
+
+
+</resources>

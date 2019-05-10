@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">Varundage oma rahakott 12-sõnalise taastefraasi abil</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">12-sõnaline taastefraas on ainus võimalus rahakoti taastamiseks, kui kaotate telefoni või unustate tehingute pääsukoodi.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">Taastefraasi loomine</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">Kirjutage 12 sõnast koosnev taastefraas õiges järjestuses üles</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">See on teie 12-sõnaline taastefraas</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">Pange kõik 12 sõna õiges järjestuses kirja ja hoidke neid turvalises kohas.</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">Olen need kirja pannud</string><!--I\'ve written them down-->
+    <string name="text_try_again">Üks või mitu sõna on valed. Pr. uuesti.</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">Järgmine</string><!--Next-->
+    <string name="text_recovery_verify_title">Kinnitage oma taastefraas (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">12-sõnalise taastefraasi kinnitamiseks sisestage 12 sõna õiges järjestuses.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">Rahakoti taastamine (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">Sisestage 12-sõnaline taastefraas õiges järjestuses.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">Vaadake tehing üle</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">Basic Attention Token</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">Redigeeri</string><!--Edit-->
+    <string name="text_review_send_to">SAADA:</string><!--SEND TO-->
+    <string name="text_review_amount">SUMMA</string><!--AMOUNT-->
+    <string name="text_review_fee">TASU</string><!--FEE-->
+    <string name="text_review_passcode_title">Pääsukood</string><!--Passcode-->
+    <string name="text_review_cancel_button">Tühista tehing</string><!--Cancel transaction-->
+    <string name="text_review_send_button">Saada</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">Pääsukoodid ei ühti. Pr. uuesti.</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">Ilmnes tõrge.\nTõrkekood: %1$s\nKui telefoni taaskäivitamine ei lahenda tõrget, pöörduge HTC toe poole. Palume ebamugavuste tekitamise eest vabandust.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">Ilmnes tõrge.\nTõrkekood: %1$s\nTaaskäivitage rakendus.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">Ilmnes tõrge.\nTõrkekood: %1$s\nKustutage Androidi seadetest Zioni rakenduse andmed ja proovige uuesti.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">Ilmnes tõrge.\nTõrkekood: %1$s\nVeenduge, et teie 12 sõnast koosnev taastefraas oleks üles kirjutatud või et Social Key Recovery oleks ajakohane, ning seejärel avage Zioni seaded, et rahakott lähtestada.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">Ilmnes tõrge.\nTõrkekood: %1$s\nTaaskäivitage telefon.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">Ilmnes tõrge.\nTõrkekood: %1$s\nPöörduge HTC toe poole.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">Ilmnes tõrge.\nTõrkekood: %1$s\nSee funktsioon ei ole saadaval.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">Ilmnes tõrge.\nTõrkekood: %1$s\nSisestatud parameetrid ei ole õiged.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">Liiga palju katseid. Proovige hiljem uuesti.</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">Liiga palju katseid. Proovige %1$s minuti pärast uuesti.</string>
+    <string name="text_try_often_button1">OK</string><!--OK-->
+    <string name="text_try_often_title2">Liiga palju katseid.</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">Teie rahakott eemaldati sellest seadmest turvalisuse tagamiseks.\nRahakoti juurdepääsuks kasutage oma 12-sõnalist taastefraasi või Social Key Recoveryt.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Rahakoti taastamine</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Looge pääsukood</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">Kinnitage oma pääsukood</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">Looge uus pääsukood</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">Kinnitage oma uus pääsukood</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Sisestage rahakoti lukust avamiseks oma pääsukood</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">Jätkamiseks sisestage oma pääsukood</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">Seda pääsukoodi läheb vaja kõikide tehingute ja rakenduse käivitamise jaoks.</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">Seda pääsukoodi läheb vaja tehingute ja rahakoti lukust avamise jaoks.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">Teie pääsukoodid ei ühti. Pr. uuesti.</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">Pääsukood on vale. Proovige uuesti.</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">Kas olete kindel, et soovite selle usaldusväärse kontakti eemaldada?</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">Sisestage eemaldamiseks oma pääsukood</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">Kas olete kindel, et soovite pääsukoodi muuta?</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">Sisestage muutmiseks pääsukood</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">Kas olete kindel, et soovite taastefraasi kuvada?</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">Kuvamiseks sisestage oma pääsukood</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">Kas olete kindel, et soovite oma rahakoti lähtestada?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">Sisestage lähtestamiseks oma pääsukood</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">Sisestage rahakoti lähtestamiseks oma pääsukood</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">See kustutab kõik rahakoti andmed. Rahakoti taastamiseks vajate oma taastefraasi.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">Sisestage oma pääsukood</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">Kas olete kindel, et soovite seda kontot kasutada?</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">Teie varasemad usaldusväärsete kontaktide andmed lähevald püsivalt kaduma.</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">Kas soovite kindlasti välja logida?</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">Kõik usaldusväärsete kontaktide andmed lähevad kaduma.</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">Väljalogimiseks sisestage oma pääsukood</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">Kehtetu taastefraas.</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">Täiendava turvalisuse tagamiseks on nõutud pääsukood</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">Kas lähtestada rahakott?</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">See kustutab kõik rahakoti andmed ja te vajate rahakoti taastamiseks taastefraasi.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">KINNITA</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">TÜHISTA</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

@@ -1,0 +1,310 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="NoActionBar" parent="Theme.AppCompat">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="ReviewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="main_textAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+    </style>
+
+    <style name="textAppearance_primary" parent="main_textAppearance">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textAppearance_secondary" parent="main_textAppearance">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textAppearance_tertiary" parent="main_textAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="textAppearance_content" parent="main_textAppearance">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="textAppearance_error_message" parent="main_textAppearance">
+        <item name="android:textSize">11.53dp</item>
+        <item name="android:textColor">@color/colorError</item>
+    </style>
+
+
+    <!-- Pin Keyboard button style -->
+    <style name="pin_keyboard_button_style_custom_01" parent="@style/fixed_lockscreen_08">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@drawable/pin_button_text_color</item>
+    </style>
+	
+    <!-- Pin Keyboard button style2:for designer request, modify text size to fixed_lockscreen_04(64px(xxhdpi))-->
+    <style name="pin_keyboard_button_style_custom_02" parent="@style/fixed_lockscreen_08">
+        <item name="android:textSize">@dimen/fixed_lockscreen_04</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@drawable/pin_button_text_color</item>
+    </style>
+
+    <style name="fixed_lockscreen_08">
+        <item name="android:textSize">@dimen/fixed_lockscreen_08</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="target_style" parent="textAppearance_content">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="target_circle_style" parent="textAppearance_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableStart">@drawable/not_input_pin_oval</item>
+    </style>
+
+    <style name="target_fullfill_style" parent="textAppearance_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/common_margin_m5</item>
+        <item name="android:layout_marginRight">@dimen/common_margin_m5</item>
+        <item name="android:layout_marginTop">@dimen/common_margin_m5</item>
+        <item name="android:layout_marginBottom">@dimen/common_margin_m5</item>
+        <item name="android:drawableStart">@drawable/input_pin_oval</item>
+    </style>
+
+    <style name="target_underline_style" parent="textAppearance_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableStart">@drawable/not_input_pin_underline</item>
+    </style>
+
+    <style name="target_indicator_style" parent="textAppearance_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableStart">@drawable/wallet_icon_indicator_password</item>
+    </style>
+
+
+    <style name="recovery_button_style" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/recovery_button_background</item>
+        <item name="android:textSize">14.5dp</item>
+        <item name="android:textColor">@color/button_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!--guideline-->
+    <style name="list_primary_m">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">16.5dp</item>
+        <item name="android:textColor">@color/light_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="darklist_primary_xs" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14.5dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="darklist_primary_xs_exodus">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14.5dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="darklist_primary_xl">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18.5dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="darklist_primary_s_bold">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15.5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="darklist_primary_xs_bold">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14.5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="title_primary_m">
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="wallet_3">
+        <item name="android:textSize">12.5dp</item>
+        <item name="android:textColor">@color/colorError</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_28">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_29">
+        <item name="android:textSize">14.5dp</item>
+        <item name="android:textColor">@color/button_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_31">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_32">
+        <item name="android:textSize">11.5dp</item>
+        <item name="android:textColor">@color/colorError</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_33">
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="wallet_34">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_35">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">10.5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_36">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_37">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_38">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">11.5dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_39">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_40">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">10.5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/light_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_42">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_49">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">42.5dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_50">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18.5dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="wallet_58">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">11.5dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="wallet_59">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">14.5dp</item>
+        <item name="android:textColor">@color/dark_primaryfont_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="AlertDialogThemeEx" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

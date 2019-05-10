@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallet_background">
+
+    <ImageView
+        android:id="@+id/background_pattern_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/try_often_image_height"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/wallet_background_pattern_01" />
+
+    <TextView
+        android:id="@+id/try_often_title"
+        style="@style/wallet_31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/background_pattern_01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/try_often_title_marginEnd"
+        android:layout_marginStart="@dimen/try_often_title_marginStart"
+        android:layout_marginTop="@dimen/try_often_title_marginTop"
+        android:gravity="center_horizontal"
+        android:text="@string/text_try_often_title1"
+        android:textAlignment="center"
+        android:textColor="@color/dark_primaryfont_color" />
+
+    <TextView
+        android:id="@+id/try_often_description"
+        style="@style/wallet_42"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/try_often_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/try_often_description_marginEnd"
+        android:layout_marginStart="@dimen/try_often_description_marginStart"
+        android:layout_marginTop="@dimen/try_often_description_marginTop"
+        android:gravity="center_horizontal"
+        android:text="@string/text_try_often_description1"
+        android:textAlignment="center"
+        android:textColor="@color/dark_primaryfont_color" />
+
+    <Button
+        android:id="@+id/check_button"
+        style="@style/recovery_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recoveryKey_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/try_often_button_marginBottom"
+        android:layout_marginEnd="@dimen/try_often_button_marginEnd"
+        android:layout_marginStart="@dimen/try_often_button_marginStart"
+        android:background="@drawable/recovery_button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingEnd="@dimen/recoveryKey_button_horizontal_padding"
+        android:paddingStart="@dimen/recoveryKey_button_horizontal_padding"
+        android:text="@string/text_try_often_button1"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+</RelativeLayout>

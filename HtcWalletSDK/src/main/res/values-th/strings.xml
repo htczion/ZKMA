@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">สำรองข้อมูลกระเป๋าเงินของคุณด้วยวลีกู้คืน 12 คำ</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">วลีกู้คืน 12 คำเป็นเพียงวิธีเดียวในการกู้คืนกระเป๋าเงินของคุณในกรณีที่คุณทำโทรศัพท์ของคุณหายหรือลืมรหัสผ่านการทำรายการของคุณ</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">สร้างวลีกู้คืน</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">จดวลีกู้คืน 12 คำของคุณตามลำดับ</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">นี่คือวลีกู้คืน 12 คำของคุณ</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">ตรวจสอบให้แน่ใจว่าจดทั้ง 12 คำลงไปตามลำดับที่ถูกต้องและเก็บไว้ในที่ปลอดภัย</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">ฉันได้จดไว้แล้ว</string><!--I\'ve written them down-->
+    <string name="text_try_again">หนึ่งคำหรือมากกว่านั้นไม่ถูกต้อง ลองอีกครั้ง</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">ถัดไป</string><!--Next-->
+    <string name="text_recovery_verify_title">ตรวจสอบวลีกู้คืนของคุณ (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">ในการตรวจสอบวลีกู้คืน 12 คำของคุณ ป้อน 12 คำตามลำดับ</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">กู้คืนกระเป๋าเงินของคุณ (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">ป้อนวลีกู้คืน 12 คำของคุณตามลำดับ</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">ทบทวนการทำรายการ</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">โทเค็นความสนใจพื้นฐาน</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">แก้ไข</string><!--Edit-->
+    <string name="text_review_send_to">ส่งไปที่</string><!--SEND TO-->
+    <string name="text_review_amount">ยอดเงิน</string><!--AMOUNT-->
+    <string name="text_review_fee">ค่าธรรมเนียม</string><!--FEE-->
+    <string name="text_review_passcode_title">รหัสผ่าน</string><!--Passcode-->
+    <string name="text_review_cancel_button">ยกเลิกการทำรายการ</string><!--Cancel transaction-->
+    <string name="text_review_send_button">ส่ง</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">รหัสผ่านไม่ถูกต้อง ลองอีกครั้ง</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">มีข้อผิดพลาดเกิดขึ้น\nรหัสข้อผิดพลาด: %1$s\nหากการรีสตาร์ทโทรศัพท์ของคุณไม่แก้ไขข้อผิดพลาด โปรดติดต่อฝ่ายสนับสนุนลูกค้า HTC เราขออภัยในความไม่สะดวก</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">มีข้อผิดพลาดเกิดขึ้น\nรหัสข้อผิดพลาด: %1$s\nโปรดเปิดแอพพลิเคชันใหม่</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">มีข้อผิดพลาดเกิดขึ้น\nรหัสข้อผิดพลาด: %1$s\nโปรดล้างข้อมูลแอพ Zion จากการตั้งค่า Android และลองใหม่อีกครั้ง</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">มีข้อผิดพลาดเกิดขึ้น\nรหัสข้อผิดพลาด: %1$s\nตรวจสอบให้แน่ใจว่าได้จดวลีกู้คืน 12 คำของคุณไว้แล้ว หรือ Social Key Recovery เป็นปัจจุบัน จากนั้นไปที่การตั้งค่า Zion เพื่อรีเซ็ตกระเป๋าเงินของคุณ</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">มีข้อผิดพลาดเกิดขึ้น\nรหัสข้อผิดพลาด: %1$s\nโปรดรีสตาร์ทโทรศัพท์ของคุณ</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">มีข้อผิดพลาดเกิดขึ้น\nรหัสข้อผิดพลาด: %1$s\nโปรดติดต่อฝ่ายสนับสนุนลูกค้า HTC</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">มีข้อผิดพลาดเกิดขึ้น\nรหัสข้อผิดพลาด: %1$s\nคุณสมบัตินี้ไม่สามารถใช้ได้</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">มีข้อผิดพลาดเกิดขึ้น\nรหัสข้อผิดพลาด: %1$s\nพารามิเตอร์ที่ระบุไม่ถูกต้อง</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">ลองหลายครั้งเกินไป กรุณาลองอีกครั้งในภายหลัง</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">ลองหลายครั้งเกินไป โปรดลองอีกครั้งในอีก %1$s นาที</string>
+    <string name="text_try_often_button1">ตกลง</string><!--OK-->
+    <string name="text_try_often_title2">ลองหลายครั้งเกินไป</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">กระเป๋าเงินของคุณถูกล้างจากอุปกรณ์นี้เพื่อเหตุผลด้านความปลอดภัย\nในการเข้าถึงกระเป๋าเงิน โปรดใช้วลีกู้คืน 12 คำของคุณหรือ Social Key Recovery</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">กู้คืนกระเป๋าเงิน</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">สร้างรหัสผ่านของคุณ</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">ยืนยันรหัสผ่านของคุณ</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">สร้างรหัสผ่านใหม่ของคุณ</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">ยืนยันรหัสผ่านใหม่ของคุณ</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">ป้อนรหัสผ่านของคุณเพื่อปลดล็อคกระเป๋าเงินของคุณ</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">ป้อนรหัสผ่านเพื่อดำเนินการต่อ</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">จะต้องใช้รหัสผ่านนี้สำหรับการทำรายการทั้งหมดและการเริ่มต้นแอพพลิเคชัน</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">จะต้องใช้รหัสผ่านนี้สำหรับการทำรายการและการปลดล็อคกระเป๋าเงิน</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">รหัสผ่านของคุณไม่ถูกต้อง ลองอีกครั้ง</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">รหัสผ่านไม่ถูกต้อง โปรดลองอีกครั้ง</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">คุณแน่ใจหรือไม่ว่าต้องการลบรายชื่อติดต่อที่เชื่อถือได้นี้</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">ป้อนรหัสผ่านเพื่อลบ</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">คุณแน่ใจหรือไม่ว่าต้องการเปลี่ยนรหัสผ่านของคุณ</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">ป้อนรหัสผ่านเพื่อเปลี่ยนแปลง</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">คุณแน่ใจหรือไม่ว่าต้องการแสดงวลีกู้คืนหรือไม่</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">ป้อนรหัสผ่านเพื่อแสดง</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">คุณแน่ใจหรือไม่ว่าคุณต้องการรีเซ็ตกระเป๋าเงินของคุณ</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">ป้อนรหัสผ่านเพื่อรีเซ็ต</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">ป้อนรหัสผ่านเพื่อรีเซ็ตกระเป๋าเงินของคุณ</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">การดำเนินการนี้จะลบข้อมูลกระเป๋าเงินทั้งหมด คุณจะต้องใช้วลีกู้คืนของคุณในการกู้คืนกระเป๋าเงินของคุณ</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">ป้อนรหัสผ่านของคุณ</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">คุณแน่ใจหรือว่าต้องการใช้บัญชีนี้</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">ข้อมูลรายชื่อติดต่อที่เชื่อถือได้ก่อนหน้าของคุณจะหายไปอย่างถาวร</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">คุณแน่ใจหรือไม่ว่าคุณต้องการออกจากระบบ</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">ข้อมูลรายชื่อติดต่อที่เชื่อถือได้ทั้งหมดจะหายไป</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">ป้อนรหัสผ่านของคุณเพื่อออกจากระบบ</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">วลีกู้คืนไม่ถูกต้อง</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">จะต้องใช้รหัสผ่านเพื่อความปลอดภัยเพิ่มเติม</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">รีเซ็ตกระเป๋าเงินหรือไม่?</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">การดำเนินการนี้จะลบข้อมูลกระเป๋าเงินทั้งหมด และคุณจะต้องใช้วลีกู้คืนในการกู้คืนกระเป๋าเงินของคุณ</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">ยืนยัน</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">ยกเลิก</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

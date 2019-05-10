@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unlock_wallet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallet_background">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/secure_layout"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/second_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/background_pattern_01"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/background_pattern_height"
+                android:src="@drawable/wallet_background_pattern_01" />
+
+            <ImageView
+                android:id="@+id/wallet_zion"
+                android:layout_width="@dimen/zion_image_width"
+                android:layout_height="@dimen/zion_image_height"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/zion_image_marginTop"
+                android:src="@drawable/wallet_zion" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="@dimen/title_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:layout_marginTop="@dimen/unlock_title_marginTop_SW"
+                android:text="Enter PIN to unlock your wallet."
+                android:textAlignment="center"
+                android:theme="@style/wallet_28" />
+
+            <FrameLayout
+                android:id="@+id/dynamic_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/title"
+                android:layout_marginTop="@dimen/unlock_dynamic_content_marginTop" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/backButton_size"
+        android:layout_height="@dimen/backButton_size"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/backButton_marginStart"
+        android:layout_marginTop="@dimen/backButton_marginTop"
+        android:src="@drawable/review_backward_arrow"
+        android:background="@android:color/transparent"
+        android:clickable="true" />
+
+    <FrameLayout
+        android:id="@id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></FrameLayout>
+
+    <include
+        android:id="@id/secure_layout"
+        layout="@layout/layout_secure_ui_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/secure_layout_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

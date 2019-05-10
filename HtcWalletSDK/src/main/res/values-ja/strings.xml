@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">12文字の回復フレーズでウォレットをバックアップする</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">12文字の回復フレーズは、あなたが電話を紛失した場合や、トランザクションのパスコードを忘れてしまった時に、ウォレットを復元できる唯一の方法です。</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">回復フレーズを生成する</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">12文字の回復フレーズを正しい順序で書き留めてください</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">これがあなたの12文字からなる回復フレーズです</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">12文字すべてを正しい順序で書き留めたか確認し、安全な場所に保管してください。</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">書き留めました</string><!--I\'ve written them down-->
+    <string name="text_try_again">1つ以上の文字に誤りがあります。もう一度お試しください。</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">次へ</string><!--Next-->
+    <string name="text_recovery_verify_title">回復フレーズを確認してください (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">12文字の回復フレーズを確認するため、12文字を正しい順序で入力してください。</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">ウォレットを回復する (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">12文字の回復フレーズを正しい順序で入力してください。</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">トランザクションを確認</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">ビットコイン</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">ライトコイン</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">ベーシックアテンショントークン</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">編集</string><!--Edit-->
+    <string name="text_review_send_to">送信先</string><!--SEND TO-->
+    <string name="text_review_amount">金額</string><!--AMOUNT-->
+    <string name="text_review_fee">料金</string><!--FEE-->
+    <string name="text_review_passcode_title">パスコード</string><!--Passcode-->
+    <string name="text_review_cancel_button">トランザクションをキャンセルする</string><!--Cancel transaction-->
+    <string name="text_review_send_button">送信</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">パスコードが一致しません。もう一度お試しください。</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">エラーが発生しました。\nエラーコード：%1$s\n電話を再起動してもエラーが解決されない場合は、HTC サポートにお問い合わせください。ご不便をお掛けして申し訳ありません。</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">エラーが発生しました。\nエラーコード：%1$s\nアプリケーションを再起動してください。</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">エラーが発生しました。\nエラーコード：%1$s\nAndroid 設定にある Zion アプリのデータを消去して、もう一度お試しください。</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">エラーが発生しました。\nエラーコード：%1$s\n12文字の回復フレーズが書き留められているか、Social Key Recovery が最新のものであることを確認してから、Zion 設定に移動してウォレットをリセットしてください。</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">エラーが発生しました。\nエラーコード：%1$s\n電話を再起動してください。</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">エラーが発生しました。\nエラーコード：%1$s\nHTC サポートにお問い合わせください。</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">エラーが発生しました。\nエラーコード：%1$s\nこの機能は利用できません。</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">エラーが発生しました。\nエラーコード：%1$s\n入力されたパラメータが有効ではありません。</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">試行回数が多すぎます。後でもう一度お試しください。</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">試行回数が多すぎます。%1$s分後にもう一度お試しください。</string>
+    <string name="text_try_often_button1">OK</string><!--OK-->
+    <string name="text_try_often_title2">試行回数が多すぎます。</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">セキュリティ上の理由から、このデバイスからウォレットが消去されました。\nウォレットにアクセスするには、12文字の回復フレーズか Social Key Recovery を使用してください。</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">ウォレットを回復する</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">パスコードを作成</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">パスコードを確認</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">新しいパスコードを作成</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">新しいパスコードを確認</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">パスコードを入力してウォレットのロックを解除する</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">パスコードを入力して続行する</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">すべてのトランザクションとウォレットの起動には、このパスコードが必要になります。</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">トランザクションとウォレットのロックを解除するには、このパスコードが必要になります。</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">パスコードが一致しません。もう一度お試しください。</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">パスコードが正しくありません。もう一度やり直してください。</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">この信頼できる連絡先を削除しますか？</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">パスコードを入力して削除する</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">パスコードを変更しますか?</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">パスコードを入力して変更する</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">回復フレーズを表示しますか?</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">パスコードを入力して表示する</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">ウォレットをリセットしますか？</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">パスコードを入力してリセットする</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">パスコードを入力してウォレットをリセットする</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">すべてのウォレットデータが消去されます。ウォレットを回復するためには回復フレーズが必要になります。</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">パスコードを入力</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">このアカウントを使いますか?</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">以前に登録した信頼できる連絡先データは、永久に失われます。</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">サインアウトしますか？</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">すべての信頼できる連絡先データが失われます。</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">パスコードを入力してサインアウトする</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">無効な回復フレーズです。</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">セキュリティを高めるためパスコードが必要です</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">ウォレットをリセットしますか？</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">全てのウォレットデータが消去され、ウォレットを回復する際には回復フレーズが必要になります。</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">確認</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">キャンセル</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/pin_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pin_underline_height"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/pin_indicator"
+        android:layout_marginStart="@dimen/common_margin_m1_2"
+        android:layout_marginEnd="@dimen/common_margin_m1_2">
+        <TextView
+            android:id="@+id/pin1"
+            style="@style/target_underline_style" />
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin2"
+            style="@style/target_underline_style" />
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin3"
+            style="@style/target_underline_style" />
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin4"
+            style="@style/target_underline_style" />
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin5"
+            style="@style/target_underline_style" />
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin6"
+            style="@style/target_underline_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pin_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/common_margin_m3"
+        android:layout_marginStart="@dimen/pin_indicator_margin_start"
+        android:layout_marginEnd="@dimen/pin_indicator_margin_start">
+        <TextView
+            android:id="@+id/pin1_fullfill"
+            style="@style/target_indicator_style"
+            android:visibility="invisible"/>
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin2_fullfill"
+            style="@style/target_indicator_style"
+            android:visibility="invisible"/>
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin3_fullfill"
+            style="@style/target_indicator_style"
+            android:visibility="invisible"/>
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin4_fullfill"
+            style="@style/target_indicator_style"
+            android:visibility="invisible"/>
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin5_fullfill"
+            style="@style/target_indicator_style"
+            android:visibility="invisible"/>
+        <Space style="@style/target_style"/>
+        <TextView
+            android:id="@+id/pin6_fullfill"
+            style="@style/target_indicator_style"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pin_try_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pin_status"
+        android:text="@string/pin_codes_did_not_match"
+        android:gravity="center_horizontal"
+        style="@style/textAppearance_error_message"
+        android:layout_marginTop="@dimen/pin_status_margin_top"
+        android:layout_marginBottom="@dimen/common_margin_m1"
+        android:layout_marginStart="@dimen/common_margin_m1_2"
+        android:layout_marginEnd="@dimen/common_margin_m1_2"
+        android:visibility="invisible" />
+
+</RelativeLayout>

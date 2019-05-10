@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallet_background"
+    android:layoutDirection="locale">
+
+    <LinearLayout
+        android:id="@+id/progressBar_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/progressBar_marginTop"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progressBar_width"
+            android:layout_height="@dimen/progressBar_height"
+            android:progressDrawable="@drawable/progressbar" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progressBar_width"
+            android:layout_height="@dimen/progressBar_height"
+            android:layout_marginStart="@dimen/leading"
+            android:progressDrawable="@drawable/progressbar" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progressBar_width"
+            android:layout_height="@dimen/progressBar_height"
+            android:layout_marginStart="@dimen/leading"
+            android:progressDrawable="@drawable/progressbar" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/backButton_size"
+        android:layout_height="@dimen/backButton_size"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/backButton_marginStart"
+        android:layout_marginTop="@dimen/backButton_marginTop"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:src="@drawable/review_backward_arrow" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/secure_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/second_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/write_recovery_key_title"
+                android:theme="@style/wallet_31" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/title"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:layout_marginTop="@dimen/margin_l"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="3"
+                android:minLines="3"
+                android:text="@string/write_recovery_key_description"
+                android:theme="@style/wallet_28" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:layout_marginTop="@dimen/subtitle_margin_top_SW"
+                android:layout_marginBottom="@dimen/subtitle_margin_bottom"
+                android:text=""
+                android:minLines="1"
+                android:gravity="center_horizontal"
+                android:theme="@style/wallet_28"
+                android:visibility="invisible" />
+
+            <FrameLayout
+                android:id="@+id/dynamic_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/description"
+                android:layout_marginTop="@dimen/margin_l"></FrameLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></FrameLayout>
+
+    <include
+        android:id="@id/secure_layout"
+        layout="@layout/layout_secure_ui_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/secure_layout_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

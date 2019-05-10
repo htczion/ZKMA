@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/numKeyboard_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/num_key_background_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/wallet_keyboard_no_background_sw" />
+
+    <TableLayout
+        android:id="@+id/numKeyboard_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/num_key_marginHorizontal"
+            android:layout_marginStart="@dimen/num_key_marginHorizontal"
+            android:layout_marginTop="@dimen/margin_m"
+            android:layoutDirection="ltr">
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num1"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_1" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num2"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_2" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num3"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/num_key_marginHorizontal"
+            android:layout_marginStart="@dimen/num_key_marginHorizontal"
+            android:layout_marginTop="@dimen/margin_l"
+            android:layoutDirection="ltr">
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num4"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_4" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num5"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_5" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num6"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_6" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/num_key_marginHorizontal"
+            android:layout_marginStart="@dimen/num_key_marginHorizontal"
+            android:layout_marginTop="@dimen/margin_l"
+            android:layoutDirection="ltr">
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num7"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_7" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num8"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_8" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num9"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_9" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/num_key_marginHorizontal"
+            android:layout_marginStart="@dimen/num_key_marginHorizontal"
+            android:layout_marginTop="@dimen/margin_l"
+            android:layoutDirection="ltr">
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_empty"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_num0"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_0" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/numkeyboard_button_del"
+                android:layout_width="@dimen/num_key_button_width"
+                android:layout_height="@dimen/num_key_button_height"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/wallet_keyboard_no_back" />
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

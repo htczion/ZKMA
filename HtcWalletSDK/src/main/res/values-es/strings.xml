@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">Realiza una copia de seguridad de tu wallet por frase de recuperación de 12 palabras</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">La frase de recuperación de 12 palabras es la única forma de restaurar tu wallet en caso de pérdida del teléfono o si olvidas la contraseña de la transacción.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">Generar frase de recuperación</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">Escribe tu frase de recuperación de 12 palabras en orden</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">Esta es tu frase de recuperación de 12 palabras</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">No olvides escribir las 12 palabras en el orden correcto y guardarlas en un lugar seguro.</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">Las he escrito</string><!--I\'ve written them down-->
+    <string name="text_try_again">Una o más palabras son incorrectas. Inténtalo de nuevo.</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">Siguiente</string><!--Next-->
+    <string name="text_recovery_verify_title">Verifica tu frase de recuperación(%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">Para verificar tu frase de recuperación de 12 palabras, escribe las 12 palabras en orden.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">Recupera tu wallet(%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">Escribe tu frase de recuperación de 12 palabras en orden.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">Revisar transacción</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">Token de atención básica</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">Editar</string><!--Edit-->
+    <string name="text_review_send_to">ENVIAR A</string><!--SEND TO-->
+    <string name="text_review_amount">CANTIDAD</string><!--AMOUNT-->
+    <string name="text_review_fee">TARIFA</string><!--FEE-->
+    <string name="text_review_passcode_title">Contraseña</string><!--Passcode-->
+    <string name="text_review_cancel_button">Cancelar transacción</string><!--Cancel transaction-->
+    <string name="text_review_send_button">Enviar</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">Las contraseñas no coinciden. Inténtalo de nuevo.</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">Se ha producido un error.\nCódigo de error: %1$s\nSi reiniciar tu teléfono no soluciona el error, ponte en contacto con la asistencia de HTC. Disculpa las molestias.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">Se ha producido un error.\nCódigo de error: %1$s\nVuelve a abrir la aplicación.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">Se ha producido un error.\nCódigo de error: %1$s\nBorra los datos de la aplicación Zion de los ajustes de Android y vuelve a intentarlo.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">Se ha producido un error.\nCódigo de error: %1$s\nNo olvides escribir la frase de recuperación de 12 palabras o de actualizar Social Key Recovery, a continuación ve a ajustes de Zion para restablecer tu wallet.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">Se ha producido un error.\nCódigo de error: %1$s\nReinicia tu teléfono.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">Se ha producido un error.\nCódigo de error: %1$s\nPonte en contacto con la asistencia de HTC.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">Se ha producido un error.\nCódigo de error: %1$s\nEsta función no está disponible.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">Se ha producido un error.\nCódigo de error: %1$s\nLos parámetros proporcionados no son válidos.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">Se han realizado demasiados intentos. Vuelve a intentarlo más tarde.</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">Se han realizado demasiados intentos. Inténtalo de nuevo cuando transcurran %1$s minutos.</string>
+    <string name="text_try_often_button1">Aceptar</string><!--OK-->
+    <string name="text_try_often_title2">Se han realizado demasiados intentos.</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">Tu wallet se ha eliminado de este dispositivo por razones de seguridad.\nPara acceder al wallet, usa tu frase de recuperación de 12 palabras o la Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Recuperar wallet</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Crea tu contraseña</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">Confirma tu contraseña</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">Crea tu nueva contraseña</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">Confirma tu nueva contraseña</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Introduce tu contraseña para desbloquear tu wallet</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">Introduce tu contraseña para continuar</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">Será necesaria esta contraseña para todas transacciones y arrancar la aplicación.</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">Será necesaria esta contraseña para transacciones y desbloquear tu wallet.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">Tus contraseñas no coinciden. Inténtalo de nuevo.</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">Contraseña incorrecta. Vuelve a intentarlo más tarde.</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">¿Estás seguro de querer eliminar este contacto de confianza?</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">Introduce tu contraseña para eliminar</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">¿Seguro que quieres cambiar tu contraseña?</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">Introduce la contraseña para cambiar</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">¿Seguro que quieres mostrar la frase de recuperación?</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">Introduce tu contraseña para mostrar</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">¿Estás seguro de que quieres restablecer tu wallet?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">Introduce tu contraseña para restablecer</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">Introduce tu contraseña para restablecer tu wallet</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">Esto borrará todos los datos del wallet. Necesitarás tu frase de recuperación para recuperar tu wallet.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">Introduce tu código contraseña</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">¿Estás seguro de usar esta cuenta?</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">Tus datos de contacto de confianza anteriores se perderán pasa siempre.</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">¿Estás seguro de que quieres cerrar sesión?</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">Se perderán todos los datos de los contactos de confianza.</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">Introduce tu contraseña para cerrar sesión</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">Frase de recuperación no válida.</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">Se requiere contraseña para mayor seguridad</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">¿Restablecer wallet?</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">Esto borrará todos los datos del wallet y necesitarás tu frase de recuperación para restaurar tu wallet.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">CONFIRMAR</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">CANCELAR</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

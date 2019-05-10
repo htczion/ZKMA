@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">Sigurnosno kopirajte svoj novčanik frazom za oporavak od 12 riječi</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">Fraza za oporavak koja se sastoji od 12 riječi je jedini način na koji je moguće vratiti svoj novčanik u slučaju gubitka telefona ili ako zaboravite pristupni kod za transakciju.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">Generiraj frazu za oporavak</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">Upišite svoju frazu od 12 riječi za oporavak poredanih pravilnim redoslijedom</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">To je vaša fraza za oporavak koja se sastoji od 12 riječi</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">Svakako si zapišite svih 12 riječi i to pravilnim redoslijedom te ih pohranite na sigurno mjesto.</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">Zapisao/la sam ih</string><!--I\'ve written them down-->
+    <string name="text_try_again">Jedna ili više riječi je neispravno. Pokušajte ponovo.</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">Dalje</string><!--Next-->
+    <string name="text_recovery_verify_title">Potvrdite svoju frazu za oporavak(%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">Za potvrdu svoje fraze za oporavak od 12 riječi, unesite redom tih 12 riječi.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">Oporavite svoj novčanik(%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">Upišite svoju frazu od 12 riječi za oporavak poredanih pravilnim redoslijedom.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">Pregledajte transakciju</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">Basic Attention Token</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">Uredi</string><!--Edit-->
+    <string name="text_review_send_to">POŠALJI NA</string><!--SEND TO-->
+    <string name="text_review_amount">IZNOS</string><!--AMOUNT-->
+    <string name="text_review_fee">NAKNADA</string><!--FEE-->
+    <string name="text_review_passcode_title">Pristupni kod</string><!--Passcode-->
+    <string name="text_review_cancel_button">Obustavi transakciju</string><!--Cancel transaction-->
+    <string name="text_review_send_button">Pošalji</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">Pristupni kodovi ne odgovaraju. Pokušajte ponovo.</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">Pojavila se pogreška.\nŠifra pogreške: %1$s\nAko ponovno pokretanje telefona ne riješi pogrešku, kontaktirajte HTC podršku. Ispričavamo se zbog mogućih neugodnosti.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">Pojavila se pogreška.\nŠifra pogreške: %1$s\nPonovno pokrenite aplikaciju.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">Pojavila se pogreška.\nŠifra pogreške: %1$s\nOčistite podatke Zion aplikacije iz Android postavki i pokušajte ponovno.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">Pojavila se pogreška.\nŠifra pogreške: %1$s\nProvjerite jeste li zapisali svoju frazu za oporavak koja se sastoji od 12 riječi ili je li Social Key Recovery ažuran, a zatim otvorite Zion postavke radi ponovnog postavljanja svojeg novčanika.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">Pojavila se pogreška.\nŠifra pogreške: %1$s\nPonovno pokrenite telefon.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">Pojavila se pogreška.\nŠifra pogreške: %1$s\nKontaktirajte HTC podršku.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">Pojavila se pogreška.\nŠifra pogreške: %1$s\nTa značajka nije dostupna.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">Pojavila se pogreška.\nŠifra pogreške: %1$s\nNavedeni parametri nisu valjani.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">Previše pokušaja. Pokušajte ponovno kasnije.</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">Previše pokušaja. Pokušajte ponovno za %1$s minuta.</string>
+    <string name="text_try_often_button1">U redu</string><!--OK-->
+    <string name="text_try_often_title2">Previše pokušaja.</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">Vaš novčanik je obrisan s ovog uređaja iz sigurnosnih razloga.\nZa pristup novčaniku koristite svoju frazu za oporavak od 12 riječi ili Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Oporavi novčanik</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Kreirajte svoj pristupni kod</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">Potvrdite svoj pristupni kod</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">Kreirajte svoj novi pristupni kod</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">Potvrdite svoj novi pristupni kod</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Unesite svoj pristupni kod za otključavanje svojeg novčanika</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">Unesite svoj pristupni kod za nastavak</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">Ovaj pristupni kod bit će potreban za sve transakcije i pokretanje aplikacije.</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">Ovaj pristupni kod bit će potreban za transakcije i otključavanje novčanika.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">Vaš pristupni kod ne odgovara. Pokušajte ponovo.</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">Pristupna šifra je netočna. Pokušajte ponovno.</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">Želite li zaista ukloniti ovaj pouzdani kontakt?</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">Unesite svoj pristupni kod za uklanjanje</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">Želite li zaista promijeniti svoj pristupni kod?</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">Unesite pristupni kod za promjenu</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">Želite li zaista prikazati frazu za oporavak?</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">Unesite svoj pristupni kod za prikaz</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">Želite li zaista ponovno postaviti svoj novčanik?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">Unesite svoj pristupni kod za ponovno postavljanje</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">Unesite svoj pristupni kod za ponovno postavljanje novčanika</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">To će obrisati sve podatke novčanika. Trebat ćete unijeti svoju frazu za oporavak kako biste oporavili svoj novčanik.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">Unesite svoj pristupni kod</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">Želite li zaista koristiti ovaj račun?</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">Podaci vašeg prethodnog pouzdanog kontakta bit će zauvijek izgubljeni.</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">Želite li se zaista odjaviti?</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">Svi podaci pouzdanog kontakta bit će izgubljeni.</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">Unesite svoj pristupni kod za odjavu</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">Neispravna fraza za oporavak.</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">Radi dodatne sigurnosti potreban je pristupni kod</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">Ponovno postaviti novčanik?</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">To će obrisati sve podatke novčanika i trebat ćete svoju frazu za oporavak kako biste oporavili svoj novčanik.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">POTVRDI</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">ODUSTANI</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

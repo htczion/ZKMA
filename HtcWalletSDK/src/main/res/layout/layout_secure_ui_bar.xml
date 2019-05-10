@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/secure_layout_height">
+
+    <ImageView
+        android:id="@+id/secure_logo"
+        android:layout_width="@dimen/secure_logo_width"
+        android:layout_height="@dimen/secure_logo_height"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wallet_zion" />
+
+    <TextView
+        android:id="@+id/secure_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/secure_text_marginStart"
+        android:layout_toEndOf="@+id/secure_logo"
+        android:text="@string/text_secure_ui"
+        android:textColor="@color/dark_primaryfont_color"
+        android:textSize="14dp" />
+
+</RelativeLayout>

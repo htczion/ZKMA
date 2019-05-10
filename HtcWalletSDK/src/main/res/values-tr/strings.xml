@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">Cüzdanınızı 12 sözcüklü kurtarma ifadesiyle yedekleyin</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">12 sözcüklü kurtarma ifadesi, telefonunuzu kaybetmeniz veya işlem şifrenizi unutmanız durumunda cüzdanınızı geri yüklemenin tek yoludur.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">Kurtarma ifadesi oluştur</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">12 sözcüklü kurtarma ifadenizi sırayla yazın</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">Bu 12 sözcüklü kurtarma ifadenizdir</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">12 sözcüğün tümünü doğru sırada yazdığınızdan emin olun ve güvenli bir yerde saklayın.</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">Yazdım</string><!--I\'ve written them down-->
+    <string name="text_try_again">Bir veya daha fazla sözcük yanlış. Tekrar deneyin.</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">İleri</string><!--Next-->
+    <string name="text_recovery_verify_title">Kurtarma ifadenizi doğrulayın (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">12 sözcüklü kurtarma ifadenizi doğrulamak için 12 sözcüğü sırayla girin.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">Cüzdanınızı kurtarın (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">12 sözcüklü kurtarma ifadenizi sırayla girin.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">İşlemi gözden geçir</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">Temel Dikkat Belirteci</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">Düzenle</string><!--Edit-->
+    <string name="text_review_send_to">GÖNDER:</string><!--SEND TO-->
+    <string name="text_review_amount">MİKTAR</string><!--AMOUNT-->
+    <string name="text_review_fee">ÜCRET</string><!--FEE-->
+    <string name="text_review_passcode_title">Şifre</string><!--Passcode-->
+    <string name="text_review_cancel_button">İşlemi iptal et</string><!--Cancel transaction-->
+    <string name="text_review_send_button">Gönder</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">Şifreler uyuşmuyor. Tekrar deneyin.</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">Bir hata oluştu.\nHata kodu: %1$s\nEğer telefonunuzu başlatmanız hatayı çözmezse, lütfen HTC desteği ile temasa geçin. Rahatsızlık için özür dileriz.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">Bir hata oluştu.\nHata kodu: %1$s\nLütfen uygulamayı yeniden başlatın.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">Bir hata oluştu.\nHata kodu: %1$s\nLütfen Zion uygulama verisini Android ayarlarından temizleyin ve tekrar deneyin.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">Bir hata oluştu.\nHata kodu: %1$s\n12 sözcüklük kurtarma ifadesinin yazıldığından veya Social Key Recovery\'nin güncel olduğundan emin olduktan sonra cüzdanınızı sıfırlamak için Zion ayarlarına gidin.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">Bir hata oluştu.\nHata kodu: %1$s\nLütfen telefonunuzu yeniden başlatın.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">Bir hata oluştu.\nHata kodu: %1$s\nLütfen HTC desteği ile temasa geçin.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">Bir hata oluştu.\nHata kodu: %1$s\nBu özellik kullanılamaz.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">Bir hata oluştu.\nHata kodu: %1$s\nSağlanan parametreler geçerli değil.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">Çok fazla deneme. Lütfen daha sonra yeniden deneyin.</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">Çok fazla deneme. Lütfen %1$s dakika sonra tekrar deneyin.</string>
+    <string name="text_try_often_button1">Tamam</string><!--OK-->
+    <string name="text_try_often_title2">Çok fazla deneme.</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">Cüzdanınız güvenlik nedenleriyle bu aygıttan silindi.\nCüzdana erişmek için 12 sözcüklü kurtarma ifadenizi veya Social Key Recovery işlevini kullanın.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Cüzdanı kurtar</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Şifrenizi oluşturun</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">Şifrenizi onaylayın</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">Yeni şifrenizi oluşturun</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">Yeni şifrenizi onaylayın</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Cüzdanınızın kilidini açmak için şifrenizi girin</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">Devam etmek için şifrenizi girin</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">Bu şifre, tüm işlemler ve uygulama başlatma için gerekli olacaktır.</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">Bu şifre, işlemler ve cüzdanın kilidinin açılması için gerekli olacaktır.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">Şifreleriniz uyuşmuyor. Tekrar deneyin.</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">Şifre yanlış. Lütfen yeniden deneyin.</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">Bu güvenilir kişiyi kaldırmak istediğinizden emin misiniz?</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">Kaldırmak için şifrenizi girin</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">Şifrenizi değiştirmek istediğinizden emin misiniz?</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">Değiştirmek için şifre girin</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">Kurtarma ifadesini göstermek istediğinizden emin misiniz?</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">Göstermek için şifrenizi girin</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">Cüzdanınızı sıfırlamak istediğinizden emin misiniz?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">Sıfırlamak için şifrenizi girin</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">Cüzdanınızı sıfırlamak için şifrenizi girin</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">Bu işlem tüm cüzdan verilerini silecektir. Cüzdanınızı kurtarmak için kurtarma ifadenize ihtiyacınız olacaktır.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">Şifrenizi girin</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">Bu hesabı kullanmak istediğinizden emin misiniz?</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">Önceki güvenilir kişi verileriniz kalıcı olarak kaybedilecektir.</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">Oturumu kapatmak istediğinize emin misiniz?</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">Tüm güvenilir kişi verileri kaybedilecektir.</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">Oturumu kapatmak için şifrenizi girin</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">Geçersiz kurtarma ifadesi.</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">Ek güvenlik için şifre gereklidir</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">Cüzdan sıfırlansın mı?</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">Bu işlem tüm cüzdan verilerini silecek ve cüzdanınızı kurtarmak için kurtarma ifadenize ihtiyacınız olacaktır.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">ONAYLA</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">İPTAL</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

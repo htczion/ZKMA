@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">Sandarkan dompet anda dengan 12 perkataan frasa pemulihan</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">12 perkataan frasa pemulihan merupakan satu-satunya cara untuk memulihkan dompet anda sekiranya anda kehilangan telefon anda atau terlupa kod laluan transaksi anda.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">Hasilkan frasa pemulihan</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">Catatkan 12 perkataan frasa pemulihan anda mengikut susunan</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">Ini 12 perkataan frasa pemulihan anda</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">Pastikan semua 12 perkataan dicatatkan dalam susunan yang betul dan kekalkannya di tempat yang selamat.</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">Saya telah mencatatkannya</string><!--I\'ve written them down-->
+    <string name="text_try_again">Satu atau banyak perkataan salah. Cuba lagi.</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">Seterusnya</string><!--Next-->
+    <string name="text_recovery_verify_title">Sahkan frasa pemulihan anda(%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">Untuk mengesahkan 12 perkataan frasa pemulihan anda, masukkan 12 perkataan tersebut mengikut susunan.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">Pulihkan dompet anda(%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">Masukkan 12 perkataan frasa pemulihan anda mengikut susunan.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">Semak semula transaksi</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">Token Perhatian Asas</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">Edit</string><!--Edit-->
+    <string name="text_review_send_to">HANTAR KE</string><!--SEND TO-->
+    <string name="text_review_amount">JUMLAH</string><!--AMOUNT-->
+    <string name="text_review_fee">BAYARAN</string><!--FEE-->
+    <string name="text_review_passcode_title">Kod Laluan</string><!--Passcode-->
+    <string name="text_review_cancel_button">Batalkan transaksi</string><!--Cancel transaction-->
+    <string name="text_review_send_button">Hantar</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">Kod laluan tidak sepadan. Cuba lagi.</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">Ralat telah berlaku.\nKod ralat: %1$s\nJika memulakan semula telefon anda tidak menyelesaikan ralat, sila hubungi sokongan HTC. Kami memohon maaf atas kesulitan.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">Ralat telah berlaku.\nKod ralat: %1$s\nSila lancarkan semula aplikasi.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">Ralat telah berlaku.\nKod ralat: %1$s\nSila kosongkan data aplikasi Zion daripada tetapan Android dan cuba lagi.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">Ralat telah berlaku.\nKod ralat: %1$s\nPastikan 12 perkataan frasa pemulihan dicatat atau Social Key Recovery sudah terkini, kemudian pergi ke tetapan Zion untuk menetapkan semula dompet anda.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">Ralat telah berlaku.\nKod ralat: %1$s\nSila mulakan semula telefon anda.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">Ralat telah berlaku.\nKod ralat: %1$s\nSila hubungi sokongan HTC.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">Ralat telah berlaku.\nKod ralat: %1$s\nCiri ini tidak tersedia.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">Ralat telah berlaku.\nKod ralat: %1$s\nParameter yang disediakan tidak sah.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">Terlalu banyak cubaan. Sila cuba lagi kemudian.</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">Terlalu banyak cubaan. Sila cuba sekali lagi dalam %1$s minit.</string>
+    <string name="text_try_often_button1">OK</string><!--OK-->
+    <string name="text_try_often_title2">Terlalu banyak cubaan.</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">Dompet anda telah dikosongkan daripada peranti ini atas sebab keselamatan.\nUntuk mengakses dompet, gunakan 12 perkataan frasa pemulihan anda atau Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Memulihkan dompet</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">Cipta kod laluan anda</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">Sahkan kod laluan anda</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">Cipta kod laluan baharu anda</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">Sahkan kod laluan baharu anda</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Masukkan kod laluan anda untuk membuka kunci dompet anda</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">Masukkan kod laluan anda untuk teruskan</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">Kod laluan ini akan diperlukan untuk semua transaksi dan permulaan aplikasi.</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">Kod laluan ini akan diperlukan untuk transaksi dan buka kunci dompet.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">Kod laluan anda tidak sepadan. Cuba lagi.</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">Kod laluan salah. Sila cuba lagi.</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">Adakah anda pasti mahu mengalih keluar kenalan yang dipercayai ini?</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">Masukkan kod laluan anda untuk mengalih keluar</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">Adakah anda pasti mahu mengubah kod laluan anda?</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">Masukkan kod laluan untuk mengubah</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">Adakah anda pasti mahu menunjukkan frasa pemulihan tersebut?</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">Masukkan kod laluan anda untuk menunjukkannya</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">Adakah anda pasti mahu menetapkan semula dompet anda?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">Masukkan kod laluan anda untuk menetapkan semula</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">Masukkan kod laluan anda untuk menetapkan semula dompet anda</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">Ini akan memadamkan semua data dompet. Anda akan memerlukan frasa pemulihan anda untuk memulihkan dompet anda.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">Masukkan kod laluan anda</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">Adakah anda pasti mahu menggunakan akaun ini?</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">Data kenalan anda yang dipercayai sebelum ini akan hilang secara kekal.</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">Adakah anda pasti ingin mendaftar keluar?</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">Semua data kenalan yang dipercayai akan hilang.</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">Masukkan kod laluan anda untuk mendaftar keluar</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">Frasa pemulihan tidak sah.</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">Kod laluan diperlukan untuk keselamatan tambahan</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">Tetapkan semula dompet?</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">Ini akan memadamkan semua data dompet dan anda akan memerlukan frasa pemulihan anda untuk memulihkan dompet anda.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">SAHKAN</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">BATAL</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

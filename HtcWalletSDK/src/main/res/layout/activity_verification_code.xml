@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallet_background"
+    android:layoutDirection="locale">
+
+    <View
+        android:id="@+id/verification_code_actionbar_space"
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/verification_code_actionbar_space">
+
+        <ImageButton
+            android:id="@+id/verification_code_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_close_24dp" />
+
+        <TextView
+            android:id="@+id/verification_code_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@id/verification_code_close_button"
+            android:text="@string/social_backup"
+            android:theme="@style/title_primary_m" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/verification_code_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/secure_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/verification_code_second_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/verification_code_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:layout_marginTop="@dimen/verification_code_title_marginTop"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/verification_share_code_title"
+                android:theme="@style/wallet_31" />
+
+            <LinearLayout
+                android:id="@+id/code_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/verification_code_title"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:layout_marginTop="@dimen/verification_code_LinearLayout_marginTop"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/number_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/verification_code_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="1"
+                        android:theme="@style/wallet_49" />
+
+                    <TextView
+                        android:id="@+id/verification_code_number2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/verification_code_number1"
+                        android:layout_marginStart="@dimen/margin_l"
+                        android:includeFontPadding="false"
+                        android:text="2"
+                        android:theme="@style/wallet_49" />
+
+
+                    <TextView
+                        android:id="@+id/verification_code_number3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/verification_code_number2"
+                        android:layout_marginStart="@dimen/margin_l"
+                        android:includeFontPadding="false"
+                        android:text="3"
+                        android:theme="@style/wallet_49" />
+
+
+                    <TextView
+                        android:id="@+id/verification_code_number4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/verification_code_number3"
+                        android:layout_marginStart="@dimen/margin_l"
+                        android:includeFontPadding="false"
+                        android:text="4"
+                        android:theme="@style/wallet_49" />
+
+
+                    <TextView
+                        android:id="@+id/verification_code_number5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/verification_code_number4"
+                        android:layout_marginStart="@dimen/margin_l"
+                        android:includeFontPadding="false"
+                        android:text="5"
+                        android:theme="@style/wallet_49" />
+
+                    <TextView
+                        android:id="@+id/verification_code_number6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/verification_code_number5"
+                        android:layout_marginStart="@dimen/margin_l"
+                        android:includeFontPadding="false"
+                        android:text="6"
+                        android:theme="@style/wallet_49" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/verification_code_request_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:layout_marginTop="@dimen/verification_code_request_from_marginTop"
+                android:layout_below="@+id/code_linearlayout"
+                android:text="@string/verification_share_code_request_from"
+                android:gravity="center_horizontal"
+                android:theme="@style/darklist_primary_xl"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:minLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/verification_code_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:layout_marginTop="@dimen/margin_m"
+                android:layout_below="@+id/verification_code_request_from"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:includeFontPadding="false"
+                android:text="Bob fy"
+                android:textAlignment="center"
+                android:theme="@style/wallet_39"
+                android:maxLines="1"
+                android:minLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/verification_code_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:layout_marginTop="@dimen/double_margin_m"
+                android:layout_below="@id/verification_code_name"
+                android:text="@string/verification_share_code_information"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:maxLines="3"
+                android:minLines="3"
+                android:ellipsize="end"
+                android:theme="@style/wallet_50" />
+
+            <TextView
+                android:id="@+id/verification_code_reject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/double_margin_l"
+                android:layout_marginTop="@dimen/double_margin_l"
+                android:layout_below="@id/verification_code_information"
+                android:text="@string/verification_share_code_reject"
+                android:layout_marginEnd="@dimen/double_margin_l"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:onClick="onClick"
+                android:theme="@style/wallet_50" />
+
+            <Space
+                android:id="@+id/verification_code_bottom_space"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_margin_m1"
+                android:layout_below="@id/verification_code_reject"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@id/secure_layout"
+        layout="@layout/layout_secure_ui_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/secure_layout_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

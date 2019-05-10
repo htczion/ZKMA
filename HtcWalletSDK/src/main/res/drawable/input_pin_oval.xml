@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid
+        android:color="#FFFFFF"/>
+    <stroke
+        android:width="@dimen/pin_status_stroke"
+        android:color="#FFFFFF" />
+    <size android:width="@dimen/pin_status_fullfill_size"
+          android:height="@dimen/pin_status_fullfill_size" />
+</shape>

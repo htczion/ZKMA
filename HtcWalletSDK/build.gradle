@@ -1,0 +1,98 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+    signingConfigs {
+        println 'signingConfigs ****'
+
+        debugSDK {
+            println 'debugSDK +++'
+        }
+
+        releaseSDK {
+            println 'releaseSDK +++'
+        }
+    }
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionName "3.1.2" // @version
+        buildConfigField "int", "PARTNER_ID", "0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+//    flavorDimensions "default" // If you want not to use dimensions you should enable this line
+    flavorDimensions "Htc_internal" // set your flavor dimension for build .AAR at here
+    productFlavors {
+        Htc_internal {
+            println 'BUILD: flavorDimensions = Htc_internal +++'
+            flavorDimensions "Htc_internal"
+            buildConfigField "int", "PARTNER_ID", "0"
+        }
+
+        Htc_partner1 {
+            println 'BUILD: flavorDimensions = Htc_partner1 +++'
+            flavorDimensions "Htc_partner1"
+            buildConfigField "int", "PARTNER_ID", "1"
+        }
+
+        Htc_partner2 {
+            println 'BUILD: flavorDimensions = Htc_partner2 +++'
+            flavorDimensions "Htc_partner2"
+            buildConfigField "int", "PARTNER_ID", "2"
+        }
+    }
+
+    sourceSets {
+        main {
+            // let gradle pack the shared library into AAR
+        }
+    }
+
+    buildTypes {
+        release {
+            println 'BUILD: release +++'
+            useProguard true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // signingConfig signingConfigs.releaseSDK
+        }
+
+        debug {
+            println 'BUILD: debug +++'
+            useProguard true
+            // signingConfig signingConfigs.debugSDK
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    // implementation 'com.scottyab:rootbeer-lib:0.0.7'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+task copyAAR(type: Copy) {
+    doFirst {
+        println 'Copying the output .AAR files to app/libs for test ++++++++'
+    }
+    doLast {
+        println 'Copying the output .AAR files to app/libs for test --------'
+    }
+
+    from('build/outputs/aar')
+    into('../app/libs')
+    include(project.name + '-release.aar')
+    include(project.name + '-debug.aar')
+}
+afterEvaluate {
+    assembleDebug.finalizedBy(copyAAR)
+    assembleRelease.finalizedBy(copyAAR)
+}

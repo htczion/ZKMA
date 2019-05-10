@@ -1,0 +1,105 @@
+<resources>
+    <string name="aar_name">HtcWalletSdk</string>
+    <string name="aar_version">1.0a</string>
+
+<!--for wallet recovery ui-->
+    <string name="recovery_key_introduction_title">با استفاده از عبارت بازیابی 12 کلمه ای از کیف پول نسخه پشتیبان تهیه کنید</string><!--Backup your wallet by 12-/word recovery phrase-->
+    <string name="recovery_key_introduction_description">اگر تلفنتان را گم کنید یا رمز تراکنش را فراموش کنید، عبارت بازیابی 12 کلمه ای تنها روش بازیابی کیف پول است</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_button">ایجاد عبارت بازیابی</string><!--Generate recovery phrase-->
+    <string name="write_recovery_key_title">عبارت بازیابی 12 کلمه ای را به ترتیب بنویسید</string><!--Write down your 12-/word recovery phrase in order-->
+    <string name="show_recovery_key_title">این عبارت بازیابی 12 کلمه ای شما است</string><!--This is your 12-/word recovery phrase-->
+    <string name="write_recovery_key_description">بررسی کنید کل 12 کلمه را به ترتیب صحیح نوشته باشید و آنها را در مکان امنی نگهداری کنید.</string><!--Make sure to write all 12 words down in the correct order and keep them in a safe place.-->
+    <string name="write_recovery_key_button">آنها را نوشته ام</string><!--I\'ve written them down-->
+    <string name="text_try_again">یک یا تعداد بیشتری از کلمه ها اشتباه هستند. دوباره امتحان کنید.</string><!--One or more words are incorrect. Try again.-->
+    <string name="text_next_button">بعدی</string><!--Next-->
+    <string name="text_recovery_verify_title">عبارت بازیابی را تأیید کنید (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
+    <string name="text_recovery_verify_description">برای تأیید عبارت بازیابی 12 کلمه ای، این 12 کلمه را به ترتیب وارد کنید.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
+    <string name="text_recovery_enter_title">بازیابی کیف پول (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_description">عبارت بازیابی 12 کلمه ای را به ترتیب بنویسید.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+<!--for wallet review activity-->
+    <string name="text_review_toolbar_title">بررسی تراکنش</string><!--Review transaction-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_eth">ETH</string>-->
+    <string name="text_review_coin_detail_title_eth">Ethereum</string><!--Ethereum-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_btc">BTC</string>-->
+    <string name="text_review_coin_detail_title_btc">Bitcoin</string><!--Bitcoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_ltc">LTC</string>-->
+    <string name="text_review_coin_detail_title_ltc">Litecoin</string><!--Litecoin-->
+<!--Do not translate-->
+	<!--<string name="text_review_coin_simple_title_bat">BAT</string>-->
+    <string name="text_review_coin_detail_title_bat">توکن توجه اصلی</string><!--Basic Attention Token-->
+    <string name="text_review_edit_button">ویرایش</string><!--Edit-->
+    <string name="text_review_send_to">ارسال به</string><!--SEND TO-->
+    <string name="text_review_amount">مبلغ</string><!--AMOUNT-->
+    <string name="text_review_fee">FEE</string><!--FEE-->
+    <string name="text_review_passcode_title">کد عبور</string><!--Passcode-->
+    <string name="text_review_cancel_button">لغو تراکنش</string><!--Cancel transaction-->
+    <string name="text_review_send_button">ارسال</string><!--Send-->
+    <string name="text_review_coin_format">%1$s %2$s</string>
+    <string name="text_review_conversion_format">= %1$s %2$s</string>
+    <string name="text_review_invalid_message">کدهای عبور مطابقت ندارند. دوباره امتحان کنید.</string><!--Passcodes do not match. Try again.-->
+
+<!-- error code -->
+    <string name="text_generic_error_description">خطایی روی داد.\nکد خطا: %1$s\nاگر با بازنشانی تلفن مشکل برطرف نشد، لطفاً با پشتیبانی HTC تماس بگیرید. از بروز این مشکل متأسفیم.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
+    <string name="text_type1_error_description">خطایی روی داد.\nکد خطا: %1$s\nلطفاً دوباره برنامه را راه اندازی کنید.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
+    <string name="text_type2_error_description">خطایی روی داد.\nکد خطا: %1$s\nلطفاً داده های برنامه Zion را از قسمت تنظیمات Android پاک کنید و دوباره امتحان کنید.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
+    <string name="text_type3_error_description">خطایی روی داد.\nکد خطا: %1$s\nبررسی کنید عبارت بازیابی 12 کلمه ای را بنویسید یا اینکه Social Key Recovery به روز باشد، سپس به تنظیمات Zion بروید و کیف پولتان را بازنشانی کنید.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type4_error_description">خطایی روی داد.\nکد خطا: %1$s\nتلفن خود را دوباره راه اندازی کنید.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
+    <string name="text_type5_error_description">خطایی روی داد.\nکد خطا: %1$s\nبا پشتیبانی HTC تماس بگیرید.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
+    <string name="text_type6_error_description">خطایی روی داد.\nکد خطا: %1$s\nاین ویژگی در دسترس نیست.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
+    <string name="text_type7_error_description">خطایی روی داد.\nکد خطا: %1$s\nپارامترهای ارائه شده معتبر نیستند.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
+    
+
+<!--for try often activity-->
+    <string name="text_try_often_title1">به تعداد دفعات زیادی امتحان کردید لطفاً بعداً دوباره امتحان کنید.</string><!--Too many attempts. Please try again later.-->
+    <string name="text_try_often_description1">به تعداد دفعات زیادی امتحان کردید لطفاً بعد از %1$s دقیقه دوباره امتحان کنید.</string>
+    <string name="text_try_often_button1">تأیید</string><!--OK-->
+    <string name="text_try_often_title2">به تعداد دفعات زیادی امتحان کردید</string><!--Too many attempts.-->
+    <string name="text_try_often_description2">کیف پولتان به دلایل امنیتی از این دستگاه حذف شده است.\nبرای دسترسی به کیف پول از عبارت بازیابی 12 کلمه ای یا Social Key Recovery استفاده کنید.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">بازیابی کیف پول</string><!--Recover wallet-->
+
+<!--text of title, description and subtitle-->
+    <string name="create_your_pin_code_title">کد عبورتان را ایجاد کنید</string><!--Create your passcode-->
+    <string name="confirm_your_pin_code_title">کد عبور را تأیید کنید</string><!--Confirm your passcode-->
+    <string name="create_your_new_pin_code_title">کد عبور جدیدی را ایجاد کنید</string><!--Create your new passcode-->
+    <string name="confirm_your_new_pin_code_title">کد عبور جدید را تأیید کنید</string><!--Confirm your new passcode-->
+    <string name="enter_pin_to_unlock_your_wallet_title">برای باز کردن قفل کیف پول، کد عبور را وارد کنید</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_continue_title">برای ادامه، کد عبورتان را وارد کنید.</string><!--Enter your passcode to continue-->
+    <string name="pin_open_app_desc">برای همه تراکنش ها و راه اندازی برنامه به این کد عبور نیاز دارید.</string><!--This passcode will be required for all transactions and app startup.-->
+    <string name="pin_unlock_wallet_desc">برای تراکنش ها و کیف پول به این کد عبور نیاز دارید.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_codes_did_not_match">کدهای عبور مطابقت ندارند. دوباره امتحان کنید.</string><!--Your passcodes do not match. Try again.-->
+    <string name="pin_codes_did_not_match2">کلمه عبور اشتباه است. لطفا دوباره تلاش كنید.</string><!--Passcode incorrect. Please try again.-->
+    <string name="confirm_remove_trusted_contact_title">مطمئن هستید می خواهید این مخاطب مورد اعتماد را حذف کنید؟</string><!--Are you sure to remove this trusted contact?-->
+    <string name="enter_pin_to_remove_desc">برای حذف کردن، کد عبور را وارد کنید</string><!--Enter your passcode to remove-->
+    <string name="enter_pin_change_pin_title">مطمئن هستید می خواهید کد عبور را تغییر دهید؟</string><!--Are you sure you want to change your passcode?-->
+    <string name="enter_pin_change_subtitle">برای تغییر دادن، کد عبور را وارد کنید</string><!--Enter passcode to change-->
+    <string name="enter_pin_show_recovery_key_title">مطمئن هستید می خواهید عبارت بازیابی نمایش داده شود؟</string><!--Are you sure you want to show the recovery phrase?-->
+    <string name="enter_pin_show_subtitle">برای نمایش دادن، کد عبور خود را وارد کنید</string><!--Enter your passcode to show-->
+    <string name="enter_pin_reset_wallet_title">آیا مطمئن هستید می خواهید کیف پول را بازنشانی کنید؟</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_subtitle">برای بازنشانی، کد عبور را وارد کنید</string><!--Enter your passcode to reset-->
+    <string name="enter_pin_to_reset_wallet_title">برای بازنشانی کیف پول، کد عبور را وارد کنید</string><!--Enter your passcode to reset your wallet-->
+    <string name="enter_pin_to_reset_wallet_desc">با این کار همه اطلاعات کیف پول پاک می شود. برای بازیابی کیف پول به عبارت بازیابی نیاز دارید.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_generate_verification_code_title">کد عبور را وارد کنید</string><!--Enter your passcode-->
+    <string name="enter_pin_backup_security_check_title">مطمئنید می خواهید از این حساب استفاده کنید؟</string><!--Are you sure to use this account?-->
+    <string name="enter_pin_backup_security_check_desc">داده های مخاطب مورد اعتماد قبلیتان به صورت دائمی از بین می رود.</string><!--Your previous trusted contact data will be permanently lost.-->
+    <string name="enter_pin_log_out_title">آیا مطمئن هستید که می خواهید از سیستم خارج شوید؟</string><!--Are you sure you want to sign out?-->
+    <string name="enter_pin_log_out_desc">همه اطلاعات مخاطب مورد اعتماد از بین می رود.</string><!--All trusted contact data will be lost.-->
+    <string name="enter_pin_log_out_subtitle">کد عبور را برای خروج از سیستم وارد کنید</string><!--Enter your passcode to sign out-->
+
+<string name="recovery_phrase_incorrect">عبارت بازیابی نامعتبر است.</string><!--Invalid recovery phrase.-->
+    <string name="passcode_required_for_additional_security">برای ایمنی بیشتر به کد عبور نیاز است</string><!--Passcode required for additional security-->
+
+<!--for reset wallet dialog-->
+    <string name="reset_wallet_dialog_title">کیف پول بازنشانی شود؟</string><!--Reset wallet?-->
+    <string name="reset_wallet_dialog_description">با این کار همه اطلاعات کیف پول پاک می شود و برای بازیابی کیف پولتان به عبارت بازیابی نیاز دارید.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_confirm">تأیید</string><!--CONFIRM-->
+    <string name="reset_wallet_cancel">لغو</string><!--CANCEL-->
+
+<!--secure ui bar-->
+<!--Do not translate-->
+	<!--<string name="text_secure_ui">Protected by <b>Zion Trusted UI</b></string>-->
+
+</resources>

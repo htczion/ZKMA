@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/next_button"
+        style="@style/wallet_29"
+        android:background="@drawable/recovery_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_margin_m1"
+        android:layout_marginEnd="@dimen/double_margin_l"
+        android:layout_marginStart="@dimen/double_margin_l"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:paddingEnd="@dimen/recoveryKey_button_horizontal_padding"
+        android:paddingStart="@dimen/recoveryKey_button_horizontal_padding"
+        android:text="@string/write_recovery_key_button"
+        android:textAllCaps="false" />
+</RelativeLayout>

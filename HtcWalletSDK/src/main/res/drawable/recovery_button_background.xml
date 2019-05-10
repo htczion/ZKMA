@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle"
+                    android:useLevel="false"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <solid android:color="@color/colorRecoveryButtonBackground" />
+                    <corners android:radius="20dp" />
+                </shape>
+            </item>
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:shape="rectangle"
+                    android:useLevel="false">
+                    <solid android:color="#19000000"/>
+                    <corners android:radius="20dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle"
+            android:useLevel="false"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/colorRecoveryButtonBackground" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle"
+            android:useLevel="false"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/colorRecoveryDisabledButtonBackground" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</selector>

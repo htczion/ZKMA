@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/review_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/review_info_shadow_background"
+        android:layout_marginEnd="@dimen/margin_l"
+        android:layout_marginStart="@dimen/margin_l"
+        android:background="@color/white"
+        android:lines="1"
+        android:text="@string/passcode_incorrect"
+        android:textColor="@color/colorError"
+        android:theme="@style/wallet_40" />
+
+</RelativeLayout>
+

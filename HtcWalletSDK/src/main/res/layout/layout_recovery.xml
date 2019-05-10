@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recoveryKey_error_text_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:layout_marginEnd="@dimen/recoveryKey_button_marginHorizontal"
+        android:layout_marginStart="@dimen/recoveryKey_button_marginHorizontal"
+        android:gravity="center_horizontal|center"
+        android:text="@string/text_try_again"
+        android:theme="@style/wallet_32" />
+
+    <LinearLayout
+        android:id="@+id/reocvery_input_keys"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recoveryKey_input_keys_region_height"
+        android:layout_below="@+id/error_message"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:background="@android:color/transparent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/idx_1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/idx_1_label_number"
+                android:layout_width="@dimen/recoveryKey_label_number_edge"
+                android:layout_height="@dimen/recoveryKey_label_number_edge"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/margin_m"
+                android:layout_marginStart="@dimen/recoveryKey_label_number_marginStart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wallet_number_01" />
+
+            <EditText
+                android:id="@+id/idx_1_input_text"
+                style="@style/darklist_primary_xl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/recoveryKey_input_text_marginEnd"
+                android:background="@drawable/recovery_input_text_background"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/margin_xs"
+                android:paddingEnd="@dimen/margin_m"
+                android:paddingStart="@dimen/margin_m"
+                android:paddingTop="@dimen/margin_xs"
+                android:textCursorDrawable="@drawable/recovery_text_cursor_drawable" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/idx_2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/idx_2_label_number"
+                android:layout_width="@dimen/recoveryKey_label_number_edge"
+                android:layout_height="@dimen/recoveryKey_label_number_edge"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/margin_m"
+                android:layout_marginStart="@dimen/recoveryKey_label_number_marginStart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wallet_number_01" />
+
+            <EditText
+                android:id="@+id/idx_2_input_text"
+                style="@style/darklist_primary_xl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/recoveryKey_input_text_marginEnd"
+                android:background="@drawable/recovery_input_text_background"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/margin_xs"
+                android:paddingEnd="@dimen/margin_m"
+                android:paddingStart="@dimen/margin_m"
+                android:paddingTop="@dimen/margin_xs"
+                android:textCursorDrawable="@drawable/recovery_text_cursor_drawable" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/idx_3_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/idx_3_label_number"
+                android:layout_width="@dimen/recoveryKey_label_number_edge"
+                android:layout_height="@dimen/recoveryKey_label_number_edge"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/margin_m"
+                android:layout_marginStart="@dimen/recoveryKey_label_number_marginStart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wallet_number_01" />
+
+            <EditText
+                android:id="@+id/idx_3_input_text"
+                style="@style/darklist_primary_xl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/recoveryKey_input_text_marginEnd"
+                android:background="@drawable/recovery_input_text_background"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/margin_xs"
+                android:paddingEnd="@dimen/margin_m"
+                android:paddingStart="@dimen/margin_m"
+                android:paddingTop="@dimen/margin_xs"
+                android:textCursorDrawable="@drawable/recovery_text_cursor_drawable" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/idx_4_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/idx_4_label_number"
+                android:layout_width="@dimen/recoveryKey_label_number_edge"
+                android:layout_height="@dimen/recoveryKey_label_number_edge"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/margin_m"
+                android:layout_marginStart="@dimen/recoveryKey_label_number_marginStart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/wallet_number_01" />
+
+            <EditText
+                android:id="@+id/idx_4_input_text"
+                style="@style/darklist_primary_xl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/recoveryKey_input_text_marginEnd"
+                android:background="@drawable/recovery_input_text_background"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/margin_xs"
+                android:paddingEnd="@dimen/margin_m"
+                android:paddingStart="@dimen/margin_m"
+                android:paddingTop="@dimen/margin_xs"
+                android:textCursorDrawable="@drawable/recovery_text_cursor_drawable" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        style="@style/recovery_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recoveryKey_button_height"
+        android:layout_below="@id/reocvery_input_keys"
+        android:layout_marginBottom="@dimen/margin_l"
+        android:layout_marginEnd="@dimen/recoveryKey_button_marginHorizontal"
+        android:layout_marginStart="@dimen/recoveryKey_button_marginHorizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingEnd="@dimen/recoveryKey_button_horizontal_padding"
+        android:paddingStart="@dimen/recoveryKey_button_horizontal_padding"
+        android:text="@string/text_next_button"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
+
