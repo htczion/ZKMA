@@ -10,7 +10,7 @@ https://github.com/htczion/ZKMA/wiki
 
 ## Change List:  
 For HW wallet, SDK will check the compatibility between ROM,SDK and TrustZone. 
-About the details of version number, you can find at section [Compatibility](https://github.com/htczion/ZKMS/wiki#compatibility).  
+About the details of version number, you can find at section [Compatibility](https://github.com/htczion/ZKMA/wiki#compatibility).  
 
 ### ZKMS ver: 3.3.0:   
 
