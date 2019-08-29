@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">Պահուստավորել ձեր դրամապանակը12 բառանոց վերականգնման արտահայտությամբ</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">Վերականգնման 12 բառանոց արտահայտությունը ձեր դրամապանակը վերականգնելու միակ ճանապարհն է, եթե կորցնեք ձեր հեռախոսը կամ մոռանաք գործարքի անցակոդը:</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">Բառերի այս կայումը Zion Vault-ը վերականգնելու միակ միջոցն է, եթե կորցնեք ձեր հեռախոսը կամ մոռանաք անցակոդը:</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">Ստեղծել վերականգնման արտահայտություն</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">Դուրս գրեք ձեր 12 բառանոց վերականգնման արտահայտությունը ըստ կարգի</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">Սա ձեր 12 բառանոց վերականգնման արտահայտությունն է</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">Հաջորդը</string><!--Next-->
     <string name="text_recovery_verify_title">Ստուգեք վերականգնման արտահայտությունը(%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">Ստուգելու համար ձեր 12 բառանոց վերականգնման արտահայտությունը, մուտքագրեք 12 բառերը ըստ կարգի:</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">Վերականգնել դրամապանակը(%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">Zion Vault-ի վերականգնում(%1$d/3)</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">Մուտքագրեք ձեր 12 բառանոց վերականգնման արտահայտությունը ըստ կարգի:</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">Վերականգման սխալ արտահայտություն:</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">Դիտել գործարքը</string><!--Review transaction-->
@@ -46,27 +48,28 @@
     <string name="text_generic_error_description">Տեղի ունեցավ սխալ:\nՍխալի կոդը. %1$s\nԵթե վերագործարկում եք հեռախոսը և սխալը չի ուղղվում, կապնվեք HTC-ի աջակման հետ: Հայցում ենք ձեր ներողամտությունը:</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">Տեղի ունեցավ սխալ:\nՍխալի կոդը. %1$s\nԿրկին թողարկեք գործադիրը:</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">Տեղի ունեցավ սխալ:\nՍխալի կոդը. %1$s\nՄաքրեք Zion գործադրի տվյալները Android-ի կարգավորումներից և կրկին ուղարկեք:</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">Տեղի ունեցավ սխալ:\nՍխալի կոդը. %1$s\nՀամոզվեք, որ 12 բառանոց վերականգնման արտահայտությունը դուրս եք գրել կամ որ Social Key Recovery-ին արդի է, ապա անցեք Zion-ի կարգավորումներին՝ ձեր դրամանպանակը վերակայելու համար:</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">Տեղի ունեցավ սխալ:\nՍխալի կոդ՝ %1$s\nՀամոզվեք, որ ձեր12 բառով վերականգնման արտահայտությունը դուրս եք գրել կամ որ Social Key Recovery-ին արդի է, ապա անցեք Zion-ի կարգավորումներին՝ Zion Vault-ը վերակայելու համար:</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">Տեղի ունեցավ սխալ:\nՍխալի կոդը. %1$s\nՎերագործարկեք ձեր հեռախոսը:</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">Տեղի ունեցավ սխալ:\nՍխալի կոդը. %1$s\nԽնդրոոմ ենք կապնվել HTC-ի աջակման հետ:</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">Տեղի ունեցավ սխալ:\nՍխալի կոդը. %1$s\nԱյս յուրահատկությունը անմատչելի է:</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">Տեղի ունեցավ սխալ:\nՍխալի կոդը. %1$s\nՏրամադրված ցուցիչները անվավեր են:</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">Տեղի ունեցավ սխալ:\nՍխալի կոդ՝ %1$s\nՁեր գործարքը չեղարկվել է, քանի որ ձեր մուտքագրած տվյալները չեն համապատասխանում ձեր պայմանագրի տվյալներին: Սա անվտանգության միջոցառում է: Դիմեք սպասառուների աջակցման կենտրոն:</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">Չափազանց շատ սխալ փորձեր: Ավելի ուշ կրկին փորձեք:</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">Չափազանց շատ սխալ փորձեր: %1$s րոպեից կրկին փորձեք:</string>
     <string name="text_try_often_button1">Լավ</string><!--OK-->
     <string name="text_try_often_title2">Չափազանց շատ սխալ փորձեր:</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">Ձեր դրամապանակը մաքրվել է այս սարքից անվտանգության պատճառներով:\nԴրամապանակ մուտք գործելու համար օգտագործեք ձեր 12 բառանոց վերականգնման արտահայտությունը կամ Social Key Recovery-ին:</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">Վերականգնել դրամապանակը</string><!--Recover wallet-->
+    <string name="text_try_often_description2">Zion Vault-ը մաքրվել է այս սարքից անվտանգության նկատառումներով:\nZion Vault մուտք գործելու համար օգտագործեք 12 բառով վերականգնման արտահայտությունը կամ Social Key Recovery-ը:</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Վերականգնել Zion Vault-ը</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">Ստեղծել ձեր անցակոդ</string><!--Create your passcode-->
     <string name="confirm_your_pin_code_title">Հաստատեք ձեր անցակոդը</string><!--Confirm your passcode-->
     <string name="create_your_new_pin_code_title">Ստեղծել ձեր նոր անցակոդը</string><!--Create your new passcode-->
     <string name="confirm_your_new_pin_code_title">Հաստատեք ձեր նոր անցակոդը</string><!--Confirm your new passcode-->
-    <string name="enter_pin_to_unlock_your_wallet_title">Մուտքագրեք ձեր անցակոդը՝ ապակողպելու ձեր դրամապանակը</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Մուտքագրեք ձեր անցակոդը՝ Zion Vault-ը ապակողպելու համար</string><!--Enter your passcode to unlock your Zion Vault-->
     <string name="enter_pin_to_continue_title">Շարունակելու համար մուտքագրեք ձեր անցակոդը</string><!--Enter your passcode to continue-->
     <string name="pin_open_app_desc">Այս անցակոդը կպահանջվի բոլոր գործարքների և գործադիրի ինքնամեկնարկի համար:</string><!--This passcode will be required for all transactions and app startup.-->
     <string name="pin_unlock_wallet_desc">Այս անցակոդը կպահանջվի գործարքների և դրամապանակը ապակողպելու համար:</string><!--This passcode will be required for transactions and wallet unlock.-->
@@ -78,10 +81,10 @@
     <string name="enter_pin_change_subtitle">Մուտքագրեք անցակոդ` փոխելու համար</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">Իրո՞ք ցանկանում եք ցուցադրել վերականգնման արտահայտությունը:</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">Մուտքագրեք ձեր անցակոդը՝ ցուցադրելու համար</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">Իրո՞ք ցանկանում եք վերակայել ձեր դրամապանակը:</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">Իրո՞ք ցանկանում եք վերակայել Zion Vault-ը:</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">Մուտքագրեք ձեր անցակոդը՝ վերակայելու համար</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">Մուտքագրեք ձեր անցակոդը՝ ձեր դրամապանակը վերակայելու համար</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">Սա կջնջի դրամապանակի բոլոր տվյալները: Ձեզ հարկավոր կլինի վերականգնման արտահայտությունը՝ ձեր դրամապանակը վերականգնելու համար:</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_reset_wallet_title">Մուտքագրեք ձեր անցակոդը՝ Zion Vault-ը վերակայելու համար</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">Zion Vault-ի բոլոր տվյալները կջնջվեն: Ձեզ պետք կգա վերականգնման արտահայտությունը՝ Zion Vault-ը վերականգնելու համար:</string><!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">Մուտքագրեք Ձեր անցակոդը</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">Իրո՞ք ցանկանում եք օգտագործել այս հաշիվը:</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">Ձեր նախորդ վստահելի կոնտակտի տվյալը մշտապես կորցնելու եք:</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +96,8 @@
     <string name="passcode_required_for_additional_security">Անցակոդը պահանջվում է լրացուցիչ անվտանգության համար</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">Վերակայե՞լ դրամապանակը:</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">Սա կմաքրի դրամապանակի բլոր տվյալները և ձեզ անհրաժեշտ կլինի վերականգնման արտահայտությունը՝ վերականգնելու համար ձեր դրամապանակը:</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">Վերակայե՞լ Zion Vault-ը:</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">Zion Vault-ը-ի բոլոր տվյալները կջնջվեն և ձեզ պետք կլինի վերականգնման արտահայտությունը՝ Zion Vault-ը վերականգնելու համար:</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">ՀԱՍՏԱՏԵԼ</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">ՉԵՂԱՐԿԵԼ</string><!--CANCEL-->
 

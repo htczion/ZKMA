@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">Створіть резервну копію свого гаманця за допомогою фрази відновлення з 12 слів</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">Фраза відновлення з 12 слів - це єдиний спосіб відновити гаманець, якщо ви втратите телефон або забудете код доступу транзакції.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">Цей набір слів - це єдиний спосіб відновити Zion Vault, якщо ви втратите телефон або забудете свій код доступу.</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">Створити фразу відновлення</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">Запишіть свою фразу відновлення з 12 слів по порядку</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">Це ваша фраза відновлення з 12 слів</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">Далі</string><!--Next-->
     <string name="text_recovery_verify_title">Перевірте свою фразу відновлення(%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">Щоб перевірити вашу фразу відновлення з 12 слів, введіть 12 слів по порядку.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">Відновіть свій гаманець(%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">Відновіть свій Zion Vault(%1$d/3)</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">Введіть свою фразу відновлення з 12 слів по порядку.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">Недійсна фраза відновлення.</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">Переглянути транзакцію</string><!--Review transaction-->
@@ -46,30 +48,31 @@
     <string name="text_generic_error_description">Сталася помилка.\nКод помилки: %1$s\nЯкщо полмилка не буде усунена після перезавантаження телефону, зверніться до служби підтримки HTC. Ми просимо вибачення за незручності.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">Сталася помилка.\nКод помилки: %1$s\nПерезапустіть програму.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">Сталася помилка.\nКод помилки: %1$s\nВидаліть дані програми Zion з налаштувань Android та спробуйте знову.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">Сталася помилка.\nКод помилки: %1$s\nПереконайтеся, що фраза відновлення з 12 слів записана або що Social Key Recovery оновлено, а потім перейдіть до налаштувань Zion, щоб скинути гаманець.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">Сталася помилка.\nКод помилки: %1$s\nПереконайтеся, що фраза відновлення з 12 слів записана або що Social Key Recovery оновлено, а потім перейдіть до налаштувань Zion, щоб скинути Zion Vault.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">Сталася помилка.\nКод помилки: %1$s\nПерезапустіть свій телефон.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">Сталася помилка.\nКод помилки: %1$s\nЗв`яжіться з службою підтримки HTC.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">Сталася помилка.\nКод помилки: %1$s\nЦя функція недоступна.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">Сталася помилка.\nКод помилки: %1$s\nНадані параметри не дійсні.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">Сталася помилка.\nКод помилки: %1$s\nВашу транзакцію скасовано, оскільки введені дані не збігаються з інформацією у вашому контракті. Це запобіжні заходи безпеки. Зв\'яжіться зі службою підтримки клієнтів.</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">Забагато спроб. Спробуйте ще раз пізніше.</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">Забагато спроб. Спробуйте ще раз через %1$s хвилин.</string>
     <string name="text_try_often_button1">ОК</string><!--OK-->
     <string name="text_try_often_title2">Забагато спроб.</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">Ваш гаманець очищено з цього пристрою з міркувань безпеки.\nЩоб отримати доступ до гаманця, скористайтеся фразою відновлення з 12 слів або Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">Відновити гаманець</string><!--Recover wallet-->
+    <string name="text_try_often_description2">Ваш Zion Vault очищено з цього пристрою з міркувань безпеки.\nЩоб отримати доступ до Zion Vault, скористайтеся фразою відновлення з 12 слів або Social Key Recovery.</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Відновити Zion Vault</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">Створіть свій код доступу</string><!--Create your passcode-->
     <string name="confirm_your_pin_code_title">Підтвердьте свій код доступу</string><!--Confirm your passcode-->
     <string name="create_your_new_pin_code_title">Створіть свій новий код доступу</string><!--Create your new passcode-->
     <string name="confirm_your_new_pin_code_title">Підтвердьте свій новий код доступу</string><!--Confirm your new passcode-->
-    <string name="enter_pin_to_unlock_your_wallet_title">Введіть свій код доступу, щоб розблокувати свій гаманець</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Введіть свій код доступу, щоб розблокувати свій Zion Vault</string><!--Enter your passcode to unlock your Zion Vault-->
     <string name="enter_pin_to_continue_title">Введіть свій код доступу для продовження</string><!--Enter your passcode to continue-->
     <string name="pin_open_app_desc">Цей код доступу буде потрібний для всіх транзакцій та запуску додатка.</string><!--This passcode will be required for all transactions and app startup.-->
-    <string name="pin_unlock_wallet_desc">Цей код доступу буде потрібний для транзакцій та розблокування гаманця.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_unlock_wallet_desc">Цей код доступу буде потрібний для транзакцій та розблокування Zion Vault.</string><!--This passcode will be required for transactions and Zion Vault unlock.-->
     <string name="pin_codes_did_not_match">Ваші коди доступу не збігаються. Повторіть спробу.</string><!--Your passcodes do not match. Try again.-->
     <string name="pin_codes_did_not_match2">Код доступу невірний. Спробуйте ще раз.</string><!--Passcode incorrect. Please try again.-->
     <string name="confirm_remove_trusted_contact_title">Ви впевнені, що хочете видалити цей довірений контакт?</string><!--Are you sure to remove this trusted contact?-->
@@ -78,10 +81,10 @@
     <string name="enter_pin_change_subtitle">Введіть код доступу для зміни</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">Ви впевнені, що хочете показати фразу відновлення?</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">Введіть свій код доступу, щоб показати</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">Справді хочете скинути свій гаманець?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">Справді хочете скинути свій Zion Vault?</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">Введіть свій код доступу для скидання</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">Введіть свій код доступу, щоб скинути свій гаманець</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">Це очистить всі дані гаманця. Вам буде потрібна фраза відновлення, щоб відновити свій гаманць.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_reset_wallet_title">Введіть свій код доступу, щоб скинути свій Zion Vault</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">Це очистить всі дані Zion Vault. Вам буде потрібна фраза відновлення, щоб відновити свій Zion Vault.</string><!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">Введіть свій код доступу</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">Ви дійсно хочете використовувати цей обліковий запис?</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">Дані ваших попередніх довірених контактів будуть остаточно втрачені.</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +96,8 @@
     <string name="passcode_required_for_additional_security">Для забезпечення додаткового захисту необхідний код доступу</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">Скинути гаманець?</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">Це очистить всі дані гаманця і для відновлення гаманця вам знадобиться фраза відновлення.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">Скинути Zion Vault?</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">Це очистить всі дані Zion Vault і для відновлення Zion Vault вам знадобиться фраза відновлення.</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">ПІДТВЕРДИТИ</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">СКАСУВАТИ</string><!--CANCEL-->
 

@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">Backup del portafoglio con frase di recupero da 12 parole</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">La frase di recupero da 12 parole è il solo modo per ripristinare il portafoglio in caso di perdita del telefono o venga dimenticata la password della transazione.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">Questo set di parole è il solo modo per recuperare Zion Vault nel caso il telefono venga smarrito o dimenticata la password.</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">Genera frase di recupero</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">Annotare la frase di recupero a 12 parole nell\'ordine</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">Ecco la frase di recupero da 12 parole</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">Avanti</string><!--Next-->
     <string name="text_recovery_verify_title">Verifica della frase di recupero(%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">Per verificare la frase di recupero da 12 parole, inserire le 12 parole nell\'ordine.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">Recupero del portafoglio(%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">Recupera Zion Vault(%1$d/3)</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">Inserire la frase di recupero a 12 parole nell\'ordine.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">Frase di recupero non valida.</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">Rivedi transazione</string><!--Review transaction-->
@@ -46,30 +48,31 @@
     <string name="text_generic_error_description">Si è verificato un errore.\nCodice di errore: %1$s\nSe riavviando il telefono l\'errore non si risolve, contattare il supporto HTC. Ci scusiamo per l\'inconveniente.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">Si è verificato un errore.\nCodice di errore: %1$s\nAvviare nuovamente l\'applicazione.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">Si è verificato un errore.\nCodice di errore: %1$s\nCancellare i dati dell\'applicazione Zion dalle impostazioni Android e riprovare.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">Si è verificato un errore.\nCodice di errore: %1$s\nAssicurarsi di aver annotato la frase di recupero da 12 parole o che Social Key Recovery sia aggiornato, quindi passare alle impostazioni di Zion per ripristinare il portafoglio.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">Si è verificato un errore.\nCodice errore: %1$s\nAssicurarsi di annotare la frase di recupero da 12 parole o che il Social Key Recovery sia aggiornato, quindi passare alle impostazioni Zion per ripristinare Zion Vault.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">Si è verificato un errore.\nCodice di errore: %1$s\nRiavviare il telefono.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">Si è verificato un errore.\nCodice di errore: %1$s\nContattare il supporto HTC.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">Si è verificato un errore.\nCodice di errore: %1$s\nFunzione non disponibile.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">Si è verificato un errore.\nCodice di errore: %1$s\nI parametri specificati non sono validi.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">Si è verificato un errore.\nCodice di errore: %1$s\nLa transazione è stata annullata perché i dati inseriti non corrispondono alle informazioni nel contratto. È una precauzione di sicurezza. Contattare il centro servizi.</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">Troppi tentativi. Riprovare in seguito.</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">Troppi tentativi. Riprovare tra %1$s minuti.</string>
     <string name="text_try_often_button1">OK</string><!--OK-->
     <string name="text_try_often_title2">Troppi tentativi.</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">Per motivi legati alla sicurezza il portafoglio è stato cancellato dal dispositivo.\nPer accedere al portafoglio, usare la frase di recupero di 12 parole o il Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">Recupera portafoglio</string><!--Recover wallet-->
+    <string name="text_try_often_description2">Zion Vault è stato cancellato dal dispositivo per motivi legati alla sicurezza.\nPer accedere a Zion Vault, usare una frase di recupero da 12 parole o Social Key Recovery.</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Recupera Zion Vault</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">Crea password</string><!--Create your passcode-->
     <string name="confirm_your_pin_code_title">Conferma password</string><!--Confirm your passcode-->
     <string name="create_your_new_pin_code_title">Crea nuova password</string><!--Create your new passcode-->
     <string name="confirm_your_new_pin_code_title">Conferma nuova password</string><!--Confirm your new passcode-->
-    <string name="enter_pin_to_unlock_your_wallet_title">Inserisci password per sbloccare il portafoglio</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Inserire la password per sbloccare Zion Vault</string><!--Enter your passcode to unlock your Zion Vault-->
     <string name="enter_pin_to_continue_title">Inserisci password per continuare</string><!--Enter your passcode to continue-->
     <string name="pin_open_app_desc">La password sarà necessaria per tutte le transazioni e avviare l\'applicazione.</string><!--This passcode will be required for all transactions and app startup.-->
-    <string name="pin_unlock_wallet_desc">La password sarà necessaria per le transazioni e sbloccare il portafoglio.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_unlock_wallet_desc">Questa password sarà necessaria per le transazioni e sbloccare Zion Vault.</string><!--This passcode will be required for transactions and Zion Vault unlock.-->
     <string name="pin_codes_did_not_match">Le password non corrispondono. Riprovare.</string><!--Your passcodes do not match. Try again.-->
     <string name="pin_codes_did_not_match2">Password errata. Riprovare.</string><!--Passcode incorrect. Please try again.-->
     <string name="confirm_remove_trusted_contact_title">Rimuovere il contatto attendibile?</string><!--Are you sure to remove this trusted contact?-->
@@ -78,10 +81,10 @@
     <string name="enter_pin_change_subtitle">Inserisci password per cambiare</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">Mostrare la frase di recupero?</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">Inserisci password per mostrare</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">Ripristinare il portafoglio?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">Ripristinare Zion Vault?</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">Inserisci password per ripristinare</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">Inserisci password per ripristinare il portafoglio</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">Cancellerà tutti i dati del portafoglio. Sarà necessaria la frase di recupero per recuperare il portafoglio.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_reset_wallet_title">Inserire la password per ripristinare Zion Vault</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">Tutti i dati Zion Vault saranno cancellati. Sarà necessaria una frase di recupero per ripristinare Zion Vault.</string><!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">Inserisci password</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">Usare questo account?</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">I dati contatto attrendibile precedenti andranno persi definitivamente.</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +96,8 @@
     <string name="passcode_required_for_additional_security">Per ulteriore sicurezza è necessaria una password</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">Ripristinare il portafoglio?</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">Cancellerà tutti i dati del portafoglio, sarà necessaria la frase di recupero per ripristinare il portafoglio.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">Ripristinare Zion Vault?</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">Tutti i dati di Zion Vault saranno cancellati. Sarà necessaria una frase di recupero per ripristinare Zion Vault.</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">CONFERMA</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">ANNULLA</string><!--CANCEL-->
 

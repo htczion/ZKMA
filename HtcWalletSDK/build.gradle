@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.google.protobuf'
 
 android {
     compileSdkVersion 26
@@ -9,17 +10,25 @@ android {
 
         debugSDK {
             println 'debugSDK +++'
+            keyAlias 'debugSDK'
+            keyPassword 'android'
+            storeFile file('private/hms.jks')
+            storePassword 'android'
         }
 
         releaseSDK {
             println 'releaseSDK +++'
+            keyAlias 'releaseSDK'
+            keyPassword 'android'
+            storeFile file('private/hms.jks')
+            storePassword 'android'
         }
     }
 
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 26
-        versionName "3.2.0" // @version
+        versionName "3.4.6" // @version
         buildConfigField "int", "PARTNER_ID", "0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -58,13 +67,33 @@ android {
             useProguard true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            // signingConfig signingConfigs.releaseSDK
+            signingConfig signingConfigs.releaseSDK
         }
 
         debug {
             println 'BUILD: debug +++'
             useProguard true
-            // signingConfig signingConfigs.debugSDK
+            signingConfig signingConfigs.debugSDK
+        }
+    }
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.8.0'
+
+    }
+    //generatedFilesBaseDir = "$projectDir/src/main/java/com/htc/htcwalletsdk"
+    generatedFilesBaseDir = "$projectDir/src/main/generated"
+
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                remove java
+            }
+            task.builtins {
+                java {}
+            }
         }
     }
 }
@@ -73,8 +102,10 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.protobuf:protobuf-java:3.8.0'
+    implementation 'com.google.protobuf:protoc:3.8.0'
     // implementation 'com.scottyab:rootbeer-lib:0.0.7'
-    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    // implementation 'com.mcxiaoke.volley:library:1.0.19'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

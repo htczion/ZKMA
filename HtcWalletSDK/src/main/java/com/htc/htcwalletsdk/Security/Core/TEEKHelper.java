@@ -24,6 +24,7 @@ public class TEEKHelper {
     private Object mManager;
     private Method METHOD_APIVERSION;
     private Method METHOD_REGISTER;
+    public Method METHOD_REGISTEREX;
     private Method METHOD_UNREGISTER;
     private Method METHOD_CREATESEED;
     private Method METHOD_RESTORESEED;
@@ -53,7 +54,8 @@ public class TEEKHelper {
     private Method METHOD_WRITETZDATASET; // SERVER key required
     private Method METHOD_SETKEYBOARDTYPE;
     private Method METHOD_CHANGEPINv2;
-
+    // FW update
+    private Method METHOD_GETEXTPUBLICKEY;
 
     private final Context mContext;
     private boolean mLoadSuccess = false;
@@ -104,6 +106,13 @@ public class TEEKHelper {
                 }
 
                 try {
+                    if(strMethod.equals("public long com.htc.wallettzservice.HtcWalletTZManager.registerEx(java.lang.String,byte[],int,java.lang.String)"))
+                        METHOD_REGISTEREX        = mClass.getMethod("registerEx",String.class, byte[].class, int.class, String.class);
+                } catch (NoSuchMethodException e) {
+                    Log.e(TAG, "registerEx API check failed!", e);
+                }
+
+                try {
                     if(strMethod.equals("public int com.htc.wallettzservice.HtcWalletTZManager.unRegister(java.lang.String,byte[],int,long)"))
                         METHOD_UNREGISTER      = mClass.getMethod("unRegister",String.class, byte[].class, int.class, long.class);
                 } catch (NoSuchMethodException e) {
@@ -150,6 +159,13 @@ public class TEEKHelper {
                         METHOD_GETPUBLICKEY    = mClass.getMethod("getPublicKey",long.class, String.class);
                 } catch (NoSuchMethodException e) {
                     Log.e(TAG, "getPublicKey API check failed!", e);
+                }
+
+                try {
+                    if(strMethod.equals("public java.lang.String com.htc.wallettzservice.HtcWalletTZManager.getExtPublicKey(long,java.lang.String)"))
+                        METHOD_GETEXTPUBLICKEY    = mClass.getMethod("getExtPublicKey",long.class, String.class);
+                } catch (NoSuchMethodException e) {
+                    Log.e(TAG, "getExtPublicKey API check failed!", e);
                 }
 
                 try {
@@ -321,25 +337,41 @@ public class TEEKHelper {
         return (int)ret;
     }
 
-    long register(String walletName, byte[] array, int arrayLength){
+    public long register(String walletName, byte[] array, int arrayLength){
         Object ret = RESULT.UNKNOWN;
 
         try {
-            ZKMALog.i(TAG, "register +");
+            ZKMALog.w(TAG, "register +");
             ret = METHOD_REGISTER.invoke(mManager,walletName, array, arrayLength);
-            ZKMALog.i(TAG, "register -");
+            ZKMALog.w(TAG, "register -");
             return (long)ret;
         } catch (Exception e) {
             Log.e(TAG, "" + e, e);
         }
         return RESULT.UNKNOWN;
     }
+
+    public long registerEx(String walletName, byte[] array, int arrayLength, String extra){
+        Object ret = RESULT.UNKNOWN;
+
+        try {
+            ZKMALog.w(TAG, "registerEx +");
+            ret = METHOD_REGISTEREX.invoke(mManager,walletName, array, arrayLength, extra);
+            ZKMALog.w(TAG, "registerEx -");
+            return (long)ret;
+        } catch (Exception e) {
+            Log.e(TAG, "" + e, e);
+        }
+        return RESULT.UNKNOWN;
+    }
+
+
     public int unRegister(String walletName, byte[] array, int arrayLength, long id){
         Object ret = RESULT.UNKNOWN;
         try {
-            ZKMALog.i(TAG, "unRegister +");
+            ZKMALog.w(TAG, "unRegister +");
             METHOD_UNREGISTER.invoke(mManager,walletName, array, arrayLength, id);
-            ZKMALog.i(TAG, "unRegister -");
+            ZKMALog.w(TAG, "unRegister -");
             return (int)ret;
         } catch (Exception e) {
             Log.e(TAG, "" + e, e);
@@ -404,9 +436,9 @@ public class TEEKHelper {
         Object ret = RESULT.UNKNOWN;
 
         try {
-            ZKMALog.i(TAG, "clearSeed +");
+            ZKMALog.w(TAG, "clearSeed +");
             ret = METHOD_CLEARSEED.invoke(mManager,id);
-            ZKMALog.i(TAG, "clearSeed - " + ret );
+            ZKMALog.w(TAG, "clearSeed - " + ret );
             return (int)ret;
         } catch (Exception e) {
             Log.e(TAG, "" + e, e);
@@ -421,6 +453,20 @@ public class TEEKHelper {
             ZKMALog.i(TAG, "getPublicKey +");
             ret = METHOD_GETPUBLICKEY.invoke(mManager, id, path);
             ZKMALog.i(TAG, "getPublicKey -");
+            return (String)ret;
+        } catch (Exception e) {
+            Log.e(TAG, "" + e, e);
+        }
+        return null;
+    }
+
+    public String getExtPublicKey(long id, String path){
+        Object ret = RESULT.UNKNOWN;
+
+        try {
+            ZKMALog.i(TAG, "getExtPublicKey +");
+            ret = METHOD_GETEXTPUBLICKEY.invoke(mManager, id, path);
+            ZKMALog.i(TAG, "getExtPublicKey -");
             return (String)ret;
         } catch (Exception e) {
             Log.e(TAG, "" + e, e);
@@ -462,9 +508,9 @@ public class TEEKHelper {
         Object ret = RESULT.UNKNOWN;
 
         try {
-            ZKMALog.i(TAG, "clearData +");
+            ZKMALog.w(TAG, "clearData +");
             ret = METHOD_CLEARDATA.invoke(mManager);
-            ZKMALog.i(TAG, "clearData  - " +ret);
+            ZKMALog.w(TAG, "clearData  - " +ret);
 
             return (int)ret;
         } catch (Exception e) {

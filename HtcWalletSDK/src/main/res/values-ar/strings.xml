@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">انسخ محفظتك احتياطيًا باستخدام عبارة الاستعادة المكوَّنة من ١‎٢ كلمة</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">عبارة الاستعادة المكوَّنة من ١‎٢ كلمة هي الطريقة الوحيدة لاستعادة محفظتك في حالة فقدان هاتفك أو نسيان رمز مرور المعاملة.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">هذه المجموعة من الكلمات هي الطريقة الوحيدة لاستعادة حسابك في Zion Vault إذا فقدت هاتفك أو نسيت رمز مرورك.</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">أنشئ عبارة استعادة</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">دوِّن عبارة الاستعادة المكوَّنة من ١‎٢ كلمة بالترتيب</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">هذه هي عبارة الاستعادة المكوَّنة من ١‎٢ كلمة</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">التالي</string><!--Next-->
     <string name="text_recovery_verify_title">تحقق من صحة عبارة الاستعادة (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">للتحقق من عبارة الاستعادة المكوَّنة من ١‎٢ كلمة، أدخل الـ ١‎٢ كلمة بالترتيب.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">استعد محفظتك (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">استعادة حسابك في Zion Vault ‏(%1$d/3)</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">أدخل عبارة الاستعادة المكوَّنة من ١‎٢ كلمة بالترتيب</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">عبارة استعادة غير صالحة</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">مراجعة المعاملة</string><!--Review transaction-->
@@ -46,30 +48,31 @@
     <string name="text_generic_error_description">حدث خطأ.\nرمز الخطأ. %1$s\nإذا لم تؤدِ إعادة تشغيل هاتفك إلى تصحيح الخطأ، فالرجاء الاتصال بدعم HTC. نأسف للإزعاج.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">حدث خطأ.\nرمز الخطأ. %1$s\nالرجاء إعادة تشغيل التطبيق.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">حدث خطأ.\nرمز الخطأ. %1$s\nالرجاء إزالة بيانات تطبيق Zion من إعدادات Android وإعادة المحاولة.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">حدث خطأ.\nرمز الخطأ. %1$s\nتأكد من تدوين عبارة الاستعادة المكونة من ١٢ كلمة أو من تحديث خدمة Social Key Recovery إلى آخر إصدار ثم انتقل إلى إعدادات Zion لإعادة ضبط محفظتك.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">حدث خطأ.\nرمز الخطأ. %1$s\nتأكد من تدوين عبارة الاستعادة المكونة من ١‎٢‎ كلمة أو من تحديث خدمة Social Key Recovery إلى آخر إصدار ثم انتقل إلى إعدادات Zion لإعادة ضبط حسابك في Zion Vault.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">حدث خطأ.\nرمز الخطأ. %1$s\nالرجاء إعادة تشغيل هاتفك.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">حدث خطأ.\nرمز الخطأ. %1$s\nالرجاء الاتصال بدعم HTC.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">حدث خطأ.\nرمز الخطأ. %1$s\nهذه الميزة غير متوفرة.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">حدث خطأ.\nرمز الخطأ. %1$s\nالمعلّمات المتوفرة غير صالحة.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">حدث خطأ.\nرمز الخطأ. %1$s\nتم إلغاء معاملتك لأن البيانات التي قد تم إدخالها غير مطابقة للمعلومات الواردة في عقدك. هذا إجراء احتياطي آمن. الرجاء الاتصال بخدمة العملاء.</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">لقد أجريت محاولات أكثر مما ينبغي. الرجاء إعادة المحاولة لاحقًا.</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">محاولات كثيرة جداً. الرجاء المحاولة مرة أخرى في غضون %1$s دقائق.</string>
     <string name="text_try_often_button1">موافق</string><!--OK-->
     <string name="text_try_often_title2">لقد أجريت محاولات أكثر مما ينبغي.</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">تم مسح محفظتك من هذا الجهاز لدواعي الأمان.\nللوصول إلى المحفظة، استخدم عبارة الاستعادة المكوَّنة من ١‎٢‎ كلمة أو خدمة استعادة المفتاح المشترك Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">استعادة المحفظة</string><!--Recover wallet-->
+    <string name="text_try_often_description2">تمت إزالة حسابك في Zion Vault من هذا الجهاز لأسباب متعلقة بالأمان.\nللوصول إلى Zion Vault، استخدم عبارة الاستعادة المكونة من ١‎٢‎ كلمة أو خدمة Social Key Recovery.</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">استعادة Zion Vault</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">أنشئ رمز المرور</string><!--Create your passcode-->
     <string name="confirm_your_pin_code_title">أكِّد رمز المرور</string><!--Confirm your passcode-->
     <string name="create_your_new_pin_code_title">أنشئ رمز المرور الجديد</string><!--Create your new passcode-->
     <string name="confirm_your_new_pin_code_title">أكِّد رمز المرور الجديد</string><!--Confirm your new passcode-->
-    <string name="enter_pin_to_unlock_your_wallet_title">أدخل رمز المرور لإلغاء قفل محفظتك</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_unlock_your_wallet_title">أدخل رمز المرور لإلغاء قفل حسابك في Zion Vault</string><!--Enter your passcode to unlock your Zion Vault-->
     <string name="enter_pin_to_continue_title">أدخل رمز المرور للمتابعة</string><!--Enter your passcode to continue-->
     <string name="pin_open_app_desc">سيلزم إدخال رمز المرور هذا لبدء تشغيل التطبيق وجميع المعاملات.</string><!--This passcode will be required for all transactions and app startup.-->
-    <string name="pin_unlock_wallet_desc">سيلزم إدخال رمز المرور هذا لإلغاء قفل المحفظة والمعاملات.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_unlock_wallet_desc">سيلزم توفير رمز المرور هذا لإجراء معاملات وإلغاء قفل Zion Vault.</string><!--This passcode will be required for transactions and Zion Vault unlock.-->
     <string name="pin_codes_did_not_match">رموز المرور غير متطابقة. أعد المحاولة.</string><!--Your passcodes do not match. Try again.-->
     <string name="pin_codes_did_not_match2">رمز المرور غير صحيح. الرجاء إعادة المحاولة.</string><!--Passcode incorrect. Please try again.-->
     <string name="confirm_remove_trusted_contact_title">هل تريد بالتأكيد إزالة جهة الاتصال الموثوق فيها هذه؟</string><!--Are you sure to remove this trusted contact?-->
@@ -78,10 +81,10 @@
     <string name="enter_pin_change_subtitle">أدخل رمز المرور للتغيير</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">هل تريد بالتأكيد إظهار عبارة الاستعادة؟</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">أدخل رمز المرور للإظهار</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">هل تريد بالتأكيد إعادة تعيين محفظتك؟</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">هل تريد بالتأكيد إعادة ضبط حسابك في Zion Vault؟</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">أدخل رمز المرور لإعادة التعيين</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">أدخل رمز المرور لإعادة تعيين محفظتك</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">سيؤدي ذلك إلى مسح كل بيانات المحفظة. ستحتاج إلى عبارة الاستعادة لاسترجاع محفظتك.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_reset_wallet_title">أدخل رمز المرور لإعادة ضبط حسابك في Zion Vault</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">سيؤدي ذلك إلى مسح كل بيانات Zion Vault. سيلزم توفير عبارة الاستعادة لاستعادة حسابك في Zion Vault.</string><!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">أدخل رمز المرور</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">هل تريد بالتأكيد استخدام هذا الحساب؟</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">سيتم فقدان بيانات جهة الاتصال السابقة الموثوق فيها نهائيًا.</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +96,8 @@
     <string name="passcode_required_for_additional_security">يجب إدخال رمز المرور لضمان مزيد من الأمان</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">إعادة تعيين المحفظة؟</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">سيؤدي هذا إلى مسح جميع بيانات المحفظة وستحتاج إلى عبارة الاستعادة لاسترجاع محفظتك.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">إعادة ضبط Zion Vault؟</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">سيؤدي ذلك إلى مسح كل بيانات Zion Vault وسيلزم توفير عبارة الاستعادة لاستعادة حسابك في Zion Vault.</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">تأكيد</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">إلغاء</string><!--CANCEL-->
 

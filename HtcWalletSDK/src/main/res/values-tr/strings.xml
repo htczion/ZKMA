@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">Cüzdanınızı 12 sözcüklü kurtarma ifadesiyle yedekleyin</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">12 sözcüklü kurtarma ifadesi, telefonunuzu kaybetmeniz veya işlem şifrenizi unutmanız durumunda cüzdanınızı geri yüklemenin tek yoludur.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">Bu sözcük grubu, telefonunuzu kaybederseniz veya şifrenizi unuttuysanız, Zion Vault\'unuzu kurtarmanın tek yoludur.</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">Kurtarma ifadesi oluştur</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">12 sözcüklü kurtarma ifadenizi sırayla yazın</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">Bu 12 sözcüklü kurtarma ifadenizdir</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">İleri</string><!--Next-->
     <string name="text_recovery_verify_title">Kurtarma ifadenizi doğrulayın (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">12 sözcüklü kurtarma ifadenizi doğrulamak için 12 sözcüğü sırayla girin.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">Cüzdanınızı kurtarın (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">Zion Vault\'unuzu kurtarın (%1$d/3)</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">12 sözcüklü kurtarma ifadenizi sırayla girin.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">Geçersiz kurtarma ifadesi.</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">İşlemi gözden geçir</string><!--Review transaction-->
@@ -46,20 +48,21 @@
     <string name="text_generic_error_description">Bir hata oluştu.\nHata kodu: %1$s\nEğer telefonunuzu başlatmanız hatayı çözmezse, lütfen HTC desteği ile temasa geçin. Rahatsızlık için özür dileriz.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">Bir hata oluştu.\nHata kodu: %1$s\nLütfen uygulamayı yeniden başlatın.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">Bir hata oluştu.\nHata kodu: %1$s\nLütfen Zion uygulama verisini Android ayarlarından temizleyin ve tekrar deneyin.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">Bir hata oluştu.\nHata kodu: %1$s\n12 sözcüklük kurtarma ifadesinin yazıldığından veya Social Key Recovery\'nin güncel olduğundan emin olduktan sonra cüzdanınızı sıfırlamak için Zion ayarlarına gidin.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">Bir hata oluştu.\nHata kodu: %1$s\n12 sözcüklük kurtarma ifadesinin yazıldığından veya Social Key Recovery\'nin güncel olduğundan emin olduktan sonra Zion Vault\'unuzu sıfırlamak için Zion ayarlarına gidin.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">Bir hata oluştu.\nHata kodu: %1$s\nLütfen telefonunuzu yeniden başlatın.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">Bir hata oluştu.\nHata kodu: %1$s\nLütfen HTC desteği ile temasa geçin.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">Bir hata oluştu.\nHata kodu: %1$s\nBu özellik kullanılamaz.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">Bir hata oluştu.\nHata kodu: %1$s\nSağlanan parametreler geçerli değil.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">Bir hata oluştu.\nHata kodu: %1$s\nGirdiğiniz veriler sözleşmenizdeki bilgilerle eşleşmediğinden işleminiz iptal edildi. Bu bir güvenlik önlemidir. Lütfen müşteri hizmetlerine başvurun.</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">Çok fazla deneme. Lütfen daha sonra yeniden deneyin.</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">Çok fazla deneme. Lütfen %1$s dakika sonra tekrar deneyin.</string>
     <string name="text_try_often_button1">Tamam</string><!--OK-->
     <string name="text_try_often_title2">Çok fazla deneme.</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">Cüzdanınız güvenlik nedenleriyle bu aygıttan silindi.\nCüzdana erişmek için 12 sözcüklü kurtarma ifadenizi veya Social Key Recovery işlevini kullanın.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">Cüzdanı kurtar</string><!--Recover wallet-->
+    <string name="text_try_often_description2">Zion Vault\'unuz güvenlik nedenleriyle bu aygıttan silindi.\nZion Vault\'a erişmek için 12 sözcüklü kurtarma ifadenizi veya Social Key Recovery işlevini kullanın.</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Zion Vault\'u Kurtarın</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">Şifrenizi oluşturun</string><!--Create your passcode-->
@@ -78,10 +81,10 @@
     <string name="enter_pin_change_subtitle">Değiştirmek için şifre girin</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">Kurtarma ifadesini göstermek istediğinizden emin misiniz?</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">Göstermek için şifrenizi girin</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">Cüzdanınızı sıfırlamak istediğinizden emin misiniz?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">Zion Vault\'unuzu sıfırlamak istediğinizden emin misiniz?</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">Sıfırlamak için şifrenizi girin</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">Cüzdanınızı sıfırlamak için şifrenizi girin</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">Bu işlem tüm cüzdan verilerini silecektir. Cüzdanınızı kurtarmak için kurtarma ifadenize ihtiyacınız olacaktır.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_reset_wallet_title">Zion Vault\'unuzu sıfırlamak için şifrenizi girin</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">Bu işlem tüm Zion Vault verilerini silecektir. Zion Vault\'unuzu kurtarmak için kurtarma ifadenize ihtiyacınız olacaktır.</string><!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">Şifrenizi girin</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">Bu hesabı kullanmak istediğinizden emin misiniz?</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">Önceki güvenilir kişi verileriniz kalıcı olarak kaybedilecektir.</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +96,8 @@
     <string name="passcode_required_for_additional_security">Ek güvenlik için şifre gereklidir</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">Cüzdan sıfırlansın mı?</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">Bu işlem tüm cüzdan verilerini silecek ve cüzdanınızı kurtarmak için kurtarma ifadenize ihtiyacınız olacaktır.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">Zion Vault sıfırlansın mı?</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">Bu işlem tüm Zion Vault verilerini silecek ve Zion Vault\'unuzu kurtarmak için kurtarma ifadenize ihtiyacınız olacaktır.</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">ONAYLA</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">İPTAL</string><!--CANCEL-->
 

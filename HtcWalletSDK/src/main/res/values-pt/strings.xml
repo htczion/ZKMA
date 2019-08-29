@@ -17,6 +17,8 @@
     <string name="text_recovery_enter_title">Enter recovery phrase to restore your wallet(%1$d/3)</string>
     <string name="text_recovery_enter_description">To restore your wallet, please enter the word from recovery phrase</string>
 
+    <string name="text_recovery_duplicated_error">Invalid recovery phrase.</string>
+
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">Review your transaction</string>
 <!--Do not translate-->
@@ -51,6 +53,8 @@
     <string name="text_type5_error_description">An error has occurred.\nError code: %1$s\nPlease contact HTC support.</string>
     <string name="text_type6_error_description">An error has occurred.\nError code: %1$s\nThis feature is not available.</string>
     <string name="text_type7_error_description">An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.</string>
+
+<string name="text_sync_tztable_error">An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.</string>
 
 <!--for try often activity-->
     <string name="text_try_often_title1">Please try again later</string>

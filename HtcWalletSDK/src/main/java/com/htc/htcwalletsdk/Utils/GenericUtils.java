@@ -7,6 +7,11 @@ import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import com.htc.htcwalletsdk.Security.Trusted.TrustedPartners;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 /**
  * Created by hawk_wei on 2018/9/28.
  */
@@ -78,5 +83,21 @@ public class GenericUtils {
             hexChars[j * 2 + 1] = hexArray[v & 0x0F];
         }
         return new String(hexChars);
+    }
+
+    public static String getHash(String... input)
+    {
+        String callerHash = "";
+        for(String param : input){
+            callerHash += param;
+        }
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA256");
+            digest.update(callerHash.getBytes());
+            callerHash = TrustedPartners.bytesToHex(digest.digest());
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return callerHash;
     }
 }

@@ -9,5 +9,7 @@ public interface CoinType {
     static final int BitCoin=0;
     static final int LiteCoin=2;
     static final int Ethereum=60;
+    static final int BCH =145;
     static final int XLM=148;
+    static final int BNB=714;
 }

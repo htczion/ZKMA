@@ -27,6 +27,7 @@ public interface IKeySecurity {
     int ChangePIN(long unique_id);
     int ConfirmPIN(long unique_id, int resId);
     PublicKeyHolder GetPublicKey(long unique_id, String path, PublicKeyHolder publicKeyHolder);
+    PublicKeyHolder GetExtPublicKey(long unique_id, String path, PublicKeyHolder publicKeyHolder);
     int SignTransaction(long unique_id, int coin_type, float rates, String strJson, ByteArrayHolder byteArrayHolder);
     int signMultipleTransaction(long unique_id, int coin_type, float rates, String strJson , ByteArrayHolder[] byteArrayHolderArray);
     // int GetPartialSeed(long unique_id, int seed_index, String public_key, StringBuilder out_seed); // 2018/09/21 E-Mail from Hank_Chiu

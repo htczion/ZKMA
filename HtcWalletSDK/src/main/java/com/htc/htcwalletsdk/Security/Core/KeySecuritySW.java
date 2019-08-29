@@ -99,6 +99,12 @@ public class KeySecuritySW implements IKeySecurity {
         return publicKeyHolder;
     }
 
+    public PublicKeyHolder GetExtPublicKey(long unique_id, String path, PublicKeyHolder publicKeyHolder) {
+        ZKMALog.d(TAG, "GetExtPublicKey");
+        return publicKeyHolder;
+    }
+
+
     public int SignTransaction(long unique_id, int coin_type, float rates, String strJson, ByteArrayHolder byteArrayHolder ) {
         ZKMALog.d(TAG, "SignTransaction");
         return RESULT.UNKNOWN;

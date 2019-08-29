@@ -32,6 +32,7 @@ public class ExportFields {
             {{"2.0.1"},{"0x0005"},{"0x01010031"}}, // support signMultipleTransaction
             {{"2.0.2"},{"0x0005"},{"0x01010038"}}, // QSU4 update for social key
             {{"2.2.2"},{"0x0005"},{"0x01010038"}}, // QSU4 update for social key
+            {{"3.4.0"},{"0x0005"},{"0x0101004c"}}, // QSU6 update for setKeyboardType
     };
 
     /**
@@ -42,6 +43,6 @@ public class ExportFields {
     /**
      * current SDK based on this TZAPI SDK version(HEX)
      */
-    public static int minTzApiVer = 0x01010038;
+    public static int minTzApiVer = 0x0101004c;
 
 }

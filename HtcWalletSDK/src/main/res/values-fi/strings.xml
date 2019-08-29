@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">Varmuuskopioi lompakkosi 12 sanan palautuslauseella</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">12 sanan palautuslause on ainoa tapa palauttaa lompakko siinä tapauksessa, että kadotat puhelimen tai unohdat tapahtumasalasanasi.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">Tämä sanasarja on ainoa tapa palauttaa Zion Vaultisi, jos kadotat puhelimen tai unohdat salasanan.</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">Luo palautuslause</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">Kirjoita muistiin 12 sanan palautuslause järjestyksessä</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">Tämä on 12 sanan palautuslauseesi</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">Seuraava</string><!--Next-->
     <string name="text_recovery_verify_title">Tarkista palautuslauseesi (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">Tarkistaaksesi 12 sanan palautuslauseen, syötä 12 sanaa järjestyksessä.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">Palauta lompakkosi (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">Palauta Zion Vault (%1$d/3)</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">Kirjoita muistiin 12 sanan palautuslause järjestyksessä.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">Palautusavain ei kelpaa.</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">Tarkista maksutapahtuma</string><!--Review transaction-->
@@ -46,30 +48,31 @@
     <string name="text_generic_error_description">Ilmeni virhe.\nVirhekoodi: %1$s\nJos puhelimen uudelleenkäynnistys ei ratkaise virhettä, ota yhteyttä HTC-tukeen. Pahoittelemme tästä aiheutuvaa haittaa.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">Ilmeni virhe.\nVirhekoodi: %1$s\nKäynnistä sovellus uudelleen.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">Ilmeni virhe.\nVirhekoodi: %1$s\nTyhjennä Zion-sovellustiedot Android-asetuksista ja yritä uudelleen.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">Ilmeni virhe.\nVirhekoodi: %1$s\nVarmista, että 12 sanan palautuslause on kirjoitettu muistiin, tai että Social Key Recovery on ajan tasalla. Siirry sen jälkeen Zion-asetuksiin nollaamaan lompakkosi.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">Ilmeni virhe.\nVirhekoodi: %1$s\nVarmista, että 12 sanan palautuslause on kirjoitettu muistiin, tai että Social Key Recovery on ajan tasalla. Siirry sen jälkeen Zion-asetuksiin nollaamaan Zion Vault.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">Ilmeni virhe.\nVirhekoodi: %1$s\nKäynnistä puhelin uudelleen.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">Ilmeni virhe.\nVirhekoodi: %1$s\nOta yhteyttä HTC-tukeen.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">Ilmeni virhe.\nVirhekoodi: %1$s\nTämä ominaisuus ei ole käytettävissä.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">Ilmeni virhe.\nVirhekoodi: %1$s\nAnnetut parametrit eivät kelpaa.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">Ilmeni virhe.\nVirhekoodi: %1$s\nTapahtumasi on peruttu, koska antamasi tiedot eivät vastaa sopimuksesi tietoja. Tämä on turvallisuusvarotoimi. Ota yhteyttä asiakaspalveluun.</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">Liian monta yritystä. Yritä myöhemmin uudelleen.</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">Liian monta yritystä. Yritä %1$s minuutin kuluttua uudelleen.</string>
     <string name="text_try_often_button1">OK</string><!--OK-->
     <string name="text_try_often_title2">Liian monta yritystä.</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">Lompakkosi on poistettu tästä laitteesta turvallisuussyistä.\nKäyttääksesi lompakkoa, käytö 12 sanan palautuslausetta tai Social Key Recovery -toimintoa.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">Palauta lompakko</string><!--Recover wallet-->
+    <string name="text_try_often_description2">Zion Vaultisi on poistettu tästä laitteesta turvallisuussyistä.\nKäyttääksesi Zion Vaultia, käytä 12 sanan palautuslausetta tai Social Key Recovery -toimintoa.</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Palauta Zion Vault</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">Luo uusi salasana</string><!--Create your passcode-->
     <string name="confirm_your_pin_code_title">Vahvista salasana</string><!--Confirm your passcode-->
     <string name="create_your_new_pin_code_title">Luo uusi salasana</string><!--Create your new passcode-->
     <string name="confirm_your_new_pin_code_title">Vahvista uusi salasana</string><!--Confirm your new passcode-->
-    <string name="enter_pin_to_unlock_your_wallet_title">Syötä salasana avataksesi lompakon lukituksen</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Syötä salasana avataksesi Zion Vaultin lukituksen</string><!--Enter your passcode to unlock your Zion Vault-->
     <string name="enter_pin_to_continue_title">Syötä salasana jatkaaksesi</string><!--Enter your passcode to continue-->
     <string name="pin_open_app_desc">Tämä salasana vaaditaan kaikkia tapahtumia ja sovellusten käynnistämistä varten.</string><!--This passcode will be required for all transactions and app startup.-->
-    <string name="pin_unlock_wallet_desc">Tämä salasana vaaditaan tapahtumia varten ja lompakon lukituksen avaamiseen.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_unlock_wallet_desc">Tämä salasana vaaditaan tapahtumia varten ja Zion Vaultin lukituksen avaamiseen.</string><!--This passcode will be required for transactions and Zion Vault unlock.-->
     <string name="pin_codes_did_not_match">Salasanat eivät täsmää. Yritä uudelleen.</string><!--Your passcodes do not match. Try again.-->
     <string name="pin_codes_did_not_match2">Väärä salasana. Yritä uudelleen.</string><!--Passcode incorrect. Please try again.-->
     <string name="confirm_remove_trusted_contact_title">Haluatko varmasti poistaa tämän luotetun yhteystiedon?</string><!--Are you sure to remove this trusted contact?-->
@@ -78,10 +81,11 @@
     <string name="enter_pin_change_subtitle">Syötä salasana muuttaaksesi</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">Haluatko varmasti näyttää palautuslauseen?</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">Syötä salasana näyttääksesi</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">Haluatko varmasti nollata lompakkosi?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">Haluatko varmasti nollata Zion Vaultin?</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">Syötä salasana nollataksesi</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">Syötä salasana nollataksesi lompakkosi</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">This will wipe all data and you will need your recovery phrase to restore your wallet</string>
+    <string name="enter_pin_to_reset_wallet_title">Syötä salasana nollataksesi Zion Vaultisi</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">Tämä pyyhkii pois kaikki Zion Vaultin tiedot. Tarvitset Zion Vaultin palauttamiseen palautuslauseen.</string>
+<!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">Syötä salasana</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">Haluatko varmasti käyttää tätä tiliä?</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">Aiemmat luotettujen yhteystietojen tiedot menetetään pysyvästi.</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +97,8 @@
     <string name="passcode_required_for_additional_security">Salasana vaaditaan lisäsuojaukseksi</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">Nollataanko lompakko?</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">Tämä pyyhkii kaikki lompakon tiedot, ja tarvitset palautuslauseen lompakkosi palauttamiseen.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">Nollataanko Zion Vault?</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">Tämä pyyhkii kaikki Zion Vaultin tiedot, ja tarvitset palautuslauseen Zion Vaultin palauttamiseen.</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">VAHVISTA</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">PERUUTA</string><!--CANCEL-->
 

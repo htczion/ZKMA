@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">Säkerhetskopiera din plånbok med återställningsfras på 12 ord</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">Återställningsfrasen på 12 ord är det enda sättet för att återställa din plånbok om du tappar bort telefonen eller glömmer transaktionslösenordet.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">Denna uppsättning ord är det enda sättet för att återställa din Zion Vault om du tappar bort telefonen eller glömmer lösenordet.</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">Skapa återställningsfras</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">Skriv ner din återställningsfras på 12 ord i ordning</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">Det här är din återställningsfras på 12 ord</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">Nästa</string><!--Next-->
     <string name="text_recovery_verify_title">Verifiera din återställningsfras (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">Ange de 12 orden i ordning för att verifiera din återställningsfras på 12 ord.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">Återställ din plånbok (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">Återställ din Zion Vault(%1$d/3)</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">Ange din återställningsfras på 12 ord i ordning.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">Ogiltig återställningsfras.</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">Granska transaktionen</string><!--Review transaction-->
@@ -46,30 +48,31 @@
     <string name="text_generic_error_description">Ett fel har uppstått.\nFelkod: %1$s\nOm en omstart av telefonen inte löser problemet, kontakta HTC support. Vi ber om ursäkt för olägenheten.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">Ett fel har uppstått.\nFelkod: %1$s\nStarta om programmet.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">Ett fel har uppstått.\nFelkod: %1$s\nRensa Zion programdata från Android-inställningarna och försök igen.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">Ett fel har uppstått.\nFelkod: %1$s\nKontrollera att din återställningsfras på 12 ord är nedskriven eller att Social Key Recovery är uppdaterad och gå till Zion-inställningar för att återställa din plånbok.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">Ett fel har uppstått.\nFelkod: %1$s\nKontrollera att din återställningsfras på 12 ord är nedskriven eller att Social Key Recovery är uppdaterad och gå till Zion-inställningar för att återställa din Zion Vault.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">Ett fel har uppstått.\nFelkod: %1$s\nStarta om telefonen.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">Ett fel har uppstått.\nFelkod: %1$s\nKontakta HTC support.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">Ett fel har uppstått.\nFelkod: %1$s\nDen här funktionen är inte tillgänglig.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">Ett fel har uppstått.\nFelkod: %1$s\nDe angivna parametrarna är inte giltiga.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">Ett fel har uppstått.\nFelkod: %1$s\nTtransaktionen avbröts eftersom uppgifterna du angav inte matchar informationen i ditt avtal. Detta är en säkerhetsåtgärd. Kontakta kundtjänst.</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">För många försök. Försök igen senare.</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">För många försök. Försök igen om %1$s minuter.</string>
     <string name="text_try_often_button1">OK</string><!--OK-->
     <string name="text_try_often_title2">För många försök.</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">Din plånbok har rensats från den här enheten av säkerhetsskäl.\nAnvänd din återställningsfras på 12 ord eller Social nyckelåterställning för att få tillgång till plånboken.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">Återställ plånbok</string><!--Recover wallet-->
+    <string name="text_try_often_description2">Din Zion Vault har rensats från den här enheten av säkerhetsskäl.\nAnvänd din återställningsfras på 12 ord eller Social Key Recovery för att få tillgång till Zion Vault.</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Återställ Zion Vault</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">Skapa ditt lösenord</string><!--Create your passcode-->
     <string name="confirm_your_pin_code_title">Bekräfta ditt lösenord</string><!--Confirm your passcode-->
     <string name="create_your_new_pin_code_title">Skapa ditt nya lösenord</string><!--Create your new passcode-->
     <string name="confirm_your_new_pin_code_title">Bekräfta ditt nya lösenord</string><!--Confirm your new passcode-->
-    <string name="enter_pin_to_unlock_your_wallet_title">Ange ditt lösenord för att låsa upp din plånbok</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Ange ditt lösenord för att låsa upp din Zion Vault</string><!--Enter your passcode to unlock your Zion Vault-->
     <string name="enter_pin_to_continue_title">Skriv in ditt lösenord för att fortsätta</string><!--Enter your passcode to continue-->
     <string name="pin_open_app_desc">Detta lösenord krävs för alla transaktioner och start av program.</string><!--This passcode will be required for all transactions and app startup.-->
-    <string name="pin_unlock_wallet_desc">Detta lösenord krävs för transaktioner och upplåsning av plånbok.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_unlock_wallet_desc">Detta lösenord kommer att krävas för transaktioner och upplåsning av Zion Vault.</string><!--This passcode will be required for transactions and Zion Vault unlock.-->
     <string name="pin_codes_did_not_match">Dina lösenord överensstämmer inte. Försök igen.</string><!--Your passcodes do not match. Try again.-->
     <string name="pin_codes_did_not_match2">Lösenordet är felaktigt. Försök igen.</string><!--Passcode incorrect. Please try again.-->
     <string name="confirm_remove_trusted_contact_title">Är du säker på att du vill ta bort denna betrodda kontakt?</string><!--Are you sure to remove this trusted contact?-->
@@ -78,10 +81,10 @@
     <string name="enter_pin_change_subtitle">Ange lösenord för att ändra</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">Är du säker på att du vill visa återställningsfrasen?</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">Ange ditt lösenord för att visa</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">Är du säker på att du vill återställa din plånbok?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">Är du säker på att du vill återställa din Zion Vault?</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">Ange ditt lösenord för att återställa</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">Ange ditt lösenord för att återställa din plånbok</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">Detta kommer att radera alla plånboksdata. Du behöver din återställningsfras för att återställa din plånbok.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_reset_wallet_title">Ange ditt lösenord för att återställa din Zion Vault</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">Detta kommer att radera alla data i Zion Vault. Du behöver din återställningsfras för att återställa din Zion Vault.</string><!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">Ange ditt lösenord</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">Vill du verkligen använda detta konto?</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">Data om din tidigare betrodda kontakt kommer att gå förlorad.</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +96,8 @@
     <string name="passcode_required_for_additional_security">Lösenord krävs för ytterligare säkerhet</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">Återställ plånbok?</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">Detta kommer att radera alla plånboksdata och du behöver din återställningsfras för att återställa din plånbok.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">Återställ Zion Vault?</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">Detta kommer att radera alla data i Zion Vault och du behöver din återställningsfras för att återställa din Zion Vault.</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">BEKRÄFTA</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">AVBRYT</string><!--CANCEL-->
 

@@ -68,7 +68,6 @@ public class JsonParser {
     }
 
 
-
     public class JsonDataKey_signMessage {
         public static final String path = "path";
         public static final String message = "message";
@@ -105,4 +104,54 @@ public class JsonParser {
         return sb.toString();
     }
 
+    public static String stringToHex(String str) {
+
+        byte byteData[] = null;
+        int intHex = 0;
+        String strHex = "";
+        String strReturn = "";
+        try {
+            byteData = str.getBytes("ISO8859-1");
+            for (int intI=0;intI<byteData.length;intI++)
+            {
+                intHex = (int)byteData[intI];
+                if (intHex<0)
+                    intHex += 256;
+                if (intHex<16)
+                    strHex += "0" + Integer.toHexString(intHex);
+                else
+                    strHex += Integer.toHexString(intHex);
+            }
+            strReturn = strHex;
+
 }
+        catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return strReturn;
+    }
+
+    public static byte[] hexToBytes(String hexString) {
+        char[] hex = hexString.toCharArray();
+        int length = hex.length / 2;
+        byte[] rawData = new byte[length];
+        for (int i = 0; i < length; i++) {
+            int high = Character.digit(hex[i * 2], 16);
+            int low = Character.digit(hex[i * 2 + 1], 16);
+            int value = (high << 4) | low;
+            if (value > 127)
+                value -= 256;
+            rawData [i] = (byte) value;
+        }
+        return rawData ;
+    }
+
+    private static final char[] HEX_ARRAY = "0123456789ABCDEF".toCharArray();
+    public static String bytesToHex(byte[] bytes) {
+        String result = "";
+        for (int i=0 ; i<bytes.length ; i++) {
+            result += Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1);
+        }return result;
+    }
+}
+

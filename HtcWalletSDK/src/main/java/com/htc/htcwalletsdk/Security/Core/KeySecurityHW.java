@@ -115,6 +115,11 @@ public class KeySecurityHW implements IKeySecurity {
         return publicKeyHolder;
     }
 
+    public PublicKeyHolder GetExtPublicKey(long unique_id, String path, PublicKeyHolder publicKeyHolder) {
+        publicKeyHolder.setKey(mTEEKHelper.getExtPublicKey(unique_id, path));
+        return publicKeyHolder;
+    }
+
     public int SignTransaction(long unique_id, int coin_type, float rates, String strJson, ByteArrayHolder byteArrayHolder) {
         ZKMALog.d(TAG, "SignTransaction");
         byte[] tz_processed = mTEEKHelper.signTransaction(unique_id, coin_type, rates, strJson); // Ood's SERVICE will new byte[] object in JAVA layer, and GC.

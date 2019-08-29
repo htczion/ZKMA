@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">Efectuați copierea de rezervă a portofelului dvs. cu ajutorul frazei de recuperare formată din 12 cuvinte</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">Fraza de recuperare formată din 12 cuvinte este singurul mod de a vă recupera portofelul în cazul în care vă pierdeți telefonul sau uitați codul de acces al tranzacției.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">Acest set de cuvinte este singurul mod de a recupera Zion Vault în cazul în care vă pierdeți telefonul sau vă uitați codul de acces.</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">Generare frază de recuperare</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">Scrieți fraza de recuperare formată din 12 cuvinte în ordine</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">Aceasta este fraza dvs. de recuperare formată din 12 cuvinte</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">Următorul</string><!--Next-->
     <string name="text_recovery_verify_title">Verificați-vă fraza de recuperare (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">Pentru a verifica fraza de recuperare formată din 12 cuvinte, introduceți cele 12 cuvinte în ordine.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">Recuperați-vă portofelul(%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">Recuperați-vă Zion Vault(%1$d/3)</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">Introduceți fraza de recuperare formată din 12 cuvinte în ordine.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">Frază de recuperare incorectă.</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">Analizare tranzacție</string><!--Review transaction-->
@@ -46,30 +48,31 @@
     <string name="text_generic_error_description">A intervenit o eroare.\nCod de eroare: %1$s\nDacă repornirea telefonului nu rezolvă eroarea, contactați serviciul clienți al HTC. Ne cerem scuze pentru inconveniență.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">A intervenit o eroare.\nCod de eroare: %1$s\nRelansați aplicația.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">A intervenit o eroare.\nCod de eroare: %1$s\nȘtergeți datele aplicației Zion din setările Android, apoi încercați din nou.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">A intervenit o eroare.\nCod de eroare: %1$s\nAsigurați-vă că fraza dvs. de recuperare formată din 12 cuvinte este notată sau că Social Key Recovery este actualizată, apoi mergeți la setările Zion pentru a vă reseta portofelul.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">A intervenit o eroare.\nCod de eroare: %1$s\nAsigurați-vă că fraza dvs. de recuperare formată din 12 cuvinte este notată sau că Social Key Recovery este actualizată, apoi mergeți la setările Zion pentru a reseta Zion Vault.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">A intervenit o eroare.\nCod de eroare: %1$s\nReporniți telefonul.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">A intervenit o eroare.\nCod de eroare: %1$s\nContactați serviciul clienți al HTC.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">A intervenit o eroare.\nCod de eroare: %1$s\nAceastă caracteristică nu este disponibilă.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">A intervenit o eroare.\nCod de eroare: %1$s\nParametrii furnizați nu sunt corecți.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">A intervenit o eroare.\nCod de eroare: %1$s\nTranzacția dvs. a fost anulată deoarece datele pe care le-ați introdus nu corespund cu informațiile din contract. Aceasta este o măsură de precauție. Contactează serviciul de relaţii cu clienţii.</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">Prea multe încercări. Încercaţi din nou mai târziu.</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">Prea multe încercări. Încercaţi din nou după %1$s minute.</string>
     <string name="text_try_often_button1">OK</string><!--OK-->
     <string name="text_try_often_title2">Prea multe încercări.</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">Din motive de securitate, portofelul dvs. a fost eliminat din acest dispozitiv.\nPentru a accesa portofelul, utilizați fraza de recuperare formată din 12 cuvinte sau Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">Recuperare portofel</string><!--Recover wallet-->
+    <string name="text_try_often_description2">Din motive de securitate, Zion Vault a fost eliminat din acest dispozitiv.\nPentru a accesa Zion Vault, utilizați fraza de recuperare formată din 12 cuvinte sau Social Key Recovery.</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Recuperare Zion Vault</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">Creați codul de acces</string><!--Create your passcode-->
     <string name="confirm_your_pin_code_title">Confirmați codul de acces</string><!--Confirm your passcode-->
     <string name="create_your_new_pin_code_title">Creați un nou cod de acces</string><!--Create your new passcode-->
     <string name="confirm_your_new_pin_code_title">Confirmați noul cod de acces</string><!--Confirm your new passcode-->
-    <string name="enter_pin_to_unlock_your_wallet_title">Introduceți codul de acces pentru a vă debloca portofelul</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Introduceți codul de acces pentru a debloca Zion Vault</string><!--Enter your passcode to unlock your Zion Vault-->
     <string name="enter_pin_to_continue_title">Introduceți codul de acces pentru a continua</string><!--Enter your passcode to continue-->
     <string name="pin_open_app_desc">Acest cod de acces va fi solicitat pentru toate tranzacțiile și pornirea aplicației.</string><!--This passcode will be required for all transactions and app startup.-->
-    <string name="pin_unlock_wallet_desc">Acest cod de acces va fi solicitat pentru tranzacții și deblocarea portofelului.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_unlock_wallet_desc">Acest cod de acces va fi solicitat pentru tranzacții și deblocarea Zion Vault.</string><!--This passcode will be required for transactions and Zion Vault unlock.-->
     <string name="pin_codes_did_not_match">Codurile dvs. de acces nu corespund. Încercaţi din nou.</string><!--Your passcodes do not match. Try again.-->
     <string name="pin_codes_did_not_match2">Cod de acces incorect. Încercaţi din nou.</string><!--Passcode incorrect. Please try again.-->
     <string name="confirm_remove_trusted_contact_title">Sigur doriți să eliminați acest contact de încredere?</string><!--Are you sure to remove this trusted contact?-->
@@ -78,10 +81,10 @@
     <string name="enter_pin_change_subtitle">Introduceţi codul de acces pentru modificare</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">Sigur doriţi să afișați fraza de recuperare?</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">Introduceți codul de acces pentru afișare</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">Sigur doriți resetarea portofelului dvs.?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">Sigur doriți resetarea Zion Vault?</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">Introduceți codul de acces pentru resetare</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">Introduceți codul de acces pentru a vă reseta portofelul</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">Această acțiune va șterge toate datele portofelului. Pentru a vă recupera portofelul veți avea nevoie de fraza dvs. de recuperare.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_reset_wallet_title">Introduceți codul de acces pentru a reseta Zion Vault</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">Această acțiune va șterge toate datele Zion Vault. Pentru a recupera Zion Vault veți avea nevoie de fraza dvs. de recuperare.</string><!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">Introduceţi codul de acces</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">Sigur doriți să utilizați acest cont?</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">Datele anterioare ale contactului de încredere se vor pierde definitiv.</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +96,8 @@
     <string name="passcode_required_for_additional_security">Cod de acces solicitat pentru securitate suplimentară</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">Resetare portofel?</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">Toate datele portofelului vor fi șterse, iar pentru a vă putea recupera portofelul, veți avea nevoie de fraza de recuperare.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">Resetare Zion Vault?</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">Toate datele Zion Vault vor fi șterse, iar pentru a putea recupera Zion Vault, veți avea nevoie de fraza de recuperare.</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">CONFIRMARE</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">REVOCARE</string><!--CANCEL-->
 

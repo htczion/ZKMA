@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">Sichern Sie Ihre Wallet mit einem 12-Wort Wiederherstellungssatz</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">Der 12-Wort Wiederherstellungssatz ist die einzige Möglichkeit, Ihre Wallet wiederherzustellen, falls Sie Ihr Telefon verlieren oder Ihr Transaktionspasswort vergessen.</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">Dieser Wortsatz ist die einzige Möglichkeit, Ihren Zion Vault wiederherzustellen, falls Sie Ihr Telefon verlieren oder das Kennwort vergessen.</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">Wiederherstellungssatz erzeugen</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">Schreiben Sie Ihren 12-Wort Wiederherstellungssatz in der Reihenfolge auf</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">Dies ist Ihr 12-Wort Wiederherstellungssatz</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">Weiter</string><!--Next-->
     <string name="text_recovery_verify_title">Überprüfen Sie Ihren Wiederherstellungssatz (%1$d/3)</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">Um Ihren 12-Wort Wiederherstellungssatz zu überprüfen, geben Sie die 12 Wörter der Reihe nach ein.</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">Ihre Wallet wiederherstellen (%1$d/3)</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">Ihren Zion Vault wiederherstellen (%1$d/3)</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">Geben Sie Ihren 12-Wort Wiederherstellungssatz der Reihe nach ein.</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">Ungültiger Wiederherstellungssatz.</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">Transaktion überprüfen</string><!--Review transaction-->
@@ -46,30 +48,31 @@
     <string name="text_generic_error_description">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nWenn der Neustart des Telefons den Fehler nicht behebt, wenden Sie sich bitte an den HTC Support. Wir entschuldigen uns für die Umstände.</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nBitte die Anwendung erneut starten.</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nBitte löschen Sie die Daten der Zion App in den Android Einstellungen und versuchen Sie es erneut.</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nStellen Sie sicher, dass Ihr 12-Wort-Wiederherstellungssatz aufgeschrieben ist oder dass Social Key Recovery auf dem neuesten Stand ist, und gehen Sie dann zu den Zion Einstellungen, um Ihre Wallet zurückzusetzen.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nStellen Sie sicher, dass Ihr 12-Wort-Wiederherstellungssatz aufgeschrieben ist oder dass Social Key Recovery auf dem neuesten Stand ist, und gehen Sie dann zu den Zion Einstellungen, um Ihren Zion Vault zurückzusetzen.</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nBitte starten Sie das Telefon neu.</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nBitte kontaktieren Sie den HTC Support.</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nDiese Funktion ist nicht verfügbar.</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nDie angegebenen Parameter sind nicht gültig.</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">Ein Fehler ist aufgetreten.\nFehlercode: %1$s\nIhre Transaktion wurde abgebrochen, weil die von Ihnen eingegebenen Daten nicht mit den Informationen in Ihrem Vertrag übereinstimmen. Dies ist eine Sicherheitsvorkehrung. Bitte wenden Sie sich an den Kundendienst.</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">Zu viele Versuche. Bitte versuchen Sie es später noch einmal.</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">Zu viele Versuche. Versuchen Sie es in %1$s Minuten bitte erneut.</string>
     <string name="text_try_often_button1">OK</string><!--OK-->
     <string name="text_try_often_title2">Zu viele Versuche.</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">Ihre Wallet wurde aus Sicherheitsgründen von diesem Gerät gelöscht.\nUm auf die Wallet zuzugreifen, verwenden Sie Ihren 12-Wort Wiederherstellungssatz oder Social Key Recovery.</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">Wallet wiederherstellen</string><!--Recover wallet-->
+    <string name="text_try_often_description2">Ihr Zion Vault wurde aus Sicherheitsgründen von diesem Gerät gelöscht.\nUm auf den Zion Vault zuzugreifen, verwenden Sie Ihren 12-Wort Wiederherstellungssatz oder Social Key Recovery.</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Zion Vault wiederherstellen</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">Erstellen Sie Ihr Kennwort</string><!--Create your passcode-->
     <string name="confirm_your_pin_code_title">Bestätigen Sie Ihr Kennwort</string><!--Confirm your passcode-->
     <string name="create_your_new_pin_code_title">Erstellen Sie Ihr neues Kennwort</string><!--Create your new passcode-->
     <string name="confirm_your_new_pin_code_title">Bestätigen Sie Ihr neues Kennwort</string><!--Confirm your new passcode-->
-    <string name="enter_pin_to_unlock_your_wallet_title">Geben Sie Ihr Kennwort ein, um Ihre Wallet zu entsperren</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_unlock_your_wallet_title">Geben Sie Ihr Kennwort ein, um Ihren Zion Vault zu entsperren</string><!--Enter your passcode to unlock your Zion Vault-->
     <string name="enter_pin_to_continue_title">Geben Sie Ihr Kennwort zum Fortfahren ein</string><!--Enter your passcode to continue-->
     <string name="pin_open_app_desc">Dieses Kennwort wird für alle Transaktionen und den Start der Anwendung benötigt.</string><!--This passcode will be required for all transactions and app startup.-->
-    <string name="pin_unlock_wallet_desc">Dieses Kennwort wird für Transaktionen und die Freischaltung der Wallet benötigt.</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_unlock_wallet_desc">Dieses Kennwort wird für Transaktionen und die Freischaltung des Zion Vault benötigt.</string><!--This passcode will be required for transactions and Zion Vault unlock.-->
     <string name="pin_codes_did_not_match">Ihre Kennwörter stimmen nicht überein. Versuchen Sie es erneut.</string><!--Your passcodes do not match. Try again.-->
     <string name="pin_codes_did_not_match2">Kennwort falsch. Bitte erneut versuchen.</string><!--Passcode incorrect. Please try again.-->
     <string name="confirm_remove_trusted_contact_title">Diesen vertrauenswürdigen Kontakt wirklich entfernen?</string><!--Are you sure to remove this trusted contact?-->
@@ -78,10 +81,10 @@
     <string name="enter_pin_change_subtitle">Geben Sie das Kennwort zum Ändern ein</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">Soll der Wiederherstellungssatz wirklich angezeigt werden?</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">Geben Sie Ihr Kennwort zum Anzeigen ein</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">Ihre Wallet wirklich zurücksetzen?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">Ihren Zion Vault wirklich zurücksetzen?</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">Geben Sie Ihr Kennwort zum Zurücksetzen ein</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">Geben Sie Ihr Kennwort ein, um Ihre Wallet zurückzusetzen</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">Dadurch werden sämtliche Wallet Daten gelöscht. Sie werden Ihren Wiederherstellungssatz benötigen, um Ihre Wallet wiederherzustellen.</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_reset_wallet_title">Geben Sie Ihr Kennwort ein, um Ihren Zion Vault zurückzusetzen</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">Dadurch werden sämtliche Zion Vault Daten gelöscht. Sie werden Ihren Wiederherstellungssatz benötigen, um Ihren Zion Vault wiederherzustellen.</string><!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">Geben Sie Ihr Kennwort ein</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">Möchten Sie dieses Konto wirklich verwenden?</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">Die Daten Ihres bisherigen vertrauenswürdigen Kontakts werden dauerhaft verloren sein.</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +96,8 @@
     <string name="passcode_required_for_additional_security">Kennwort erforderlich für zusätzliche Sicherheit</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">Wallet zurücksetzen?</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">Dadurch werden alle Wallet Daten gelöscht und Sie benötigen Ihren Wiederherstellungssatz, um Ihre Wallet wiederherzustellen.</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">Zion Vault zurücksetzen?</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">Dadurch werden alle Zion Vault Daten gelöscht und Sie benötigen Ihren Wiederherstellungssatz, um Ihren Zion Vault wiederherzustellen.</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">BESTÄTIGEN</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">ABBRECHEN</string><!--CANCEL-->
 

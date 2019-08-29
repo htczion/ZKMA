@@ -4,7 +4,7 @@
 
 <!--for wallet recovery ui-->
     <string name="recovery_key_introduction_title">12 शब्दों वाले रिकवरी वाक्यांश के द्वारा अपने बटुए का बैकअप लें</string><!--Backup your wallet by 12-/word recovery phrase-->
-    <string name="recovery_key_introduction_description">अपना फ़ोन खो देने या लेनदेन पासकोड भूल जाने की स्थिति में आपके बटुए को पुनर्स्थापित करने का एकमात्र तरीका 12 शब्दों वाला रिकवरी वाक्यांश है।</string><!--The 12-/word recovery phrase is the only way to restore your wallet in case you lose your phone or forget your transaction passcode.-->
+    <string name="recovery_key_introduction_description">यदि आप अपना फ़ोन खो देते हैं या पासकोड भूल जाते हैं तो शब्दों का यह समूह ही आपके Zion Vault को पुनः प्राप्त करने का एकमात्र तरीका है।</string><!--This set of words is the only way to recover your Zion Vault if you lose your phone or forget your passcode.-->
     <string name="recovery_key_introduction_button">रिकवरी वाक्यांश उत्पन्न करें</string><!--Generate recovery phrase-->
     <string name="write_recovery_key_title">अपना 12 शब्दों वाला रिकवरी वाक्यांश क्रम में लिखें</string><!--Write down your 12-/word recovery phrase in order-->
     <string name="show_recovery_key_title">यह आपका 12 शब्दों वाला रिकवरी वाक्यांश है</string><!--This is your 12-/word recovery phrase-->
@@ -14,8 +14,10 @@
     <string name="text_next_button">Next</string><!--Next-->
     <string name="text_recovery_verify_title">अपने रिकवरी वाक्यांश (%1$d/3) का सत्यापन करें</string><!--Verify your recovery phrase(%1$d/3)-->
     <string name="text_recovery_verify_description">अपने 12 शब्दों वाले रिकवरी वाक्यांश की पुष्टि के लिए, 12 शब्दों को क्रम में प्रविष्ट करें।</string><!--To verify your 12-/word recovery phrase, enter the 12 words in order.-->
-    <string name="text_recovery_enter_title">अपने बटुए (%1$d/3) को पुनः प्राप्त करें</string><!--Recover your wallet(%1$d/3)-->
+    <string name="text_recovery_enter_title">अपने Zion Vault (%1$d/3) को पुनः प्राप्त करें</string><!--Recover your Zion Vault(%1$d/3)-->
     <string name="text_recovery_enter_description">अपना 12 शब्दों वाला रिकवरी वाक्यांश क्रम में प्रविष्ट करें।</string><!--Enter your 12-/word recovery phrase in order.-->
+
+    <string name="text_recovery_duplicated_error">अमान्य रिकवरी वाक्यांश।</string><!--Invalid recovery phrase.-->
 
 <!--for wallet review activity-->
     <string name="text_review_toolbar_title">लेनदेन की समीक्षा करें</string><!--Review transaction-->
@@ -46,30 +48,31 @@
     <string name="text_generic_error_description">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nयदि फ़ोन रीस्टार्ट करने से त्रुटि का समाधान नहीं होता है, तो कृपया HTC सहायता से संपर्क करें। हमें असुविधा के लिए खेद है।</string><!--An error has occurred.\nError code: %1$s\nIf restarting your phone doesn’t resolve the error, please contact HTC support. We apologize for the inconvenience.-->
     <string name="text_type1_error_description">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nकृपया एप्लिकेशन को फिर से लॉन्च करें।</string><!--An error has occurred.\nError code: %1$s\nPlease relaunch the application.-->
     <string name="text_type2_error_description">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nकृपया एंड्रॉयड सेटिंग से Zion एप्लिकेशन डेटा खाली करें और फिर से प्रयास करें।</string><!--An error has occurred.\nError code: %1$s\nPlease clear Zion app data from Android settings and try again.-->
-    <string name="text_type3_error_description">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nसुनिश्चित करें कि आपका 12 शब्दों वाला रिकवरी वाक्यांश लिखा हुआ है या कि Social Key Recovery नवीनतम है, फिर अपना बटुआ रीसेट करने के लिए Zion सेटिंग पर जाएँ।</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your wallet.-->
+    <string name="text_type3_error_description">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nसुनिश्चित करें कि आपका 12 शब्दों वाला रिकवरी वाक्यांश लिखा हुआ है या कि Social Key Recovery नवीनतम है, फिर अपना Zion Vault रीसेट करने के लिए Zion सेटिंग पर जाएँ।</string><!--An error has occurred.\nError code: %1$s\nMake sure your 12-/word recovery phrase is written down or that Social Key Recovery is up to date, then go to Zion settings to reset your Zion Vault.-->
     <string name="text_type4_error_description">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nकृपया अपना फ़ोन रीस्टार्ट करें।</string><!--An error has occurred.\nError code: %1$s\nPlease restart your phone.-->
     <string name="text_type5_error_description">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nकृपया HTC सहायता से संपर्क करें।</string><!--An error has occurred.\nError code: %1$s\nPlease contact HTC support.-->
     <string name="text_type6_error_description">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nयह सुविधा उपलब्ध नहीं है।</string><!--An error has occurred.\nError code: %1$s\nThis feature is not available.-->
     <string name="text_type7_error_description">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nप्रदान किए गए पैरामीटर मान्य नहीं हैं।</string><!--An error has occurred.\nError code: %1$s\nThe provided parameters are not valid.-->
     
+<string name="text_sync_tztable_error">एक त्रुटि हुई है।\nत्रुटि कोड: %1$s\nआपका लेनदेन रद्द कर दिया गया है क्योंकि आपके द्वारा प्रविष्ट डेटा आपके संपर्क में मौजूद जानकारी से मेल नहीं खाता है। यह एक सुरक्षा एहतियात है। कृपया ग्राहक सेवा से संपर्क करें।</string><!--An error has occurred.\nError code: %1$s\nYour transaction has been cancelled because the data you have entered does not match the information in your contract. This is a safety precaution. Please contact customer service.-->
 
 <!--for try often activity-->
     <string name="text_try_often_title1">अत्यधिक प्रयास। कृपया बाद में पुनः प्रयास करें।</string><!--Too many attempts. Please try again later.-->
     <string name="text_try_often_description1">अत्यधिक प्रयास। कृपया %1$s मिनट में पुन: प्रयास करें।</string>
     <string name="text_try_often_button1">ठीक</string><!--OK-->
     <string name="text_try_often_title2">अत्यधिक प्रयास।</string><!--Too many attempts.-->
-    <string name="text_try_often_description2">आपके बटुए को सुरक्षा कारणों से इस डिवाइस से हटा दिया गया है।\nअपने बटुए तक पहुँचने के लिए, अपने 12 शब्दों वाले रिकवरी वाक्यांश या Social Key Recovery का उपयोग करें।</string><!--Your wallet has been cleared from this device for security reasons.\nTo access wallet, use your 12-/word recovery phrase or Social Key Recovery.-->
-    <string name="text_try_often_button2">बटुआ पुनः प्राप्त करें</string><!--Recover wallet-->
+    <string name="text_try_often_description2">आपके Zion Vault को सुरक्षा कारणों से इस डिवाइस से हटा दिया गया है।\nअपने Zion Vault तक पहुँचने के लिए, अपने 12 शब्दों वाले रिकवरी वाक्यांश या Social Key Recovery का उपयोग करें।</string><!--Your Zion Vault has been cleared from this device for security reasons.\nTo access Zion Vault, use your 12-/word recovery phrase or Social Key Recovery.-->
+    <string name="text_try_often_button2">Zion Vault पुनः प्राप्त करें</string><!--Recover Zion Vault-->
 
 <!--text of title, description and subtitle-->
     <string name="create_your_pin_code_title">अपना पासकोड बनाएँ</string><!--Create your passcode-->
     <string name="confirm_your_pin_code_title">अपने पासकोड की पुष्टि करें</string><!--Confirm your passcode-->
     <string name="create_your_new_pin_code_title">अपना नया पासकोड बनाएँ</string><!--Create your new passcode-->
     <string name="confirm_your_new_pin_code_title">अपने नए पासकोड की पुष्टि करें</string><!--Confirm your new passcode-->
-    <string name="enter_pin_to_unlock_your_wallet_title">अपना बटुआ अनलॉक करने के लिए अपना पासकोड प्रविष्ट करें</string><!--Enter your passcode to unlock your wallet-->
+    <string name="enter_pin_to_unlock_your_wallet_title">अपना Zion Vault रीसेट करने के लिए अपना पासकोड प्रविष्ट करें</string><!--Enter your passcode to unlock your Zion Vault-->
     <string name="enter_pin_to_continue_title">जारी रखने के लिए अपना पासकोड प्रविष्ट करें</string><!--Enter your passcode to continue-->
     <string name="pin_open_app_desc">यह पासकोड लेनदेनों के लिए और एप्लिकेशन चालू करने के लिए आवश्यक होगा।</string><!--This passcode will be required for all transactions and app startup.-->
-    <string name="pin_unlock_wallet_desc">यह पासकोड लेनदेनों के लिए और बटुआ अनलॉक करने के लिए आवश्यक होगा।</string><!--This passcode will be required for transactions and wallet unlock.-->
+    <string name="pin_unlock_wallet_desc">यह पासकोड लेनदेनों के लिए और Zion Vault अनलॉक करने के लिए आवश्यक होगा।</string><!--This passcode will be required for transactions and Zion Vault unlock.-->
     <string name="pin_codes_did_not_match">आपके पासकोड मेल नहीं खाते। फिर से प्रयास करें।</string><!--Your passcodes do not match. Try again.-->
     <string name="pin_codes_did_not_match2">पासकोड गलत है। कृपया पुनः प्रयास करें।</string><!--Passcode incorrect. Please try again.-->
     <string name="confirm_remove_trusted_contact_title">क्या आप वाकई इस विश्वसनीय संपर्क को हटाना चाहते हैं?</string><!--Are you sure to remove this trusted contact?-->
@@ -78,10 +81,10 @@
     <string name="enter_pin_change_subtitle">बदलने के लिए पासकोड प्रविष्ट करें</string><!--Enter passcode to change-->
     <string name="enter_pin_show_recovery_key_title">क्या आप वाकई रिकवरी वाक्यांश दिखाना चाहते हैं?</string><!--Are you sure you want to show the recovery phrase?-->
     <string name="enter_pin_show_subtitle">दिखाने के लिए अपना पासकोड प्रविष्ट करें</string><!--Enter your passcode to show-->
-    <string name="enter_pin_reset_wallet_title">क्या आप वाकई अपना बटुआ रीसेट करना चाहते हैं?</string><!--Are you sure you want to reset your wallet?-->
+    <string name="enter_pin_reset_wallet_title">क्या आप वाकई अपना Zion Vault रीसेट करना चाहते हैं?</string><!--Are you sure you want to reset your Zion Vault?-->
     <string name="enter_pin_reset_wallet_subtitle">रीसेट करने के लिए अपना पासकोड प्रविष्ट करें</string><!--Enter your passcode to reset-->
-    <string name="enter_pin_to_reset_wallet_title">अपना बटुआ रीसेट करने के लिए अपना पासकोड प्रविष्ट करें</string><!--Enter your passcode to reset your wallet-->
-    <string name="enter_pin_to_reset_wallet_desc">यह बटुआ के सभी डेटा को मिटा देगा। आपको अपना बटुआ पुनः प्राप्त करने के लिए अपने रिकवरी वाक्यांश की जरूरत पड़ेगी।</string><!--This will wipe all wallet data. You will need your recovery phrase to recover your wallet.-->
+    <string name="enter_pin_to_reset_wallet_title">अपना Zion Vault रीसेट करने के लिए अपना पासकोड प्रविष्ट करें</string><!--Enter your passcode to reset your Zion Vault-->
+    <string name="enter_pin_to_reset_wallet_desc">यह Zion Vault के सभी डेटा को मिटा देगा। आपको अपना Zion Vault पुनः प्राप्त करने के लिए अपने रिकवरी वाक्यांश की जरूरत पड़ेगी।</string><!--This will wipe all Zion Vault data. You will need your recovery phrase to recover your Zion Vault.-->
     <string name="enter_pin_to_generate_verification_code_title">अपना पासकोड प्रविष्ट करें</string><!--Enter your passcode-->
     <string name="enter_pin_backup_security_check_title">क्या आप वाकई इस खाते का उपयोग करना चाहते हैं?</string><!--Are you sure to use this account?-->
     <string name="enter_pin_backup_security_check_desc">आपका पिछला विश्वसनीय संपर्क डेटा स्थायी रूप से गुम हो जाएगा।</string><!--Your previous trusted contact data will be permanently lost.-->
@@ -93,8 +96,8 @@
     <string name="passcode_required_for_additional_security">अतिरिक्त सुरक्षा के लिए पासकोड आवश्यक</string><!--Passcode required for additional security-->
 
 <!--for reset wallet dialog-->
-    <string name="reset_wallet_dialog_title">बटुआ रीसेट करें?</string><!--Reset wallet?-->
-    <string name="reset_wallet_dialog_description">यह बटुआ के सभी डेटा को मिटा देगा और आपको अपना बटुआ पुनः प्राप्त करने के लिए अपने रिकवरी वाक्यांश की जरूरत पड़ेगी।</string><!--This will wipe all wallet data and you will need your recovery phrase to recover your wallet.-->
+    <string name="reset_wallet_dialog_title">Zion Vault रीसेट करें?</string><!--Reset Zion Vault?-->
+    <string name="reset_wallet_dialog_description">यह Zion Vault के सभी डेटा को मिटा देगा और आपको अपना Zion Vault पुनः प्राप्त करने के लिए अपने रिकवरी वाक्यांश की जरूरत पड़ेगी।</string><!--This will wipe all Zion Vault data and you will need your recovery phrase to recover your Zion Vault.-->
     <string name="reset_wallet_confirm">पुष्टि करें</string><!--CONFIRM-->
     <string name="reset_wallet_cancel">रद्द करें</string><!--CANCEL-->
 

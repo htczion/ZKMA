@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Looper;
-import android.util.Log;
 
 import com.htc.htcwalletsdk.Act.BaseResultCallbackAct;
 import com.htc.htcwalletsdk.Act.UIErrorDialogAct;
@@ -19,6 +18,8 @@ import com.htc.htcwalletsdk.Native.Type.ByteArrayHolder;
 import com.htc.htcwalletsdk.Protect.ISdkProtector;
 import com.htc.htcwalletsdk.Protect.ResultChecker;
 import com.htc.htcwalletsdk.Security.Key.PublicKeyHolder;
+import com.htc.htcwalletsdk.Utils.BinanceEncodeUtils;
+import com.htc.htcwalletsdk.Utils.BinanceTxAssembler;
 import com.htc.htcwalletsdk.Utils.GenericUtils;
 import com.htc.htcwalletsdk.Utils.JsonParser;
 import com.htc.htcwalletsdk.Utils.ParamHolder;
@@ -26,6 +27,11 @@ import com.htc.htcwalletsdk.Utils.Result;
 import com.htc.htcwalletsdk.Utils.ResultCallback;
 import com.htc.htcwalletsdk.Utils.ZKMALog;
 import com.htc.htcwalletsdk.Wallet.Coins.CoinType;
+
+import org.json.JSONException;
+
+import java.io.IOException;
+import java.util.Arrays;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -193,6 +199,11 @@ public class KeyAgent {
 
     public int isSeedExists(long unique_id) {
         int ret = mKeySecurity.IsSeedExists(unique_id);
+        if(ret != RESULT.SUCCESS) {
+            String strUID = ""+unique_id;
+            String strUIDHash = GenericUtils.getHash(strUID);
+            ZKMALog.w(TAG,"isSeedExists err=" + ret + "  " +strUIDHash.substring(0,10));
+        }
         ResultChecker.Diagnostic(mContext, ret);
         return ret;
     }
@@ -237,24 +248,30 @@ public class KeyAgent {
 
     // BIP44 defined this part:
     // m/purpose'/coin'/account'/change/address_index 
-    public PublicKeyHolder getPublicKey(long unique_id, int coinType, int purpose, int index) {
+    public PublicKeyHolder getPublicKey(long unique_id, int coinType, int change, int index) {
         PublicKeyHolder publicKeyHolder = new PublicKeyHolder();
         String path = "UNKNOWN path";
         switch(coinType) {
             case CoinType.BitCoin:
-                path = "m/44'/0'/0'/" +Integer.toString(purpose)+"/"+ index;
+                path = "m/44'/0'/0'/" +Integer.toString(change)+"/"+ index;
                 // BitCoin_idx++;
                 break;
             case CoinType.LiteCoin:
-                path = "m/44'/2'/0'/" +Integer.toString(purpose)+"/"+ index;
+                path = "m/44'/2'/0'/" +Integer.toString(change)+"/"+ index;
                 // LiteCoin_idx++;
                 break;
             case CoinType.Ethereum:
                 path = "m/44'/60'/0'/0/0";
                 // Ethereum_idx++; // ETH has no idx concept.
                 break;
+            case CoinType.BCH:
+                path = "m/44'/145'/0'/" +Integer.toString(change)+"/"+ index;
+                break;
             case CoinType.XLM:
                 path = "m/44'/148'/0'/0'/0'";
+                break;
+            case CoinType.BNB:
+                path = "m/44'/714'/0'/" +Integer.toString(change)+"/"+ index;
                 break;
 
         }
@@ -262,11 +279,31 @@ public class KeyAgent {
         return mKeySecurity.GetPublicKey(unique_id, path, publicKeyHolder);
     }
 
+    // BIP44 defined this part:
+    // m/purpose'/coin'/account'/change/address_index 
+    public PublicKeyHolder getExtPublicKey(long unique_id, int purpose, int coinType, int account) {
+        PublicKeyHolder publicKeyHolder = new PublicKeyHolder();
+        String path = "UNKNOWN path";
+        path = "m/" +Integer.toString(purpose)+"'/"+Integer.toString(coinType)+"'/"+Integer.toString(account)+"'"; // Not support ETH
+        publicKeyHolder.setKeyPath(path);
+        return mKeySecurity.GetExtPublicKey(unique_id, path, publicKeyHolder);
+    }
+
+    // BIP44 defined this part:
+    // m/purpose'/coin'/account'/change/address_index 
+    public PublicKeyHolder getExtPublicKey(long unique_id, int purpose, int coinType, int account, int change, int index) {
+        PublicKeyHolder publicKeyHolder = new PublicKeyHolder();
+        String path = "UNKNOWN path";
+        path = "m/" +Integer.toString(purpose)+"'/"+Integer.toString(coinType)+"'/"+Integer.toString(account)+"'/"+Integer.toString(change);  // Not support ETH
+        publicKeyHolder.setKeyPath(path);
+        return mKeySecurity.GetExtPublicKey(unique_id, path, publicKeyHolder);
+    }
+
 
     static int BitCoin_idx;
     static int LiteCoin_idx;
     static int Ethereum_idx;
-    public PublicKeyHolder getPublicKey(long unique_id, int coinType, int purpose) {
+    public PublicKeyHolder getPublicKey(long unique_id, int coinType, int change) {
         PublicKeyHolder publicKeyHolder = new PublicKeyHolder();
         String path = "UNKNOWN path";
         String post_index;
@@ -280,21 +317,29 @@ public class KeyAgent {
             case CoinType.BitCoin:
                 digitalNumTag = BIT_DNUM_INDEX;
                 digitalNumVal = sp.getInt(digitalNumTag, 0);
-                path = "m/44'/0'/0'/" +Integer.toString(purpose)+"/"+ digitalNumVal;
+                path = "m/44'/0'/0'/" +Integer.toString(change)+"/"+ digitalNumVal;
                 BitCoin_idx++;
                 break;
             case CoinType.LiteCoin:
                 digitalNumTag = LIT_DNUM_INDEX;
                 digitalNumVal = sp.getInt(digitalNumTag, 0);
-                path = "m/44'/2'/0'/" +Integer.toString(purpose)+"/"+ digitalNumVal;
+                path = "m/44'/2'/0'/" +Integer.toString(change)+"/"+ digitalNumVal;
                 LiteCoin_idx++;
                 break;
             case CoinType.Ethereum:
                 path = "m/44'/60'/0'/0/0";
                 // Ethereum_idx++; // ETH has no idx concept.
                 break;
+            case CoinType.BCH:
+                path = "m/44'/145'/0'/" +Integer.toString(change)+"/"+ digitalNumVal;
+                break;
             case CoinType.XLM:
                 path = "m/44'/148'/0'/0'/0'";
+                break;
+            case CoinType.BNB:
+                digitalNumTag = LIT_DNUM_INDEX;
+                digitalNumVal = sp.getInt(digitalNumTag, 0);
+                path = "m/44'/714'/0'/" +Integer.toString(change)+"/"+ digitalNumVal;
                 break;
         }
         if(digitalNumTag != null){
@@ -310,10 +355,40 @@ public class KeyAgent {
     }
 
     public int signTransaction(long unique_id, int coin_type, float rates, String strJson, ByteArrayHolder byteArrayHolder) {
-        int ret = mKeySecurity.SignTransaction(unique_id, coin_type, rates, strJson, byteArrayHolder);
+        int ret = RESULT.E_SDK_GENERIC_ERROR;
+        if(coin_type == CoinType.BNB) {
+            BinanceEncodeUtils.BNBJsonObj bnb = null;
+            try {
+                bnb = new BinanceEncodeUtils.BNBJsonObj(strJson);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            ByteArrayHolder signBytes = new ByteArrayHolder();
+            ret = mKeySecurity.SignTransaction(unique_id, coin_type, rates, bnb.getSignJsonStr(), signBytes);
+            if (ret == RESULT.SUCCESS) {
+                byte[] stdTx = new byte[2*1024];
+                try {
+                    PublicKeyHolder publicKeyHolder = new PublicKeyHolder();
+                    publicKeyHolder.setKeyPath(bnb.getPath());
+                    publicKeyHolder = mKeySecurity.GetPublicKey(unique_id, bnb.getPath(), publicKeyHolder);
+                    bnb.pubKeyHex = publicKeyHolder.mPublicKey;
+                    stdTx = BinanceTxAssembler.encodeStdTx(signBytes.byteArray, bnb);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                byteArrayHolder.byteArray = Arrays.copyOf(stdTx, stdTx.length);
+                byteArrayHolder.receivedLength = stdTx.length;
+                // String outHexString = GenericUtils.byteArrayToHexString(byteArrayHolder.byteArray);
+                // ZKMALog.d(TAG, outHexString); // compare with output at SignerTests.cpp
+            }
+        }
+        else{
+            ret = mKeySecurity.SignTransaction(unique_id, coin_type, rates, strJson, byteArrayHolder);
+        }
         ResultChecker.Diagnostic(mContext, ret);
         return ret;
     }
+
 
 
     public int signMultipleTransaction(long unique_id, int coin_type, float rates, String strJson , ByteArrayHolder[] byteArrayHolderArray) {
@@ -436,7 +511,8 @@ public class KeyAgent {
 
     public int readTzDataSet(int dataSet, ByteArrayHolder data) {
         int ret = mKeySecurity.ReadTzDataSet( dataSet, data);
-        ResultChecker.Diagnostic(mContext, ret);
+        if( ret < RESULT.SUCCESS)
+            ResultChecker.Diagnostic(mContext, ret);
         return ret;
     }
 

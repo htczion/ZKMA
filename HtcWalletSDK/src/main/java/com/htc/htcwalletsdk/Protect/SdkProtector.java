@@ -90,6 +90,7 @@ public class SdkProtector {
                     case RESULT.E_TEEKM_PASSCODE_NOT_FOUND: // changing PIN without seed
                     case RESULT.E_TEEKM_DATA_DB_DATASET:
                     case RESULT.E_TEEKM_DATA_DB_RSA_SIGN_VERIFY:
+                    case RESULT.E_TEEKM_REGISTER_ALREADY:
                         break;
 
                     case RESULT.E_TEEKM_CLIENT_TOUCH: // SSD asked not handle

@@ -39,6 +39,9 @@ public interface ISdkExportKeyAgentApis {
     PublicKeyHolder getReceivePublicKey(long unique_id, int coinType); // add 10/15 E-MAIL from Jeff.CF
     PublicKeyHolder getReceivePublicKey(long unique_id, int coinType, int index);
 
+    PublicKeyHolder getAccountExtPublicKey(long unique_id, int bips, int coinType, int account);
+    PublicKeyHolder getBipExtPublicKey(long unique_id, int bips, int coinType, int account, int change, int index);
+
     int     signTransaction(long unique_id, int oin_type, float rates, String strJson, ByteArrayHolder byteArrayHolder);
     int     signMultipleTransaction(long unique_id, int coin_type, float rates, String strJson , ByteArrayHolder[] byteArrayHolderArray);
     int     signMessage(long unique_id, int oin_type, String strJson, ByteArrayHolder byteArrayHolder);
