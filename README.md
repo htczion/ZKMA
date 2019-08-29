@@ -2,11 +2,16 @@
 
 [![Build Status](https://travis-ci.com/htczion/ZKMA.svg?branch=master)](https://travis-ci.com/htczion/ZKMA)
 
-Integration guide for creating a wallet using Zion Key Management APIs
+ZKMA (Zion Key Management API) is a library which provides a way for developers to manage seed security built into HTC EXODUS devices, which integrates Zion protection. All secure operations (input pin, display seed, sign transaction…) will be performed by the trusted OS and no secure data exposed to the rest of Android.
 
-https://github.com/htczion/ZKMA/wiki
+All details at https://github.com/htczion/ZKMA/wiki
 
-
+## Support coin types:  
+- BTC  
+- BCH  
+- BNB  
+- ETH  
+- LTC  
 
 ## Change List:  
 For HW wallet, SDK will check the compatibility between ROM,SDK and TrustZone. 
