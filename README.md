@@ -9,7 +9,6 @@ All details at https://github.com/htczion/ZKMA/wiki
 ## Support coin types:  
 - BTC  
 - BCH  
-- BNB  
 - ETH  
 - LTC  
 
@@ -20,9 +19,6 @@ About the details of version number, you can find at section [Compatibility](htt
 ### ZKMS ver: 3.3.0:  
 
 - 3.4.6  
-    Support BNB  
-
-- 3.4.0  
     Support BCH  
 
 - 3.3.1  
