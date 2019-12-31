@@ -20,7 +20,7 @@ About the details of version number, you can find at section [Compatibility](htt
 ### ZKMS ver: 3.3.0:  
 
 - 3.4.6  
-    Support BBH  
+    Support BNB  
 
 - 3.4.0  
     Support BCH  
